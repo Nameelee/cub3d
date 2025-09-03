@@ -18,7 +18,7 @@ MLX_DIR = ./minilibx/
 # MiniLibX 라이브러리 파일 경로
 MLX_LIB = $(MLX_DIR)libmlx.a
 # macOS 용 MiniLibX 플래그
-MLX_FLAGS = -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
+MLX_FLAGS = -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit -lm
 # Linux 용 MiniLibX 플래그 (macOS 사용 시 주석 처리)
 # MLX_FLAGS = -L$(MLX_DIR) -lmlx -lXext -lX11 -lm
 
@@ -27,6 +27,7 @@ INCLUDES = -I./includes -I$(MLX_DIR)
 
 # 소스 파일 목록 (여기에 .c 파일을 추가하세요)
 SRCS = main.c \
+	   move.c \
 
 # 오브젝트 파일 목록 (자동 생성)
 OBJS = $(addprefix $(OBJS_DIR), $(SRCS:.c=.o))
