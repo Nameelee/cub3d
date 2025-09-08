@@ -6,7 +6,7 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/05 16:41:17 by manuelma          #+#    #+#              #
-#    Updated: 2025/09/08 23:02:14 by manuelma         ###   ########.fr        #
+#    Updated: 2025/09/08 23:35:19 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,7 @@ all: $(LIBFT) $(GNL) $(NAME)
 # Création de l'exécutable
 $(NAME): $(OBJS)
 	@$(CC) $(CFLAGS) $(OBJS) $(LIBFT) $(GNL) -o $(NAME)
-	@printf "Cub3d compiled successfully! ✅\n"
+	@printf "Cub3d compiled successfully!\n"
 
 # Objets dans objs/
 $(OBJ_DIR)/%.o: %.c
@@ -78,14 +78,14 @@ clean:
 	@rm -rf $(OBJ_DIR)
 	@$(MAKE) -C $(LIBFT_PATH) clean --no-print-directory
 	@$(MAKE) -C $(GNL_PATH) clean --no-print-directory
-	@printf "Removed all object files from cub3d and subprojects. 🧹\n"
+	@printf "Removed all object files from cub3d and subprojects.\n"
 
 fclean: clean
 	@rm -f $(NAME)
 	@$(MAKE) -C $(LIBFT_PATH) fclean --no-print-directory || \
 	 $(MAKE) -C $(LIBFT_PATH) clean_exec --no-print-directory
 	@$(MAKE) -C $(GNL_PATH) fclean --no-print-directory || true
-	@printf "Removed executable and libraries. 🗑️\n"
+	@printf "Removed executable and libraries.\n"
 
 re: fclean all
 
