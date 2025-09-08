@@ -41,7 +41,7 @@ int key_press_handler(int keycode, t_game *game)
 			game->player.pos_y += game->player.plane_y * move_speed;
 		printf("X: %f, Y: %f\n", game->player.pos_x, game->player.pos_y);
 	}
-	if (keycode == KEY_RIGHT) // 오른쪽 화살표: 시야 회전
+	if (keycode == KEY_LEFT) // 오른쪽 화살표: 시야 회전
 	{
 		double old_dir_x = game->player.dir_x;
 		game->player.dir_x = game->player.dir_x * cos(-rot_speed) - game->player.dir_y * sin(-rot_speed);
@@ -60,7 +60,7 @@ int key_press_handler(int keycode, t_game *game)
             game->player.pos_y,
             angle_deg);
 	}
-	if (keycode == KEY_LEFT) // 왼쪽 화살표: 시야 회전
+	if (keycode == KEY_RIGHT) // 왼쪽 화살표: 시야 회전
 	{
 		// 회전 방향을 결정하는 rot_speed의 부호가 반대입니다.
 		double old_dir_x = game->player.dir_x;

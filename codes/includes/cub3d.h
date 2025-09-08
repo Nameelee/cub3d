@@ -16,6 +16,9 @@
 #define MAP_WIDTH 8
 #define MAP_HEIGHT 8
 
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 600
+
 typedef struct s_player
 {
 	double	pos_x;     // 플레이어의 x 좌표
@@ -35,5 +38,30 @@ typedef struct s_game
 	t_player	player;                     // 플레이어 데이터
 }	t_game;
 
-int key_press_handler(int keycode, t_game *game);
-int close_game(t_game *game);
+typedef struct s_ray
+{
+	double	camera_x;
+	double	dir_x;
+	double	dir_y;
+	int		map_x;
+	int		map_y;
+	double	side_dist_x;
+	double	side_dist_y;
+	double	delta_dist_x;
+	double	delta_dist_y;
+	double	perp_wall_dist;
+	int		step_x;
+	int		step_y;
+	int		hit;
+	int		side;
+	int		line_height;
+	int		draw_start;
+	int		draw_end;
+}	t_ray;
+
+int		key_press_handler(int keycode, t_game *game);
+int		close_game(t_game *game);
+void	init_ray_data(t_game *game, t_ray *ray, int x);
+void	perform_dda(t_game *game, t_ray *ray);
+void	calculate_wall_projection(t_game *game, t_ray *ray);
+int		game_loop(t_game *game);

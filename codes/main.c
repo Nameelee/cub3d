@@ -1,5 +1,17 @@
 #include "includes/cub3d.h"
 
+void	draw_vertical_line(t_game *game, int x, int draw_start, int draw_end, int color)
+{
+	int	y;
+
+	y = draw_start;
+	while (y < draw_end)
+	{
+		mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, color);
+		y++;
+	}
+}
+
 // Fonction pour fermer la fenêtre et quitter le programme proprement
 int	close_game(t_game *game)
 {
@@ -9,21 +21,36 @@ int	close_game(t_game *game)
 	return (0);
 }
 
-/*
-int game_loop(t_game *game)
+int	game_loop(t_game *game)
 {
-	// 1. 화면을 검은색으로 지운다 (나중에 바닥/천장 색으로 채움)
-	// mlx_clear_window(game->mlx_ptr, game->win_ptr);
+	t_ray	ray;
+	int		x;
 
-	// 2. 여기에 레이캐스팅 및 렌더링 코드가 들어갈 예정
-	//    (지금은 비워둡니다)
+	mlx_clear_window(game->mlx_ptr, game->win_ptr);
+	x = 0;
+	while (x < SCREEN_WIDTH)
+	{
+		// 1. 현재 x 좌표에 대한 광선 데이터 초기화
+		init_ray_data(game, &ray, x);
 
-	// (임시) 현재 플레이어 좌표 출력해서 움직임 확인하기
-	printf("Player X: %f, Player Y: %f\n", game->player.pos_x, game->player.pos_y);
+		// 2. DDA 알고리즘으로 벽 찾기
+		perform_dda(game, &ray);
 
+		// 3. 벽 높이 등 그리기 위한 정보 계산
+		calculate_wall_projection(game, &ray);
+
+		// 4. 색상을 정하고 실제 수직선 그리기 (13, 14번)
+		int color;
+		if (ray.side == 1)
+			color = 0x00FF0000; // 빨간색
+		else
+			color = 0x0000FF00; // 초록색
+		draw_vertical_line(game, x, ray.draw_start, ray.draw_end, color);
+		
+		x++;
+	}
 	return (0);
 }
-*/
 
 int	main(void)
 {
@@ -78,7 +105,7 @@ int	main(void)
 
 	// 4. Démarrage de la boucle d'événements
 	// game_loop 함수를 계속해서 반복 실행하도록 등록
-	//mlx_loop_hook(game.mlx_ptr, game_loop, &game);
+	mlx_loop_hook(game.mlx_ptr, game_loop, &game);
 	mlx_loop(game.mlx_ptr);//continuer la boucle d'événements
 	
 	return (0);
