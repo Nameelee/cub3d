@@ -6,11 +6,11 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/14 23:11:53 by manuelma          #+#    #+#              #
-#    Updated: 2025/09/08 23:55:06 by manuelma         ###   ########.fr        #
+#    Updated: 2025/09/08 23:59:34 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-Color_Off='\033[0m'
+RESET='\033[0m'
 IGreen='\033[0;92m'
 IRed='\033[0;91m'
 

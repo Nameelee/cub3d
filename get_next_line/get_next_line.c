@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 15:14:22 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/08 23:28:54 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/09 01:09:46 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,39 +112,3 @@ char	*get_next_line(int fd)
 		return (output);
 	return (output);
 }
-/*
-// =============================================================================
-// -------------------------------- test ---------------------------------------
-#include <fcntl.h>
-#include <stdio.h>
-
-int	main(int ac, char **av)
-{
-	int		fd;
-	int		i;
-	char	*str;
-
-	if (ac == 2)
-		i = atoi(av[1]);
-	else
-	{
-		i = 1;
-		printf("by default, tries to read one line, \
-		put a number as argument to read x lines.\n");
-	}
-	i = 20;
-	fd = open("./test.txt", O_RDONLY);
-	printf("-------- buffer size = %d  -------\n", BUFFER_SIZE);
-	printf("-------- printing %d lines -------\n\n", i);
-	while(i--)
-	{
-		str = get_next_line(fd);
-		if (str)
-			printf("%s", str);
-		else
-		printf("function returned NULL\n");
-	}
-	close(fd);
-}
-//==============================================================================
-*/

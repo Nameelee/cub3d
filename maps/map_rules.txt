@@ -1,0 +1,20 @@
+the map file must end with '.cub'
+map must contain:
+	1. map content in any order but before the actual map:
+		- it must contain only this:
+			- NO, SO, EA, WE textures for the walls in any order followed by the path of the texture (ex:NO ./path_to_texture)
+			- F, C floor and ceiling colors followed by three colors in rgb from 0 to 255 (ex:C 255,30,0)
+		- those parametters can contain or be separated by isspace/empty lines and still has to work
+	2. the actual map:
+		- it must be composed only of:
+			- any number of 0 (empty space) and 1 (walls)
+			- one letter of the following ones 'N,S,E,W' for the player start position
+		- it must be closed, surrounded by walls
+		- it can be shaped by spaces as long as they are not inside the surrounding walls
+Any violation of previous rules must return an ERROR that has to display an explicit message
+
+
+map parsing:
+	1 - check that there is all the textures and store them
+	2 - check that there is all the colors and store them
+	3 - algorithm to check the actual map, only read after the bigger index of the previous parametters

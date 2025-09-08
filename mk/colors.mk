@@ -6,12 +6,12 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/26 18:07:40 by manuelma          #+#    #+#              #
-#    Updated: 2025/08/26 21:14:24 by manuelma         ###   ########.fr        #
+#    Updated: 2025/09/08 23:59:43 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Reset
-Color_Off='\033[0m'       # Text Reset
+RESET='\033[0m'       # Text Reset
 
 # Regular Colors
 Black='\033[0;30m'        # Black

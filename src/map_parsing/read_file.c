@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 18:43:05 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/08 22:50:04 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/09 01:11:14 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,11 @@ int	count_file_lines(char *file_path)
 }
 
 /**
- * @brief Can be used to read a file and get each of its lines terminated by NULL.
+ * @brief Reads a file and gets each of its lines.
  * @param file_path the path for the file we want the lines of.
  * @return a NULL terminated list of strings with each line of the file.
  */
-char **get_file_lines(char *file_path)
+char	**get_file_lines(char *file_path)
 {
 	char	**output;
 	int		i;

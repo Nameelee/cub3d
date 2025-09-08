@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 18:44:42 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/08 22:59:05 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/09 01:00:28 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 # include <stdio.h>
 # include "../libft/libft.h"
 # include "../get_next_line/get_next_line.h"
-# include "msg.h"
+# include "errors.h"
+# include "data.h"
 # include "map_parsing.h"
 
 #endif
