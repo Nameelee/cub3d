@@ -3,12 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: manuelma <manuelma@student.42.fr>          +#+  +:+       +#+         #
+#    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/14 23:11:53 by manuelma          #+#    #+#              #
-#    Updated: 2025/08/14 17:14:54 by manuelma         ###   ########.fr        #
+#    Updated: 2025/09/08 23:55:06 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+Color_Off='\033[0m'
+IGreen='\033[0;92m'
+IRed='\033[0;91m'
 
 SRCS			= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 				  ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c \
@@ -38,26 +42,31 @@ all:			$(NAME)
 
 $(NAME):		$(OBJS)
 				@ar rcs $(NAME) $(OBJS)
-				@printf "Libft compiled succesfully !\n"
+				@printf $(IGreen)
+				@printf "Libft compiled succesfully !$(RESET)\n"
 
 $(OBJS) $(BONUS_OBJS): %.o: %.c
 				@$(CC) $(CFLAGS) -c $< -o $@
 
 bonus:			$(OBJS) $(BONUS_OBJS)
 				@ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
-				@printf "Libft bonus compiled succesfully !\n"
+				@printf $(IGreen)
+				@printf "Libft bonus compiled succesfully !$(RESET)\n"
 
 clean:
 				@$(RM) $(OBJS) $(BONUS_OBJS)
-				@printf "Removed all object files from Libft !\n"
+				@printf $(IRed)
+				@printf "Removed all object files from Libft !$(RESET)\n"
 
 fclean:			clean
 				@$(RM) $(NAME)
-				@printf "Removed executable file from Libft !\n"
+				@printf $(IRed)
+				@printf "Removed executable file from Libft !$(RESET)\n"
 
 clean_exec:		
 				@$(RM) $(NAME)
-				@printf "Removed executable file from Libft !\n"
+				@printf $(IRed)
+				@printf "Removed executable file from Libft !$(RESET)\n"
 
 re:				fclean $(NAME)
 
