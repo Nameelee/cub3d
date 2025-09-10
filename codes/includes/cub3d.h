@@ -18,6 +18,19 @@
 
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
+// 텍스처의 크기를 정의합니다.
+# define TEX_WIDTH 64
+# define TEX_HEIGHT 64
+
+
+typedef struct s_img
+{
+	void	*img_ptr;
+	int		*data; // 이미지의 픽셀 데이터 주소
+	int		size_l;
+	int		bpp;
+	int		endian;
+}	t_img;
 
 typedef struct s_player
 {
@@ -36,6 +49,7 @@ typedef struct s_game
 	void		*win_ptr;
 	char		map[MAP_WIDTH][MAP_HEIGHT]; // 2D 맵 데이터
 	t_player	player;                     // 플레이어 데이터
+	t_img		textures[4]; // 0:북, 1:남, 2:서, 3:동 텍스처
 }	t_game;
 
 typedef struct s_ray
@@ -57,6 +71,9 @@ typedef struct s_ray
 	int		line_height;
 	int		draw_start;
 	int		draw_end;
+	int		tex_num; // 사용할 텍스처의 번호
+	double	wall_x;  // 벽에 부딪힌 지점의 x 좌표 (0.0 ~ 1.0)
+	int		tex_x;   // 텍스처의 x 좌표
 }	t_ray;
 
 int		key_press_handler(int keycode, t_game *game);

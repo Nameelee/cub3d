@@ -1,5 +1,56 @@
 #include "includes/cub3d.h"
 
+// XPM 파일을 로드하여 t_img 구조체에 저장하는 함수
+void	load_texture(t_game *game, int tex_num, char *path, int w, int h)
+{
+	game->textures[tex_num].img_ptr = mlx_xpm_file_to_image(game->mlx_ptr, path, &w, &h);
+	if (!game->textures[tex_num].img_ptr)
+	{
+		perror("Error: Failed to load texture");
+		exit(EXIT_FAILURE);
+	}
+	game->textures[tex_num].data = (int *)mlx_get_data_addr(
+		game->textures[tex_num].img_ptr,
+		&game->textures[tex_num].bpp,
+		&game->textures[tex_num].size_l,
+		&game->textures[tex_num].endian
+	);
+}
+
+// 텍스처를 입힌 수직선을 그리는 함수
+void	draw_textured_line(t_game *game, t_ray *ray, int x)
+{
+	int		y;
+	int		tex_y;
+	int		color;
+	double	step;
+	double	tex_pos;
+
+	// 텍스처의 y 좌표를 얼마나 증가시킬지 계산
+	step = 1.0 * TEX_HEIGHT / ray->line_height;
+	// 그리기 시작 지점의 텍스처 y 좌표 계산
+	tex_pos = (ray->draw_start - SCREEN_HEIGHT / 2 + ray->line_height / 2) * step;
+	
+	y = ray->draw_start;
+	while (y < ray->draw_end)
+	{
+		// 텍스처의 y 좌표를 정수로 변환
+		tex_y = (int)tex_pos & (TEX_HEIGHT - 1);
+		tex_pos += step;
+		
+		// tex_x, tex_y를 이용해 텍스처에서 해당 픽셀의 색상 값을 가져옴
+		color = game->textures[ray->tex_num].data[TEX_HEIGHT * tex_y + ray->tex_x];
+
+        // y축 벽(남/북)은 약간 어둡게 표현하여 입체감을 줍니다.
+        if (ray->side == 1)
+            color = (color >> 1) & 8355711; // 비트 연산으로 밝기를 절반으로 줄임
+		
+		mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, color);
+		y++;
+	}
+}
+
+//draw_textured_line 함수가 나오면서 요 함수는 안 쓰이게 됨
 void	draw_vertical_line(t_game *game, int x, int draw_start, int draw_end, int color)
 {
 	int	y;
@@ -39,14 +90,15 @@ int	game_loop(t_game *game)
 		// 3. 벽 높이 등 그리기 위한 정보 계산
 		calculate_wall_projection(game, &ray);
 
-		// 4. 색상을 정하고 실제 수직선 그리기 (13, 14번)
+		/* 4. 색상을 정하고 실제 수직선 그리기 (13, 14번) draw_textured_line 함수로 대체
 		int color;
 		if (ray.side == 1)
 			color = 0x00FF0000; // 빨간색
 		else
 			color = 0x0000FF00; // 초록색
 		draw_vertical_line(game, x, ray.draw_start, ray.draw_end, color);
-		
+		*/
+		draw_textured_line(game, &ray, x);
 		x++;
 	}
 	return (0);
@@ -87,6 +139,13 @@ int	main(void)
 		perror("Échec de l'initialisation de la MiniLibX");
 		return (1);
 	}
+
+	// 텍스처 로드 (경로는 실제 파일 위치에 맞게 수정해야 합니다)
+	// 예: 프로젝트 루트에 textures 폴더를 만들고 그 안에 xpm 파일들을 넣으세요.
+	load_texture(&game, 0, "./textures/map02.xpm", TEX_WIDTH, TEX_HEIGHT);
+	load_texture(&game, 1, "./textures/map03.xpm", TEX_WIDTH, TEX_HEIGHT);
+	load_texture(&game, 2, "./textures/map04.xpm", TEX_WIDTH, TEX_HEIGHT);
+	load_texture(&game, 3, "./textures/map01.xpm", TEX_WIDTH, TEX_HEIGHT);
 
 	// 2. Création d'une nouvelle fenêtre
 	game.win_ptr = mlx_new_window(game.mlx_ptr, 800, 600, "cub3D");

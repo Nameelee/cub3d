@@ -53,6 +53,21 @@ void	perform_dda(t_game *game, t_ray *ray)
 		if (game->map[ray->map_x][ray->map_y] == '1')
 			ray->hit = 1;
 	}
+    	// 어느 벽에 부딪혔는지 결정
+	if (ray->side == 0) // x축 방향 벽 (동쪽 또는 서쪽)
+	{
+		if (ray->dir_x > 0)
+			ray->tex_num = 3; // 동쪽
+		else
+			ray->tex_num = 2; // 서쪽
+	}
+	else // y축 방향 벽 (남쪽 또는 북쪽)
+	{
+		if (ray->dir_y > 0)
+			ray->tex_num = 1; // 남쪽
+		else
+			ray->tex_num = 0; // 북쪽
+	}
 }
 
 // 벽까지의 거리를 계산하고, 화면에 그릴 벽의 높이와 위치를 계산하는 함수
@@ -69,5 +84,19 @@ void	calculate_wall_projection(t_game *game, t_ray *ray)
 	ray->draw_end = ray->line_height / 2 + SCREEN_HEIGHT / 2;
 	if (ray->draw_end >= SCREEN_HEIGHT)
 		ray->draw_end = SCREEN_HEIGHT - 1;
-}
 
+    // 여기부터 텍스쳐 관련 코드
+    // 벽에 부딪힌 정확한 x 좌표(wall_x)를 계산합니다.
+	if (ray->side == 0)
+		ray->wall_x = game->player.pos_y + ray->perp_wall_dist * ray->dir_y;
+	else
+		ray->wall_x = game->player.pos_x + ray->perp_wall_dist * ray->dir_x;
+	ray->wall_x -= floor(ray->wall_x);
+
+	// 텍스처의 x 좌표(tex_x)를 계산합니다.
+	ray->tex_x = (int)(ray->wall_x * (double)TEX_WIDTH);
+	if(ray->side == 0 && ray->dir_x < 0)
+		ray->tex_x = TEX_WIDTH - ray->tex_x - 1;
+	if(ray->side == 1 && ray->dir_y > 0)
+		ray->tex_x = TEX_WIDTH - ray->tex_x - 1;
+}
