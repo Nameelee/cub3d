@@ -6,29 +6,50 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/05 16:41:17 by manuelma          #+#    #+#              #
-#    Updated: 2025/09/08 23:48:53 by manuelma         ###   ########.fr        #
+#    Updated: 2025/09/11 20:15:27 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 include mk/print_ascii_art.mk
 
 NAME				= cub3d
+
 CC					= cc
+
 CFLAGS				= -Wall -Wextra -Werror -g
+
 OBJ_DIR				= objs
+
 SRCS_DIR			= src/
+
 M_PARSE_DIR			= $(SRCS_DIR)map_parsing/
-SRCS_MAIN			= main.c
-SRCS_M_PARSE		= read_file.c strs_utils.c
+
+SRCS_MAIN			= main.c debug.c
+
+SRCS_M_PARSE		= color_utils.c  \
+					map_parser.c  \
+					param_parser.c  \
+					parsing_utils.c  \
+					read_file.c  \
+					strs_utils.c
+
 SRCS				= $(addprefix $(SRCS_DIR), $(SRCS_MAIN)) \
 					  $(addprefix $(M_PARSE_DIR), $(SRCS_M_PARSE))
+
 OBJS				= $(SRCS:%.c=$(OBJ_DIR)/%.o)
+
 PROJ_INC			= -I$(SRCS_DIR) -I$(M_PARSE_DIR)
+
 LIBFT_PATH			= libft
+
 LIBFT				= $(LIBFT_PATH)/libft.a
+
 LIBFT_INC			= -I$(LIBFT_PATH)
+
 GNL_PATH			= get_next_line
+
 GNL					= $(GNL_PATH)/get_next_line.a
+
 GNL_INC				= -I$(GNL_PATH)
 
 all: $(LIBFT) $(GNL) $(NAME)

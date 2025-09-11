@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 15:14:22 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/09 01:09:46 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/11 20:21:27 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # define BUFFER_SIZE 10
 #endif
 
-void	ft_bzero(void *s, size_t n)
+void	ft_bzero_gnl(void *s, size_t n)
 {
 	void	*a;
 
@@ -27,7 +27,7 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat_gnl(char *dst, const char *src, size_t size)
 {
 	size_t	len_dst;
 	size_t	i;
@@ -42,7 +42,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (len_dst + ft_strlen_gnl(src));
 }
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy_gnl(char *dst, const char *src, size_t dstsize)
 {
 	size_t	len;
 
@@ -61,15 +61,15 @@ char	*read_new_line(int fd, char *buffer, char *output, ssize_t *i)
 {
 	char	*temp;
 
-	while (!ft_strchr(output, '\n'))
+	while (!ft_strchr_gnl(output, '\n'))
 	{
-		ft_bzero(buffer, BUFFER_SIZE + 1);
+		ft_bzero_gnl(buffer, BUFFER_SIZE + 1);
 		*i = read(fd, buffer, BUFFER_SIZE);
 		if (*i > 0)
 		{
-			temp = ft_strjoin(output, buffer);
+			temp = ft_strjoin_gnl(output, buffer);
 			free(output);
-			output = ft_strdup(temp);
+			output = ft_strdup_gnl(temp);
 			free(temp);
 		}
 		else
@@ -79,7 +79,7 @@ char	*read_new_line(int fd, char *buffer, char *output, ssize_t *i)
 			return (output);
 		}
 	}
-	temp = ft_strchr(output, '\n');
+	temp = ft_strchr_gnl(output, '\n');
 	*(temp + 1) = '\0';
 	return (output);
 }
@@ -98,14 +98,14 @@ char	*get_next_line(int fd)
 	temp = NULL;
 	if (*buffer[fd])
 	{
-		temp = ft_strchr(buffer[fd], '\n');
+		temp = ft_strchr_gnl(buffer[fd], '\n');
 		if (temp)
 		{
 			i = temp - buffer[fd] + 1;
-			output = ft_substr(buffer[fd], i, BUFFER_SIZE - i);
+			output = ft_substr_gnl(buffer[fd], i, BUFFER_SIZE - i);
 		}
-		ft_bzero(buffer[fd], BUFFER_SIZE + 1);
-		ft_strlcpy(buffer[fd], output, BUFFER_SIZE);
+		ft_bzero_gnl(buffer[fd], BUFFER_SIZE + 1);
+		ft_strlcpy_gnl(buffer[fd], output, BUFFER_SIZE);
 	}
 	output = read_new_line(fd, buffer[fd], output, &i);
 	if (!i)

@@ -6,35 +6,12 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/09 00:25:42 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/09 20:02:28 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/11 20:13:28 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../headers/cub3d.h"
-
-int	store_param(char *str, t_map_data *map_data)
-{
-	// try to store parameter, return SUCCES if did not already exist, is valid and was stored successfully
-}
-
-int	get_map_param(char **file_lines, t_map_data *map_data)
-{
-	int	i_lines;
-	int	i_chars;
-	int	nbr_of_param_found;
-
-	i_lines = 0;
-	nbr_of_param_found = 0;
-	while (file_lines[i_lines] && nbr_of_param_found < EXPECTED_PARAM_NBR)
-	{
-		i_chars = get_index_after_isspace(file_lines[i_lines]);
-		if (i_chars != -1 && store_param(&(file_lines[i_lines][i_chars]), \
-			map_data) == SUCCESS)
-				nbr_of_param_found++;
-		i_lines++;
-	}
-	// return index of last parameter line it got, or -1 if missing parametters, or invalid one detected
-}
+#include "../../headers/debug.h"
 
 /**
  * @brief checks that the file path is at least a char followed by '.cub'
@@ -74,6 +51,10 @@ int	map_parser(char *file_path, t_map_data *map_data)
 	if (last_param_index == -1)
 		return (free_double((void ***)&file_lines), ERR_MISS_OR_INVAL_PARAM);
 	//check and store map after last_param_index
+	// ---- for debug purposes ----
+	map_data->map = &(file_lines[last_param_index + 1]);
+	print_map_data(map_data);
+	// ----------------------------
 	free_double((void ***)&file_lines);
 	return (SUCCESS);
 }

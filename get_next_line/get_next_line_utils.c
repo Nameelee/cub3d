@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 14:58:18 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/08 23:29:06 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/11 20:22:51 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_strlen_gnl(const char *str)
 	return (i);
 }
 
-char	*ft_strdup(const char *s1)
+char	*ft_strdup_gnl(const char *s1)
 {
 	int		len;
 	char	*output;
@@ -33,11 +33,11 @@ char	*ft_strdup(const char *s1)
 	output = malloc(sizeof(char) * (len));
 	if (output == NULL)
 		return (NULL);
-	ft_strlcpy(output, s1, len);
+	ft_strlcpy_gnl(output, s1, len);
 	return (output);
 }
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr_gnl(char const *s, unsigned int start, size_t len)
 {
 	char	*output;
 
@@ -54,11 +54,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	output = malloc(sizeof(char) * (len + 1));
 	if (!output)
 		return (NULL);
-	ft_strlcpy(output, s + start, len + 1);
+	ft_strlcpy_gnl(output, s + start, len + 1);
 	return (output);
 }
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin_gnl(char const *s1, char const *s2)
 {
 	int		len_s1;
 	int		len_s2;
@@ -69,13 +69,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	output = malloc((len_s1 + len_s2 + 1) * sizeof(char));
 	if (!output)
 		return (NULL);
-	ft_bzero(output, len_s1 + len_s2 + 1);
-	ft_strlcat(output, s1, len_s1 + 1);
-	ft_strlcat(output, s2, len_s2 + len_s1 + 1);
+	ft_bzero_gnl(output, len_s1 + len_s2 + 1);
+	ft_strlcat_gnl(output, s1, len_s1 + 1);
+	ft_strlcat_gnl(output, s2, len_s2 + len_s1 + 1);
 	return (output);
 }
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strchr_gnl(const char *s, int c)
 {
 	if (!s)
 		return (NULL);

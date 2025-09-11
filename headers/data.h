@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/09 00:30:46 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/09 01:30:45 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/11 18:49:37 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ typedef struct s_color
  */
 typedef struct s_map_data
 {
-	t_color	ceiling_color;
-	t_color	floor_color;
+	t_color	*ceiling_color;
+	t_color	*floor_color;
 	char	*wall_n_t;
 	char	*wall_s_t;
 	char	*wall_w_t;
