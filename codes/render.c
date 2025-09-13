@@ -100,3 +100,5 @@ void	calculate_wall_projection(t_game *game, t_ray *ray)
 	if(ray->side == 1 && ray->dir_y > 0)
 		ray->tex_x = TEX_WIDTH - ray->tex_x - 1;
 }
+
+

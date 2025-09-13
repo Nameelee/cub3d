@@ -18,6 +18,7 @@ void	load_texture(t_game *game, int tex_num, char *path, int w, int h)
 }
 
 // 텍스처를 입힌 수직선을 그리는 함수
+//******코드가 좀 이상함 다듬어야 할 듯 *************/
 void	draw_textured_line(t_game *game, t_ray *ray, int x)
 {
 	int		y;
@@ -25,6 +26,21 @@ void	draw_textured_line(t_game *game, t_ray *ray, int x)
 	int		color;
 	double	step;
 	double	tex_pos;
+
+	//천정 그리기
+	y = 0;
+	while (y < ray->draw_start)
+	{
+		mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, 0x808080);
+		y++;
+	}
+	//바닥 그리기
+	y = ray->draw_end; // y를 벽 그리기가 끝난 지점부터 시작
+	while (y < SCREEN_HEIGHT)
+	{
+		mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, 0x0000FF);
+		y++;
+	}
 
 	// 텍스처의 y 좌표를 얼마나 증가시킬지 계산
 	step = 1.0 * TEX_HEIGHT / ray->line_height;
@@ -104,6 +120,69 @@ int	game_loop(t_game *game)
 	return (0);
 }
 
+void set_player_direction(t_game *game, char direction)
+{
+    if (direction == 'N')
+    {
+        game->player.dir_x = 0;
+        game->player.dir_y = -1;
+        game->player.plane_x = 0.66;//시야각이라는데? (FOV)
+        game->player.plane_y = 0;
+    }
+    else if (direction == 'S')
+    {
+        game->player.dir_x = 0;
+        game->player.dir_y = 1;
+        game->player.plane_x = -0.66;
+        game->player.plane_y = 0;
+    }
+    else if (direction == 'W')
+    {
+        game->player.dir_x = -1;
+        game->player.dir_y = 0;
+        game->player.plane_x = 0;
+        game->player.plane_y = -0.66;
+    }
+    else if (direction == 'E')
+    {
+        game->player.dir_x = 1;
+        game->player.dir_y = 0;
+        game->player.plane_x = 0;
+        game->player.plane_y = 0.66;
+    }
+}
+
+void init_player_position(t_game *game)
+{
+    int y;
+    int x;
+
+    y = 0;
+    while (y < MAP_HEIGHT)
+    {
+        x = 0;
+        while (x < MAP_WIDTH)
+        {
+            if (game->map[y][x] == 'N' || game->map[y][x] == 'S' ||
+                game->map[y][x] == 'W' || game->map[y][x] == 'E')
+            {
+                // 플레이어 위치 설정 (타일 중앙으로 보정하기 위해 +0.5)
+                game->player.pos_x = x + 0.5;
+                game->player.pos_y = y + 0.5;
+                
+                // 방향 설정
+                set_player_direction(game, game->map[y][x]);
+                
+                // 맵에서 플레이어 위치를 빈 공간으로 변경
+                game->map[y][x] = '0';
+                return ; // 플레이어를 찾았으므로 함수 종료
+            }
+            x++;
+        }
+        y++;
+    }
+}
+
 int	main(void)
 {
 	t_game	game;
@@ -116,7 +195,7 @@ int	main(void)
 		{'1','0','0','0','0','0','0','1'},
 		{'1','0','1','0','0','1','0','1'},
 		{'1','0','0','0','0','0','0','1'},
-		{'1','0','1','0','0','1','0','1'},
+		{'1','0','1','0','W','1','0','1'},
 		{'1','0','0','0','0','0','0','1'},
 		{'1','0','0','1','1','1','0','1'},
 		{'1','1','1','1','1','1','1','1'}
@@ -125,13 +204,13 @@ int	main(void)
 	memcpy(game.map, temp_map, sizeof(temp_map));
 
 	// 플레이어 초기 위치 및 방향 설정 (남쪽을 바라봄)
-	game.player.pos_x = 4.5; // 맵의 중앙쯤
-	game.player.pos_y = 4.5;
-	game.player.dir_x = 1.0;  // 남쪽 방향
-	game.player.dir_y = 0.0;
-	game.player.plane_x = 0.0;
-	game.player.plane_y = 0.66; // 66도의 시야각(FOV)
-
+	//game.player.pos_x = 4.5; // 맵의 중앙쯤
+	//game.player.pos_y = 4.5;
+	//game.player.dir_x = 1.0;  // 남쪽 방향
+	//game.player.dir_y = 0.0;
+	//game.player.plane_x = 0.0;
+	//game.player.plane_y = 0.66; // 66도의 시야각(FOV)
+	init_player_position(&game);
 	// 1. Initialisation de la MiniLibX
 	game.mlx_ptr = mlx_init();
 	if (game.mlx_ptr == NULL)
@@ -142,10 +221,10 @@ int	main(void)
 
 	// 텍스처 로드 (경로는 실제 파일 위치에 맞게 수정해야 합니다)
 	// 예: 프로젝트 루트에 textures 폴더를 만들고 그 안에 xpm 파일들을 넣으세요.
-	load_texture(&game, 0, "./textures/map02.xpm", TEX_WIDTH, TEX_HEIGHT);
-	load_texture(&game, 1, "./textures/map03.xpm", TEX_WIDTH, TEX_HEIGHT);
-	load_texture(&game, 2, "./textures/map04.xpm", TEX_WIDTH, TEX_HEIGHT);
-	load_texture(&game, 3, "./textures/map01.xpm", TEX_WIDTH, TEX_HEIGHT);
+	load_texture(&game, 0, "./textures/greek1.xpm", TEX_WIDTH, TEX_HEIGHT);
+	load_texture(&game, 1, "./textures/greek2.xpm", TEX_WIDTH, TEX_HEIGHT);
+	load_texture(&game, 2, "./textures/greek3.xpm", TEX_WIDTH, TEX_HEIGHT);
+	load_texture(&game, 3, "./textures/greek4.xpm", TEX_WIDTH, TEX_HEIGHT);
 
 	// 2. Création d'une nouvelle fenêtre
 	game.win_ptr = mlx_new_window(game.mlx_ptr, 800, 600, "cub3D");
