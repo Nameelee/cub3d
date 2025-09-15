@@ -18,9 +18,16 @@
 
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
-// 텍스처의 크기를 정의합니다.
+// 벽 텍스처의 크기를 정의합니다.
 # define TEX_WIDTH 64
 # define TEX_HEIGHT 64
+
+//미니맵 관련
+# define MINIMAP_SCALE 15 // 미니맵 각 타일의 픽셀 크기
+# define PLAYER_SIZE 15
+# define PLAYER_COLOR 0xFF0000 // 플레이어 색상 (빨강)
+# define WALL_COLOR 0xFFFFFF   // 벽 색상 (흰색)
+# define FLOOR_COLOR 0x808080  // 바닥 색상 (회색)
 
 
 typedef struct s_img
@@ -47,7 +54,7 @@ typedef struct s_game
 {
 	void		*mlx_ptr;
 	void		*win_ptr;
-	char		map[MAP_WIDTH][MAP_HEIGHT]; // 2D 맵 데이터
+	char		map[MAP_HEIGHT][MAP_WIDTH]; // 2D 맵 데이터
 	t_player	player;                     // 플레이어 데이터
 	t_img		textures[4]; // 0:북, 1:남, 2:서, 3:동 텍스처
 }	t_game;
@@ -82,3 +89,4 @@ void	init_ray_data(t_game *game, t_ray *ray, int x);
 void	perform_dda(t_game *game, t_ray *ray);
 void	calculate_wall_projection(t_game *game, t_ray *ray);
 int		game_loop(t_game *game);
+void	draw_minimap(t_game *game);//미니맵

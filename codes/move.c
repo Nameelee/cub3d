@@ -5,41 +5,41 @@ int key_press_handler(int keycode, t_game *game)
 {
 	double move_speed = 0.2; // 이동 속도
 	double rot_speed = 0.1;  // 회전 속도
+	double padding = 0.7;//이거 안하면 캐릭터가 점으로 나옴. 미니맵은 부피감을 가지는데. 미니맵과 실제 게임에서의 불일치 해소를 위함 
 
 	if (keycode == KEY_ESC)
 		close_game(game);
 	if (keycode == KEY_W) // 'W' 키: 앞으로 이동
 	{
-		// 벽에 부딪히지 않을 때만 이동
-		if (game->map[(int)(game->player.pos_x + game->player.dir_x * move_speed)][(int)game->player.pos_y] == '0')
+		// [수정] 맵 접근 인덱스를 [y][x] 순서로 변경
+		if (game->map[(int)game->player.pos_y][(int)(game->player.pos_x + game->player.dir_x * (move_speed + padding))] == '0')
 			game->player.pos_x += game->player.dir_x * move_speed;
-		if (game->map[(int)game->player.pos_x][(int)(game->player.pos_y + game->player.dir_y * move_speed)] == '0')
+		if (game->map[(int)(game->player.pos_y + game->player.dir_y * (move_speed + padding))][(int)game->player.pos_x] == '0')
 			game->player.pos_y += game->player.dir_y * move_speed;
-		//printf("X: %f, Y: %f\n", game->player.pos_x, game->player.pos_y);
 	}
 	if (keycode == KEY_A)
 	{
-		if (game->map[(int)(game->player.pos_x - game->player.plane_x * move_speed)][(int)game->player.pos_y] == '0')
+		// [수정] 맵 접근 인덱스를 [y][x] 순서로 변경
+		if (game->map[(int)game->player.pos_y][(int)(game->player.pos_x - game->player.plane_x * (move_speed + padding))] == '0')
 			game->player.pos_x -= game->player.plane_x * move_speed;
-		if (game->map[(int)game->player.pos_x][(int)(game->player.pos_y - game->player.plane_y * move_speed)] == '0')
+		if (game->map[(int)(game->player.pos_y - game->player.plane_y * (move_speed + padding))][(int)game->player.pos_x] == '0')
 			game->player.pos_y -= game->player.plane_y * move_speed;
-		//printf("X: %f, Y: %f\n", game->player.pos_x, game->player.pos_y);
 	}
 	if (keycode == KEY_S)
 	{
-		if (game->map[(int)(game->player.pos_x - game->player.dir_x * move_speed)][(int)game->player.pos_y] == '0')
+		// [수정] 맵 접근 인덱스를 [y][x] 순서로 변경
+		if (game->map[(int)game->player.pos_y][(int)(game->player.pos_x - game->player.dir_x * (move_speed + padding))] == '0')
 			game->player.pos_x -= game->player.dir_x * move_speed;
-		if (game->map[(int)game->player.pos_x][(int)(game->player.pos_y - game->player.dir_y * move_speed)] == '0')
+		if (game->map[(int)(game->player.pos_y - game->player.dir_y * (move_speed *padding))][(int)game->player.pos_x] == '0')
 			game->player.pos_y -= game->player.dir_y * move_speed;
-		//printf("X: %f, Y: %f\n", game->player.pos_x, game->player.pos_y);
 	}
 	if (keycode == KEY_D)
 	{
-		if (game->map[(int)(game->player.pos_x + game->player.plane_x * move_speed)][(int)game->player.pos_y] == '0')
+		// [수정] 맵 접근 인덱스를 [y][x] 순서로 변경
+		if (game->map[(int)game->player.pos_y][(int)(game->player.pos_x + game->player.plane_x * (move_speed + padding))] == '0')
 			game->player.pos_x += game->player.plane_x * move_speed;
-		if (game->map[(int)game->player.pos_x][(int)(game->player.pos_y + game->player.plane_y * move_speed)] == '0')
+		if (game->map[(int)(game->player.pos_y + game->player.plane_y * (move_speed + padding))][(int)game->player.pos_x] == '0')
 			game->player.pos_y += game->player.plane_y * move_speed;
-		//printf("X: %f, Y: %f\n", game->player.pos_x, game->player.pos_y);
 	}
 	if (keycode == KEY_LEFT) // 오른쪽 화살표: 시야 회전
 	{

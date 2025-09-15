@@ -50,7 +50,7 @@ void	perform_dda(t_game *game, t_ray *ray)
 			ray->map_y += ray->step_y;
 			ray->side = 1;
 		}
-		if (game->map[ray->map_x][ray->map_y] == '1')
+		if (game->map[ray->map_y][ray->map_x] == '1')
 			ray->hit = 1;
 	}
     	// 어느 벽에 부딪혔는지 결정
