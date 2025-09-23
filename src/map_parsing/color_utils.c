@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 18:47:42 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/11 20:16:31 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/23 17:10:42 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,22 +23,25 @@ int	is_valid_color_data(char *color)
 	int digit_cnt;
 	int comma_cnt;
 
-	i = get_index_after_isspace(color);
+	i = 0;
 	comma_cnt = 0;
 	while (color[i])
 	{
+		while (ft_isspace(color[i++]))
+			;
 		digit_cnt = 0;
 		if (!ft_isdigit(color[i]))
 			return (0);
 		while (ft_isdigit(color[i++]))
 			digit_cnt++;
+		i--;
 		if (digit_cnt == 0 || digit_cnt > 3)
 			return (0);
-		i = get_index_after_isspace(&(color[i]));
-		if ((comma_cnt == 2 && color[i] == ',') || color[i] != ',')
+		while (ft_isspace(color[i]))
+			i++;
+		if ((comma_cnt == 2 && color[i] == ',') ||(comma_cnt < 2 && color[i] != ','))
 			return (0);
 		comma_cnt++;
-		i = get_index_after_isspace(&(color[i]));
 	}
 	return (1);
 }

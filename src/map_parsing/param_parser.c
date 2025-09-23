@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 17:32:55 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/11 20:18:26 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/23 16:42:48 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,26 +22,28 @@
 int	store_texture(char direction, char *texture_path, t_map_data *map_data)
 {
 	int		texture_len;
-	void	**temp;
 
 	texture_len = 0;
-	temp = NULL;
 	while (!ft_isspace(texture_path[texture_len]))
 		texture_len++;
-	if (direction == 'N' && map_data->wall_n_t)
-		temp = (void **)&(map_data->wall_n_t);
-	else if (direction == 'S' && map_data->wall_s_t)
-		temp = (void **)&(map_data->wall_s_t);
-	else if (direction == 'E' && map_data->wall_e_t)
-		temp = (void **)&(map_data->wall_e_t);
-	else if (direction == 'W' && map_data->wall_w_t)
-		temp = (void **)&(map_data->wall_w_t);
+	if (direction == 'N' && map_data->wall_n_t == NULL)
+		map_data->wall_n_t = ft_substr(texture_path, 0, texture_len);
+	else if (direction == 'S' && map_data->wall_s_t == NULL)
+		map_data->wall_s_t = ft_substr(texture_path, 0, texture_len);
+	else if (direction == 'E' && map_data->wall_e_t == NULL)
+		map_data->wall_e_t = ft_substr(texture_path, 0, texture_len);
+	else if (direction == 'W' && map_data->wall_w_t == NULL)
+		map_data->wall_w_t = ft_substr(texture_path, 0, texture_len);
 	else
 		return (-1);
-	*temp = malloc(texture_len * sizeof(char));
-	if (*temp)
-		return (ERR_MALLOC);
-	ft_strlcpy(*temp, texture_path, texture_len);
+	if (direction == 'N' && map_data->wall_n_t == NULL)
+		return (-1);
+	if (direction == 'S' && map_data->wall_s_t == NULL)
+		return (-1);
+	if (direction == 'E' && map_data->wall_e_t == NULL)
+		return (-1);
+	if (direction == 'W' && map_data->wall_w_t == NULL)
+		return (-1);
 	return (SUCCESS);	
 }
 
@@ -55,17 +57,16 @@ int	store_texture(char direction, char *texture_path, t_map_data *map_data)
 int	store_color(char identifier, char *color, t_map_data *map_data)
 {
 	int		malloc_err_flag;
-	t_color **ptr_to_color;
 
 	malloc_err_flag = 0;
 	if (identifier == 'F' && map_data->floor_color == NULL)
-		ptr_to_color = &(map_data->floor_color);
+		map_data->floor_color = extract_color(color, &malloc_err_flag);
 	else if (identifier == 'C' && map_data->ceiling_color == NULL)
-		ptr_to_color = &(map_data->ceiling_color);
+		map_data->ceiling_color = extract_color(color, &malloc_err_flag);
 	else
 		return (ERR_MISS_OR_INVAL_PARAM);
-	*ptr_to_color = extract_color(color, &malloc_err_flag);
-	if (*ptr_to_color == NULL)
+	if ((identifier == 'C' && map_data->ceiling_color == NULL) || 
+		(identifier == 'F' && map_data->floor_color == NULL))
 	{
 		if (malloc_err_flag)
 			return (ERR_MALLOC);
@@ -91,12 +92,12 @@ int	store_param(char *str, t_map_data *map_data)
 	|| !ft_strncmp(str, "EA", 2) || !ft_strncmp(str, "WE", 2)) \
 	&& ft_isspace(str[2]))
 	{
-		i = get_index_after_isspace(&(str[2]));
+		i = get_index_after_isspace(&(str[2])) + 2;
 		error = store_texture(*str, &(str[i]), map_data);
 	}
 	else if ((str[0] == 'F' || str[0] == 'C') && ft_isspace(str[1]))
 	{
-		i = get_index_after_isspace(&(str[1]));
+		i = get_index_after_isspace(&(str[1])) + 1;
 		error = store_color(*str, &(str[i]), map_data);
 	}
 	return (error);
@@ -119,7 +120,7 @@ int	get_map_param(char **file_lines, t_map_data *map_data)
 
 	i_lines = 0;
 	nbr_of_param_found = 0;
-	while (file_lines[i_lines])  
+	while (file_lines[i_lines] )  
 	{
 		i_chars = get_index_after_isspace(file_lines[i_lines]);
 		if (i_chars != (int)ft_strlen(file_lines[i_lines]))

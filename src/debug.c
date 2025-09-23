@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 19:56:14 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/11 20:11:43 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/23 17:15:16 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	print_color(t_color *color, char c_f)
 
 void	print_map_data(t_map_data *map_data)
 {
-	int	i;
+	//int	i;
 
 	print_color(map_data->ceiling_color, 'C');
 	print_color(map_data->floor_color, 'F');
@@ -31,9 +31,14 @@ void	print_map_data(t_map_data *map_data)
 	printf("wall_s_t = %s\n", map_data->wall_s_t);
 	printf("wall_w_t = %s\n", map_data->wall_w_t);
 	printf("wall_e_t = %s\n", map_data->wall_e_t);
-	printf("============== MAP ==============\n");
+	/* printf("============== MAP ==============\n");
 	i = 0;
-	while (map_data->map[i])
-		printf("%s\n", map_data->map[i++]);
-	printf("=================================\n");
+	if (map_data->map == NULL)
+		printf("no map\n");
+	else
+	{
+		while (map_data->map[i])
+			printf("%s\n", map_data->map[i++]);
+	}
+	printf("=================================\n"); */
 }
