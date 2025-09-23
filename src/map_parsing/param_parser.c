@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 17:32:55 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/23 16:42:48 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/23 17:26:42 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,7 +120,7 @@ int	get_map_param(char **file_lines, t_map_data *map_data)
 
 	i_lines = 0;
 	nbr_of_param_found = 0;
-	while (file_lines[i_lines] )  
+	while (file_lines[i_lines] && nbr_of_param_found < EXPECTED_PARAM_NBR)  
 	{
 		i_chars = get_index_after_isspace(file_lines[i_lines]);
 		if (i_chars != (int)ft_strlen(file_lines[i_lines]))
