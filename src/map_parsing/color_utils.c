@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 18:47:42 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/23 17:10:42 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/23 17:20:10 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,9 +69,9 @@ unsigned char	get_color_value_after_n_commas(char *input, int n_commas)
 		i++;
 	output = input[--i] - '0';
 	if (ft_isdigit(input[--i]))
-		output = (input[i] - '0') * 10;
+		output += (input[i] - '0') * 10;
 	if (ft_isdigit(input[--i]))
-		output = (input[i] - '0') * 100;
+		output += (input[i] - '0') * 100;
 	return (output);
 }
 
