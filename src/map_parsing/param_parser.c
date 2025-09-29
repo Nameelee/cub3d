@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 17:32:55 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/23 17:26:42 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/29 15:22:08 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ int	store_texture(char direction, char *texture_path, t_map_data *map_data)
  * @param color string begining with color data
  * @param map_data the structure that contains the map data stored
  * @return SUCCESS if the color is found did not exist already, else -1
+ * (ERR_MALLOC if there is a malloc error)
  */
 int	store_color(char identifier, char *color, t_map_data *map_data)
 {
@@ -80,6 +81,7 @@ int	store_color(char identifier, char *color, t_map_data *map_data)
  * @param str the line containing a parametter
  * @param map_data the structure that contains the map data stored
  * @return SUCCESS if the parametter is found did not exist already, else -1
+ * (ERR_MALLOC if there is a malloc error)
  */
 int	store_param(char *str, t_map_data *map_data)
 {

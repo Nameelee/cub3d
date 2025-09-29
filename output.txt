@@ -3,86 +3,460 @@
 ***************************************
 >>> Testing ./maps/good/cheese_maze.cub
 SUCCESS !
+ceiling_color = 153,204,255
+floor_color = 164,169,20
+wall_n_t = textures/simonkraft/wet_sponge.xpm
+wall_s_t = textures/simonkraft/wet_sponge.xpm
+wall_w_t = textures/simonkraft/wet_sponge.xpm
+wall_e_t = textures/simonkraft/wet_sponge.xpm
+============== MAP ==============
+111111111111111111111
+101000001000000000001
+101010101011111110001
+100010100010000010001
+111110101111101011101
+100000101000101000001
+101111101011101111111
+101000001010100000101
+101011111010111110101
+101010001010100010101
+101110101010101010101
+100000101010001010001
+111111101011111011101
+100000101000100010001
+101110101110101110111
+101000100000100010101
+101011111111111010101
+100010000000000010001
+101010111011111111101
+1N1000001000000000001
+111111111111111111111
+
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/creepy.cub
 SUCCESS !
+ceiling_color = 35,19,73
+floor_color = 15,6,40
+wall_n_t = textures/simonkraft/respawn_anchor_side0.xpm
+wall_s_t = textures/simonkraft/respawn_anchor_side4.xpm
+wall_w_t = textures/simonkraft/respawn_anchor_side3.xpm
+wall_e_t = textures/simonkraft/respawn_anchor_side2.xpm
+============== MAP ==============
+111111111111111
+111111000111111
+111110000011111
+1111000N0001111
+111000000000111
+110000000000011
+100001111100001
+110000111000011
+111000010000111
+111100000001111
+111110000011111
+111111000111111
+111111111111111
+
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/dungeon.cub
 SUCCESS !
+ceiling_color = 99,99,99
+floor_color = 76,76,76
+wall_n_t = textures/simonkraft/cobblestone.xpm
+wall_s_t = textures/simonkraft/cobblestone_01.xpm
+wall_w_t = textures/simonkraft/mossy_cobblestone1.xpm
+wall_e_t = textures/simonkraft/cobblestone_02.xpm
+============== MAP ==============
+1111111111111111111
+10W1001001001000001
+1011000001000001001
+1001001001111101111
+1001111000001001001
+1000000000000001001
+1001111111111001001
+1111000000000001011
+1000000001000000001
+1111111111111111111
+
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/library.cub
 SUCCESS !
+ceiling_color = 171,154,137
+floor_color = 139,99,58
+wall_n_t = textures/simonkraft/bookshelf.xpm
+wall_s_t = textures/simonkraft/bookshelf_01.xpm
+wall_w_t = textures/simonkraft/bookshelf_02.xpm
+wall_e_t = textures/simonkraft/bookshelf_03.xpm
+============== MAP ==============
+1111111111111111111
+1001001001001001001
+1001001001001001001
+1001001001001001001
+1001001000001001001
+100000000S000000001
+1000011111111000001
+1111000000000001111
+1000000101010000001
+1111111111111111111
+
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/matrix.cub
 SUCCESS !
+ceiling_color = 0,0,0
+floor_color = 0,0,0
+wall_n_t = textures/matrix.xpm
+wall_s_t = textures/matrix.xpm
+wall_w_t = textures/matrix.xpm
+wall_e_t = textures/matrix.xpm
+============== MAP ==============
+111111111111111111111
+101000001000000000001
+101010101011111110001
+100010100010000010001
+111110101111101011101
+100000101000101000001
+101111101011101111111
+101000001010100000101
+101011111010111110101
+101010001010100010101
+101110101010101010101
+100000101010001010001
+111111101011111011101
+100000101000100010001
+101110101110101110111
+101000100000100010101
+101011111111111010101
+100010000000000010001
+101010111011111111101
+1N1000001000000000001
+111111111111111111111
+
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/sad_face.cub
 SUCCESS !
+ceiling_color = 53,41,34
+floor_color = 45,33,27
+wall_n_t = textures/simonkraft/soul_sand.xpm
+wall_s_t = textures/simonkraft/soul_soil_01.xpm
+wall_w_t = textures/simonkraft/soul_soil.xpm
+wall_e_t = textures/simonkraft/soul_sand.xpm
+============== MAP ==============
+111111111111111
+111111000111111
+111110000011111
+1111000N0001111
+111000000000111
+110000000000011
+100001111100001
+110000111000011
+111000010000111
+111100000001111
+111110000011111
+111111000111111
+111111111111111
+
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/square_map.cub
 SUCCESS !
+ceiling_color = 235,198,52
+floor_color = 69,222,199
+wall_n_t = textures/wolfenstein/grey_stone.xpm
+wall_s_t = textures/wolfenstein/red_brick.xpm
+wall_w_t = textures/wolfenstein/eagle.xpm
+wall_e_t = textures/wolfenstein/mossy.xpm
+============== MAP ==============
+111111111111111111111111
+100000000000000000000001
+100000000000000000000001
+100000000N00000000000001
+100000000000000000000001
+100000000000000000000001
+100000000000000000000001
+100000111110000101010001
+100000100010000000000001
+100000100010000100010001
+100000100010000000000001
+100000111100001010100001
+100000000000000000000001
+100000000000000000000001
+100000000000000000000001
+100000000000000000000001
+100000000000000000000001
+100000000000000000000001
+100000000000000000000001
+111111111000000000000001
+100100001000000000000001
+100000101000000000000001
+100100001000000000000001
+100111111000000000000001
+100000000000000000000001
+100000000000000000000001
+111111111111111111111111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/subject_map.cub
 SUCCESS !
+ceiling_color = 225,30,0
+floor_color = 220,100,0
+wall_n_t = textures/wolfenstein/grey_stone.xpm
+wall_s_t = textures/wolfenstein/purple_stone.xpm
+wall_w_t = textures/wolfenstein/red_brick.xpm
+wall_e_t = textures/wolfenstein/wood.xpm
+============== MAP ==============
+        1111111111111111111111111
+        1000000000110000000000001
+        1011000001110000000000001
+        1001000000000000000000001
+111111111011000001110000000000001
+100000000011000001110111111111111
+11110111111111011100000010001
+11110111111111011101010010001
+11000000110101011100000010001
+10000000000000001100000010001
+10000000000000001101010010001
+11000001110101011111011110N0111
+11110111 1110101 101111010001
+11111111 1111111 111111111111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/test_map.cub
 SUCCESS !
+ceiling_color = 153,204,255
+floor_color = 18,53,25
+wall_n_t = textures/wolfenstein/grey_stone.xpm
+wall_s_t = textures/wolfenstein/purple_stone.xpm
+wall_w_t = textures/wolfenstein/red_brick.xpm
+wall_e_t = textures/wolfenstein/wood.xpm
+============== MAP ==============
+111111111111
+1         11
+1          1
+111111111111
+10S000000001
+111111111111
+11         1
+111111111111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/test_map_hole.cub
 SUCCESS !
+ceiling_color = 153,204,255
+floor_color = 18,53,25
+wall_n_t = textures/wolfenstein/grey_stone.xpm
+wall_s_t = textures/wolfenstein/purple_stone.xpm
+wall_w_t = textures/wolfenstein/red_brick.xpm
+wall_e_t = textures/wolfenstein/wood.xpm
+============== MAP ==============
+111111111111
+1         11
+1       0001
+1000000 0011
+10S000000001
+111111111111
+11         1
+111111111111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/test_pos_bottom.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+111
+101
+101
+101
+101
+101
+101
+101
+101
+101
+101
+1S1
+111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/test_pos_left.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+111111111111111111111
+1W0000000000000000001
+111111111111111111111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/test_pos_right.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+111111111111111111111
+1000000000000000000E1
+111111111111111111111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/test_pos_top.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+111
+1N1
+101
+101
+101
+101
+101
+101
+101
+101
+101
+101
+111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/test_textures.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10S01
+10001
+10001
+10001
+11001
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/test_whitespace.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10S01                
+10001
+10001
+10001
+11001               
+10001
+10001
+10001
+10001
+10001
+11111           
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/good/works.cub
 SUCCESS !
+ceiling_color = 218,234,235
+floor_color = 17,38,64
+wall_n_t = textures/wolfenstein/purple_stone.xpm
+wall_s_t = textures/wolfenstein/red_brick.xpm
+wall_w_t = textures/wolfenstein/grey_stone.xpm
+wall_e_t = textures/wolfenstein/wood.xpm
+============== MAP ==============
+1111111111111111111111111
+10S0110000100000000000001
+1000110000000000111111001
+1000110000000000110001001
+1000000000100000000001001
+1111111111111111111111111
+=================================
 
 ---------------------------------------
 
@@ -97,7 +471,9 @@ There was a problem reading the file !
 ---------------------------------------
 
 >>> Testing ./maps/bad/color_missing_ceiling_rgb.cub
-SUCCESS !
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
 
 ---------------------------------------
 
@@ -131,6 +507,40 @@ There was a problem reading the file !
 
 >>> Testing ./maps/bad/file_letter_end.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10S01
+10001
+10001
+10001
+11001
+10001
+10001
+10001
+10001
+10001
+11111
+
+
+
+
+
+
+
+
+
+
+
+
+
+1=================================
 
 ---------------------------------------
 
@@ -150,21 +560,62 @@ There was a problem reading the file !
 
 >>> Testing ./maps/bad/forbidden.cub
 SUCCESS !
+ceiling_color = 153,204,255
+floor_color = 18,53,25
+wall_n_t = textures/wolfenstein/grey_stone.xpm
+wall_s_t = textures/wolfenstein/purple_stone.xpm
+wall_w_t = textures/wolfenstein/red_brick.xpm
+wall_e_t = textures/wolfenstein/wood.xpm
+============== MAP ==============
+111111111111
+1         11
+1          1
+111111111111
+10S000000001
+111111111111
+11         1
+111111111111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/map_first.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/map_middle.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/map_missing.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+=================================
 
 ---------------------------------------
 
@@ -177,41 +628,198 @@ There was a problem reading the file !
 
 >>> Testing ./maps/bad/map_too_small.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+111
+111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/player_multiple.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10S01
+10001
+10001
+10001
+11E01
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/player_none.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10001
+10001
+10001
+10001
+11001
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/player_on_edge.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+1S111
+10001
+10001
+10001
+10001
+10001
+11001
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/textures_dir.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/
+============== MAP ==============
+11111
+10001
+10S01
+10001
+10001
+10001
+11001
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/textures_duplicates.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10S01
+10001
+10001
+10001
+11001
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/textures_forbidden.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/forbidden.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10S01
+10001
+10001
+10001
+11001
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/textures_invalid.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/x
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10S01
+10001
+10001
+10001
+11001
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
@@ -231,31 +839,157 @@ There was a problem reading the file !
 
 >>> Testing ./maps/bad/textures_not_xpm.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10S01
+10001
+10001
+10001
+11001
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/wall_hole_east.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10S01
+10001
+10001
+10001
+11000
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/wall_hole_north.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11011
+10001
+10S01
+10001
+10001
+10001
+11001
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/wall_hole_south.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10S01
+10001
+10001
+10001
+11001
+10001
+10001
+10001
+10001
+10001
+11011
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/wall_hole_west.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+11111
+10001
+10S01
+10001
+10001
+00001
+11001
+10001
+10001
+10001
+10001
+10001
+11111
+=================================
 
 ---------------------------------------
 
 >>> Testing ./maps/bad/wall_none.cub
 SUCCESS !
+ceiling_color = 200,200,200
+floor_color = 20,20,20
+wall_n_t = textures/test/north.xpm
+wall_s_t = textures/test/south.xpm
+wall_w_t = textures/test/west.xpm
+wall_e_t = textures/test/east.xpm
+============== MAP ==============
+00000
+00000
+00S00
+00000
+00000
+00000
+00000
+00000
+00000
+00000
+00000
+00000
+00000
+=================================
 
 ---------------------------------------
 

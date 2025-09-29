@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/09 00:25:42 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/29 13:13:42 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/29 15:50:04 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,9 @@ int	map_parser(char *file_path, t_map_data *map_data)
 		return (free_double((void ***)&file_lines), ERR_MISS_OR_INVAL_PARAM);
 	//check and store map after last_param_index
 	// ---- for debug purposes ----
-	// map_data->map = &(file_lines[last_param_index + 1]);
-	// print_map_data(map_data);
 	printf("SUCCESS !\n");
+	map_data->map = &(file_lines[last_param_index + 1]);
+	print_map_data(map_data);
 	// ----------------------------
 	free_double((void ***)&file_lines);
 	return (SUCCESS);
