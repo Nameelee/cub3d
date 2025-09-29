@@ -6,12 +6,53 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/09 00:25:42 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/29 15:50:04 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:17:56 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../headers/cub3d.h"
 #include "../../headers/debug.h"
+
+/**
+ * @brief checks that the textures file name is valid and accessible
+ * @param texture_name contains all textures file names
+ * @return 1 if all valid, else 0
+ */
+int	check_texture_file_name_and_access(char *texture)
+{
+	int	i_char;
+	int	fd;
+
+	fd = open(texture, O_RDONLY);
+	if (fd >= 0)
+		close(fd);
+	else
+		return (0);
+	i_char = ft_strlen(texture);
+	if (i_char < 5)
+		return (0);
+	if (ft_strncmp(&(texture[i_char - 4]), ".xpm", 5) != 0)
+		return (0);
+	return (1);
+}
+
+/**
+ * @brief checks that the textures file names are valid
+ * @param map_data contains all textures file names
+ * @return 1 if all valid, else 0
+ */
+int	check_textures_file(t_map_data *map_data)
+{
+	if (!check_texture_file_name_and_access(map_data->wall_n_t))
+		return (0);
+	if (!check_texture_file_name_and_access(map_data->wall_s_t))
+		return (0);
+	if (!check_texture_file_name_and_access(map_data->wall_w_t))
+		return (0);
+	if (!check_texture_file_name_and_access(map_data->wall_e_t))
+		return (0);
+	return (1);
+}
 
 /**
  * @brief checks that the file path is at least a char followed by '.cub'
@@ -48,7 +89,7 @@ int	map_parser(char *file_path, t_map_data *map_data)
 	if (file_lines == NULL)
 		return (ERR_READ);
 	last_param_index = get_map_param(file_lines, map_data);
-	if (last_param_index == -1)
+	if (last_param_index == -1 || !check_textures_file(map_data))
 		return (free_double((void ***)&file_lines), ERR_MISS_OR_INVAL_PARAM);
 	//check and store map after last_param_index
 	// ---- for debug purposes ----
