@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 22:51:10 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/11 18:25:30 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:21:24 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,7 @@ typedef enum e_error
 with the map file !\n"
 # define MSG_ERR_READ "Error\nThere was a problem reading the file !\n(file \
 is empty or there was an error reading it)\n"
-
+# define MSG_ERR_FILE_NAME "Error\nInvalid file name !\n"
+# define MSG_ERR_MISS_OR_INVAL_PARAM "Error\nMissing or Invalid parametter\n"
+# define MSG_ERR_MALLOC "Error\nThere was a allocation error !\n"
 #endif

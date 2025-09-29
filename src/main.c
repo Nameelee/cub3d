@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 18:14:38 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/11 18:50:04 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:21:54 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,13 @@ void	print_error(int error)
 		ft_putstr_fd(MSG_ERR_ARGS, STDERR_FILENO);
 	else if (error == ERR_READ)
 		ft_putstr_fd(MSG_ERR_READ, STDERR_FILENO);
+	else if (error == ERR_FILE_NAME)
+		ft_putstr_fd(MSG_ERR_FILE_NAME, STDERR_FILENO);
+	else if (error == ERR_MISS_OR_INVAL_PARAM)
+		ft_putstr_fd(MSG_ERR_MISS_OR_INVAL_PARAM, STDERR_FILENO);
+	else if (error == ERR_MALLOC)
+		ft_putstr_fd(MSG_ERR_MALLOC, STDERR_FILENO);
+	
 }
 
 int	main(int ac, char **av)
@@ -41,6 +48,6 @@ int	main(int ac, char **av)
 	init_map_data(&map_data);
 	error = map_parser(av[1], &map_data);
 	if (error != SUCCESS)
-		return (print_error(ERR_READ), 1);
+		return (print_error(error), 1);
 	return (0);
 }
