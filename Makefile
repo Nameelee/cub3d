@@ -6,7 +6,7 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/05 16:41:17 by manuelma          #+#    #+#              #
-#    Updated: 2025/09/11 20:15:27 by manuelma         ###   ########.fr        #
+#    Updated: 2025/09/29 14:24:46 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRCS_DIR			= src/
 
 M_PARSE_DIR			= $(SRCS_DIR)map_parsing/
 
-SRCS_MAIN			= main.c debug.c
+SRCS_MAIN			= main.c debug.c string_utils.c
 
 SRCS_M_PARSE		= color_utils.c  \
 					map_parser.c  \

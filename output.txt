@@ -1,0 +1,261 @@
+***************************************
+              Good maps
+***************************************
+>>> Testing ./maps/good/cheese_maze.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/creepy.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/dungeon.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/library.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/matrix.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/sad_face.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/square_map.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/subject_map.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/test_map.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/test_map_hole.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/test_pos_bottom.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/test_pos_left.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/test_pos_right.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/test_pos_top.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/test_textures.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/test_whitespace.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/good/works.cub
+SUCCESS !
+
+---------------------------------------
+
+***************************************
+               Bad maps
+***************************************
+>>> Testing ./maps/bad/color_invalid_rgb.cub
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
+
+---------------------------------------
+
+>>> Testing ./maps/bad/color_missing_ceiling_rgb.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/color_missing.cub
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
+
+---------------------------------------
+
+>>> Testing ./maps/bad/color_missing_floor_rgb.cub
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
+
+---------------------------------------
+
+>>> Testing ./maps/bad/color_none.cub
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
+
+---------------------------------------
+
+>>> Testing ./maps/bad/empty.cub
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
+
+---------------------------------------
+
+>>> Testing ./maps/bad/file_letter_end.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/filetype_missing
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
+
+---------------------------------------
+
+>>> Testing ./maps/bad/filetype_wrong.buc
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
+
+---------------------------------------
+
+>>> Testing ./maps/bad/forbidden.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/map_first.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/map_middle.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/map_missing.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/map_only.cub
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
+
+---------------------------------------
+
+>>> Testing ./maps/bad/map_too_small.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/player_multiple.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/player_none.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/player_on_edge.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/textures_dir.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/textures_duplicates.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/textures_forbidden.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/textures_invalid.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/textures_missing.cub
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
+
+---------------------------------------
+
+>>> Testing ./maps/bad/textures_none.cub
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
+
+---------------------------------------
+
+>>> Testing ./maps/bad/textures_not_xpm.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/wall_hole_east.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/wall_hole_north.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/wall_hole_south.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/wall_hole_west.cub
+SUCCESS !
+
+---------------------------------------
+
+>>> Testing ./maps/bad/wall_none.cub
+SUCCESS !
+
+---------------------------------------
+
