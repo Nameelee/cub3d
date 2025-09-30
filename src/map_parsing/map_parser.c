@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/09 00:25:42 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/29 17:17:56 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/30 16:36:01 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int	check_file_path(char *file_path)
 	i = ft_strlen(file_path);
 	if (i <= 4)
 		return (ERR_FILE_NAME);
-	if (file_path[i - 4] != '.' || file_path[i - 3] != 'c' \
+	if (file_path[i - 4] != '.' || file_path[i - 3] != 'c'
 		|| file_path[i - 2] != 'u' || file_path[i - 1] != 'b')
 		return (ERR_FILE_NAME);
 	return (SUCCESS);
@@ -91,12 +91,6 @@ int	map_parser(char *file_path, t_map_data *map_data)
 	last_param_index = get_map_param(file_lines, map_data);
 	if (last_param_index == -1 || !check_textures_file(map_data))
 		return (free_double((void ***)&file_lines), ERR_MISS_OR_INVAL_PARAM);
-	//check and store map after last_param_index
-	// ---- for debug purposes ----
-	printf("SUCCESS !\n");
-	map_data->map = &(file_lines[last_param_index + 1]);
-	print_map_data(map_data);
-	// ----------------------------
 	free_double((void ***)&file_lines);
 	return (SUCCESS);
 }

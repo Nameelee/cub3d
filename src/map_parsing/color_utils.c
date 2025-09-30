@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 18:47:42 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/29 15:49:00 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/30 15:37:15 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 int	is_valid_color_data(char *color)
 {
 	int	i;
-	int digit_cnt;
+	int	digit_cnt;
 	int	color_cnt;
 
 	i = 0;
@@ -30,10 +30,10 @@ int	is_valid_color_data(char *color)
 		digit_cnt = cnt_digits(&(color[i]));
 		if (digit_cnt > 3 || digit_cnt == 0)
 			return (0);
-		color_cnt+=1;
+		color_cnt += 1;
 		i += digit_cnt;
 		i = next_index_after_isspace(color, i);
-		if ((color_cnt < 3 && color[i] != ',') 
+		if ((color_cnt < 3 && color[i] != ',')
 			|| (color_cnt >= 3 && color[i] == ','))
 			return (0);
 		if (color[i] == ',')
@@ -83,7 +83,7 @@ int	get_color_value_after_n_commas(char *input, int n_commas)
  * @param malloc_err_flag flag put to 1 to report a malloc error
  * @return color structure allocated with values or NULL in case of an error
  */
-t_color *extract_color(char *color, int *malloc_err_flag)
+t_color	*extract_color(char *color, int *malloc_err_flag)
 {
 	t_color			*output_color;
 

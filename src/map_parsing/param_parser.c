@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 17:32:55 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/29 16:32:39 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/30 16:26:04 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	store_texture(char direction, char *texture_path, t_map_data *map_data)
 		return (-1);
 	if (direction == 'W' && map_data->wall_w_t == NULL)
 		return (-1);
-	return (SUCCESS);	
+	return (SUCCESS);
 }
 
 /**
@@ -66,8 +66,8 @@ int	store_color(char identifier, char *color, t_map_data *map_data)
 		map_data->ceiling_color = extract_color(color, &malloc_err_flag);
 	else
 		return (ERR_MISS_OR_INVAL_PARAM);
-	if ((identifier == 'C' && map_data->ceiling_color == NULL) || 
-		(identifier == 'F' && map_data->floor_color == NULL))
+	if ((identifier == 'C' && map_data->ceiling_color == NULL)
+		|| (identifier == 'F' && map_data->floor_color == NULL))
 	{
 		if (malloc_err_flag)
 			return (ERR_MALLOC);
@@ -90,9 +90,9 @@ int	store_param(char *str, t_map_data *map_data)
 
 	error = -1;
 	i = 0;
-	if ((!ft_strncmp(str, "NO", 2) || !ft_strncmp(str, "SO", 2) \
-	|| !ft_strncmp(str, "EA", 2) || !ft_strncmp(str, "WE", 2)) \
-	&& ft_isspace(str[2]))
+	if ((!ft_strncmp(str, "NO", 2) || !ft_strncmp(str, "SO", 2)
+			|| !ft_strncmp(str, "EA", 2) || !ft_strncmp(str, "WE", 2))
+		&& ft_isspace(str[2]))
 	{
 		i = get_index_after_isspace(&(str[2])) + 2;
 		error = store_texture(*str, &(str[i]), map_data);
@@ -122,7 +122,7 @@ int	get_map_param(char **file_lines, t_map_data *map_data)
 
 	i_lines = 0;
 	nbr_of_param_found = 0;
-	while (file_lines[i_lines] && nbr_of_param_found < EXPECTED_PARAM_NBR)  
+	while (file_lines[i_lines] && nbr_of_param_found < EXPECTED_PARAM_NBR)
 	{
 		i_chars = get_index_after_isspace(file_lines[i_lines]);
 		if (i_chars != (int)ft_strlen(file_lines[i_lines]))

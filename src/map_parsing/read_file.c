@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 18:43:05 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/09 01:11:14 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/30 16:35:43 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ char	**get_file_lines(char *file_path)
 	int		line_cnt;
 
 	line_cnt = count_file_lines(file_path);
+	if (line_cnt < 1)
+		return (NULL);
 	fd = open(file_path, O_RDONLY);
 	if (fd < 0)
 		return (NULL);
