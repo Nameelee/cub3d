@@ -6,7 +6,7 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/05 16:41:17 by manuelma          #+#    #+#              #
-#    Updated: 2025/09/30 19:29:11 by manuelma         ###   ########.fr        #
+#    Updated: 2025/09/30 22:27:52 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRCS_DIR			= src/
 M_PARSE_DIR			= $(SRCS_DIR)map_parsing/
 M_CHECK_DIR			= $(SRCS_DIR)map_checking/
 
-SRCS_MAIN			= main.c debug.c string_utils.c
+SRCS_MAIN			= main.c debug.c string_utils.c strs_dup.c
 
 SRCS_M_PARSE		= color_utils.c  \
 					map_parser.c  \
@@ -29,7 +29,7 @@ SRCS_M_PARSE		= color_utils.c  \
 					parsing_utils.c  \
 					read_file.c
 
-SRCS_M_CHECK		= main_checker.c
+SRCS_M_CHECK		= main_checker.c map_check_utils.c
 
 SRCS				= $(addprefix $(SRCS_DIR), $(SRCS_MAIN)) \
 					  $(addprefix $(M_PARSE_DIR), $(SRCS_M_PARSE)) \

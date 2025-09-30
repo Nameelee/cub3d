@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 18:14:38 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/30 19:56:52 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/30 22:00:47 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,8 @@ void	print_error(int error)
 		ft_putstr_fd(MSG_ERR_MISS_OR_INVAL_PARAM, STDERR_FILENO);
 	else if (error == ERR_MALLOC)
 		ft_putstr_fd(MSG_ERR_MALLOC, STDERR_FILENO);
+	else if (error == ERR_INVALID_MAP)
+		ft_putstr_fd(MSG_ERR_ERR_INVALID_MAP, STDERR_FILENO);
 }
 
 int	main(int ac, char **av)

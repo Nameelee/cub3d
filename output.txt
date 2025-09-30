@@ -18,6 +18,8 @@
 >>> ./maps/good/test_map.cub
 
 >>> ./maps/good/test_map_hole.cub
+Error
+The map is not valid !
 
 >>> ./maps/good/test_pos_bottom.cub
 
@@ -52,7 +54,7 @@ Missing or Invalid parametter
 
 >>> ./maps/bad/color_none.cub
 Error
-Missing or Invalid parametter
+Missing or Invalid paramettermak
 
 >>> ./maps/bad/empty.cub
 Error
@@ -72,6 +74,9 @@ Error
 Invalid file name !
 
 >>> ./maps/bad/forbidden.cub
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
 
 >>> ./maps/bad/map_first.cub
 Error
@@ -134,6 +139,8 @@ Error
 Missing or Invalid parametter
 
 >>> ./maps/bad/wall_hole_east.cub
+Error
+The map is not valid !
 
 >>> ./maps/bad/wall_hole_north.cub
 Error
@@ -144,6 +151,8 @@ Error
 Missing or Invalid parametter
 
 >>> ./maps/bad/wall_hole_west.cub
+Error
+The map is not valid !
 
 >>> ./maps/bad/wall_none.cub
 Error

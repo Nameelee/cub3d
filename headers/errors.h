@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 22:51:10 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/29 16:21:24 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/30 22:00:16 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ typedef enum e_error
 	ERR_READ,
 	ERR_FILE_NAME,
 	ERR_MISS_OR_INVAL_PARAM,
-	ERR_MALLOC
+	ERR_MALLOC,
+	ERR_INVALID_MAP
 }	t_error;
 
 # define MSG_ERR_ARGS "Error\nIncorrect args, you must add one argument\
@@ -31,4 +32,5 @@ is empty or there was an error reading it)\n"
 # define MSG_ERR_FILE_NAME "Error\nInvalid file name !\n"
 # define MSG_ERR_MISS_OR_INVAL_PARAM "Error\nMissing or Invalid parametter\n"
 # define MSG_ERR_MALLOC "Error\nThere was a allocation error !\n"
+# define MSG_ERR_ERR_INVALID_MAP "Error\nThe map is not valid !\n"
 #endif

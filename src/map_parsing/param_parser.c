@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 17:32:55 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/30 20:42:07 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/30 21:15:19 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,8 +112,8 @@ int	store_param(char *str, t_map_data *map_data)
  * parametter line
  * @param file_lines a double string containing each line of the map file
  * @param map_data the structure that contains the map data stored
- * @param i_lines the index of the last parametter line or -1 if there is too much or
- * not enough parametters
+ * @param i_lines the index of the last parametter line or -1 if there is too
+ * much or not enough parametters
  * @return the index of the last parametter line or -1 if there is too much or
  * not enough parametters
  */
