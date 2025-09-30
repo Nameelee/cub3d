@@ -6,7 +6,7 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/26 18:54:11 by manuelma          #+#    #+#              #
-#    Updated: 2025/08/26 21:56:27 by manuelma         ###   ########.fr        #
+#    Updated: 2025/09/30 18:05:43 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,6 +52,6 @@ define PRINT_WORD
 	$(call PRINT_LINE,$(1),1)
 	$(call PRINT_LINE,$(1),2)
 	$(call PRINT_LINE,$(1),3)
-	@printf "%b\n" "$(call UNQUOTE,$(Color_Off))"
+	@printf "%b\n" "$(call UNQUOTE,$(RESET))"
 endef
 

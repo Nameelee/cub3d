@@ -1,223 +1,125 @@
-***************************************
-              Good maps
-***************************************
->>> Testing ./maps/good/cheese_maze.cub
+================ GOOD MAPS ================
+>>> ./maps/good/cheese_maze.cub
 
----------------------------------------
+>>> ./maps/good/creepy.cub
 
->>> Testing ./maps/good/creepy.cub
+>>> ./maps/good/dungeon.cub
 
----------------------------------------
+>>> ./maps/good/library.cub
 
->>> Testing ./maps/good/dungeon.cub
+>>> ./maps/good/matrix.cub
 
----------------------------------------
+>>> ./maps/good/sad_face.cub
 
->>> Testing ./maps/good/library.cub
+>>> ./maps/good/square_map.cub
 
----------------------------------------
+>>> ./maps/good/subject_map.cub
 
->>> Testing ./maps/good/matrix.cub
+>>> ./maps/good/test_map.cub
 
----------------------------------------
+>>> ./maps/good/test_map_hole.cub
 
->>> Testing ./maps/good/sad_face.cub
+>>> ./maps/good/test_pos_bottom.cub
 
----------------------------------------
+>>> ./maps/good/test_pos_left.cub
 
->>> Testing ./maps/good/square_map.cub
+>>> ./maps/good/test_pos_right.cub
 
----------------------------------------
+>>> ./maps/good/test_pos_top.cub
 
->>> Testing ./maps/good/subject_map.cub
+>>> ./maps/good/test_textures.cub
 
----------------------------------------
+>>> ./maps/good/test_whitespace.cub
 
->>> Testing ./maps/good/test_map.cub
+>>> ./maps/good/works.cub
 
----------------------------------------
-
->>> Testing ./maps/good/test_map_hole.cub
-
----------------------------------------
-
->>> Testing ./maps/good/test_pos_bottom.cub
-
----------------------------------------
-
->>> Testing ./maps/good/test_pos_left.cub
-
----------------------------------------
-
->>> Testing ./maps/good/test_pos_right.cub
-
----------------------------------------
-
->>> Testing ./maps/good/test_pos_top.cub
-
----------------------------------------
-
->>> Testing ./maps/good/test_textures.cub
-
----------------------------------------
-
->>> Testing ./maps/good/test_whitespace.cub
-
----------------------------------------
-
->>> Testing ./maps/good/works.cub
-
----------------------------------------
-
-***************************************
-               Bad maps
-***************************************
->>> Testing ./maps/bad/color_invalid_rgb.cub
+================ BAD MAPS =================
+>>> ./maps/bad/color_invalid_rgb.cub
 Error
 Missing or Invalid parametter
 
----------------------------------------
-
->>> Testing ./maps/bad/color_missing_ceiling_rgb.cub
+>>> ./maps/bad/color_missing_ceiling_rgb.cub
 Error
 Missing or Invalid parametter
 
----------------------------------------
-
->>> Testing ./maps/bad/color_missing.cub
+>>> ./maps/bad/color_missing.cub
 Error
 Missing or Invalid parametter
 
----------------------------------------
-
->>> Testing ./maps/bad/color_missing_floor_rgb.cub
+>>> ./maps/bad/color_missing_floor_rgb.cub
 Error
 Missing or Invalid parametter
 
----------------------------------------
-
->>> Testing ./maps/bad/color_none.cub
+>>> ./maps/bad/color_none.cub
 Error
 Missing or Invalid parametter
 
----------------------------------------
-
->>> Testing ./maps/bad/empty.cub
+>>> ./maps/bad/empty.cub
 Error
 There was a problem reading the file !
 (file is empty or there was an error reading it)
 
----------------------------------------
+>>> ./maps/bad/file_letter_end.cub
 
->>> Testing ./maps/bad/file_letter_end.cub
-
----------------------------------------
-
->>> Testing ./maps/bad/filetype_missing
+>>> ./maps/bad/filetype_missing
 Error
 Invalid file name !
 
----------------------------------------
-
->>> Testing ./maps/bad/filetype_wrong.buc
+>>> ./maps/bad/filetype_wrong.buc
 Error
 Invalid file name !
 
----------------------------------------
+>>> ./maps/bad/forbidden.cub
 
->>> Testing ./maps/bad/forbidden.cub
+>>> ./maps/bad/map_first.cub
 
----------------------------------------
+>>> ./maps/bad/map_middle.cub
 
->>> Testing ./maps/bad/map_first.cub
+>>> ./maps/bad/map_missing.cub
 
----------------------------------------
-
->>> Testing ./maps/bad/map_middle.cub
-
----------------------------------------
-
->>> Testing ./maps/bad/map_missing.cub
-
----------------------------------------
-
->>> Testing ./maps/bad/map_only.cub
+>>> ./maps/bad/map_only.cub
 Error
 Missing or Invalid parametter
 
----------------------------------------
+>>> ./maps/bad/map_too_small.cub
 
->>> Testing ./maps/bad/map_too_small.cub
+>>> ./maps/bad/player_multiple.cub
 
----------------------------------------
+>>> ./maps/bad/player_none.cub
 
->>> Testing ./maps/bad/player_multiple.cub
+>>> ./maps/bad/player_on_edge.cub
 
----------------------------------------
-
->>> Testing ./maps/bad/player_none.cub
-
----------------------------------------
-
->>> Testing ./maps/bad/player_on_edge.cub
-
----------------------------------------
-
->>> Testing ./maps/bad/textures_dir.cub
+>>> ./maps/bad/textures_dir.cub
 Error
 Missing or Invalid parametter
 
----------------------------------------
+>>> ./maps/bad/textures_duplicates.cub
 
->>> Testing ./maps/bad/textures_duplicates.cub
+>>> ./maps/bad/textures_forbidden.cub
 
----------------------------------------
-
->>> Testing ./maps/bad/textures_forbidden.cub
-
----------------------------------------
-
->>> Testing ./maps/bad/textures_invalid.cub
+>>> ./maps/bad/textures_invalid.cub
 Error
 Missing or Invalid parametter
 
----------------------------------------
-
->>> Testing ./maps/bad/textures_missing.cub
+>>> ./maps/bad/textures_missing.cub
 Error
 Missing or Invalid parametter
 
----------------------------------------
-
->>> Testing ./maps/bad/textures_none.cub
+>>> ./maps/bad/textures_none.cub
 Error
 Missing or Invalid parametter
 
----------------------------------------
-
->>> Testing ./maps/bad/textures_not_xpm.cub
+>>> ./maps/bad/textures_not_xpm.cub
 Error
 Missing or Invalid parametter
 
----------------------------------------
+>>> ./maps/bad/wall_hole_east.cub
 
->>> Testing ./maps/bad/wall_hole_east.cub
+>>> ./maps/bad/wall_hole_north.cub
 
----------------------------------------
+>>> ./maps/bad/wall_hole_south.cub
 
->>> Testing ./maps/bad/wall_hole_north.cub
+>>> ./maps/bad/wall_hole_west.cub
 
----------------------------------------
-
->>> Testing ./maps/bad/wall_hole_south.cub
-
----------------------------------------
-
->>> Testing ./maps/bad/wall_hole_west.cub
-
----------------------------------------
-
->>> Testing ./maps/bad/wall_none.cub
-
----------------------------------------
+>>> ./maps/bad/wall_none.cub
 

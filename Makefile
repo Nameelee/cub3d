@@ -6,7 +6,7 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/05 16:41:17 by manuelma          #+#    #+#              #
-#    Updated: 2025/09/29 14:24:46 by manuelma         ###   ########.fr        #
+#    Updated: 2025/09/30 18:04:00 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,6 @@ SRCS_M_PARSE		= color_utils.c  \
 					param_parser.c  \
 					parsing_utils.c  \
 					read_file.c  \
-					strs_utils.c
 
 SRCS				= $(addprefix $(SRCS_DIR), $(SRCS_MAIN)) \
 					  $(addprefix $(M_PARSE_DIR), $(SRCS_M_PARSE))
