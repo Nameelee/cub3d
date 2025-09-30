@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 18:14:38 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/30 16:32:29 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/30 19:56:52 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ int	main(int ac, char **av)
 	error = map_parser(av[1], &map_data);
 	if (error != SUCCESS)
 		return (free_map_data(&map_data), print_error(error), 1);
+	// launch game
 	free_map_data(&map_data);
 	return (0);
 }

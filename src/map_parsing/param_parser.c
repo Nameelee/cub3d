@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 17:32:55 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/30 16:26:04 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/30 20:42:07 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@
  * @param direction N, S, E, W
  * @param str the line containing a texture
  * @param map_data the structure that contains the map data stored
- * @return SUCCESS if the texture is found did not exist already, else -1
+ * @return SUCCESS if the texture is found did not exist already, else if
+ * texture is already stored returns ERR_MISS_OR_INVAL_PARAM, and in case of
+ * a malloc error, returns ERR_MALLOC
  */
 int	store_texture(char direction, char *texture_path, t_map_data *map_data)
 {
@@ -35,15 +37,15 @@ int	store_texture(char direction, char *texture_path, t_map_data *map_data)
 	else if (direction == 'W' && map_data->wall_w_t == NULL)
 		map_data->wall_w_t = ft_substr(texture_path, 0, texture_len);
 	else
-		return (-1);
+		return (ERR_MISS_OR_INVAL_PARAM);
 	if (direction == 'N' && map_data->wall_n_t == NULL)
-		return (-1);
+		return (ERR_MALLOC);
 	if (direction == 'S' && map_data->wall_s_t == NULL)
-		return (-1);
+		return (ERR_MALLOC);
 	if (direction == 'E' && map_data->wall_e_t == NULL)
-		return (-1);
+		return (ERR_MALLOC);
 	if (direction == 'W' && map_data->wall_w_t == NULL)
-		return (-1);
+		return (ERR_MALLOC);
 	return (SUCCESS);
 }
 
@@ -110,32 +112,33 @@ int	store_param(char *str, t_map_data *map_data)
  * parametter line
  * @param file_lines a double string containing each line of the map file
  * @param map_data the structure that contains the map data stored
+ * @param i_lines the index of the last parametter line or -1 if there is too much or
+ * not enough parametters
  * @return the index of the last parametter line or -1 if there is too much or
  * not enough parametters
  */
-int	get_map_param(char **file_lines, t_map_data *map_data)
+int	get_map_param(char **file_lines, t_map_data *map_data, int *i_lines)
 {
-	int	i_lines;
 	int	i_chars;
 	int	nbr_of_param_found;
 	int	error;
 
-	i_lines = 0;
+	*i_lines = 0;
 	nbr_of_param_found = 0;
-	while (file_lines[i_lines] && nbr_of_param_found < EXPECTED_PARAM_NBR)
+	while (file_lines[*i_lines] && nbr_of_param_found < EXPECTED_PARAM_NBR)
 	{
-		i_chars = get_index_after_isspace(file_lines[i_lines]);
-		if (i_chars != (int)ft_strlen(file_lines[i_lines]))
+		i_chars = get_index_after_isspace(file_lines[*i_lines]);
+		if (i_chars != (int)ft_strlen(file_lines[*i_lines]))
 		{
-			error = store_param(&(file_lines[i_lines][i_chars]), map_data);
+			error = store_param(&(file_lines[*i_lines][i_chars]), map_data);
 			if (error == SUCCESS)
 				nbr_of_param_found++;
-			if (error == ERR_MALLOC)
-				return (ERR_MALLOC);
+			else if (error > 0)
+				return (error);
 		}
-		i_lines++;
+		*i_lines += 1;
 	}
 	if (nbr_of_param_found != EXPECTED_PARAM_NBR)
-		return (-1);
-	return (i_lines);
+		return (ERR_MISS_OR_INVAL_PARAM);
+	return (SUCCESS);
 }

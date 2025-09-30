@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 18:44:42 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/29 14:24:05 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/30 18:33:36 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # include "errors.h"
 # include "data.h"
 # include "map_parsing.h"
+# include "map_checking.h"
 # include "string_utils.h"
 
 #endif

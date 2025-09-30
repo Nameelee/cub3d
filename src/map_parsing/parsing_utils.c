@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/09 01:16:43 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/30 15:43:21 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/09/30 19:04:16 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 /**
  * @brief copy of the function isspace (man isspace)
- * @param str the string we want to skip all 'isspace'
- * return int with the index of the first non 'isspace' char or -1 if there
- * is only 'isspace' char in str
+ * @param c the char we check
+ * @return 1 if char is 'isspace' else 0
  */
 int	ft_isspace(char c)
 {
@@ -29,7 +28,7 @@ int	ft_isspace(char c)
 /**
  * @brief gets the first char that is not 'isspace'
  * @param str the string we want to skip all 'isspace'
- * return int with the index of the first non 'isspace' char
+ * @return int with the index of the first non 'isspace' char
  */
 int	get_index_after_isspace(char *str)
 {
