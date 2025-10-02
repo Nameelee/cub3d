@@ -1,5 +1,54 @@
 #include "includes/cub3d.h"
 
+// 텍스처를 입힌 수직선을 그리는 함수
+//******코드가 좀 이상함 다듬어야 할 듯 *************/
+void	draw_textured_line(t_game *game, t_ray *ray, int x)
+{
+	int		y;
+	int		tex_y;
+	int		color;
+	double	step;
+	double	tex_pos;
+
+	//천정 그리기
+	y = 0;
+	while (y < ray->draw_start)
+	{
+		mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, 0x808080);
+		y++;
+	}
+	//바닥 그리기
+	y = ray->draw_end; // y를 벽 그리기가 끝난 지점부터 시작
+	while (y < SCREEN_HEIGHT)
+	{
+		mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, 0x0000FF);
+		y++;
+	}
+
+	// 텍스처의 y 좌표를 얼마나 증가시킬지 계산
+	step = 1.0 * TEX_HEIGHT / ray->line_height;
+	// 그리기 시작 지점의 텍스처 y 좌표 계산
+	tex_pos = (ray->draw_start - SCREEN_HEIGHT / 2 + ray->line_height / 2) * step;
+	
+	y = ray->draw_start;
+	while (y < ray->draw_end)
+	{
+		// 텍스처의 y 좌표를 정수로 변환
+		tex_y = (int)tex_pos & (TEX_HEIGHT - 1);
+		tex_pos += step;
+		
+		// tex_x, tex_y를 이용해 텍스처에서 해당 픽셀의 색상 값을 가져옴
+		color = game->textures[ray->tex_num].data[TEX_HEIGHT * tex_y + ray->tex_x];
+
+        // y축 벽(남/북)은 약간 어둡게 표현하여 입체감을 줍니다.
+        if (ray->side == 1)
+            color = (color >> 1) & 8355711; // 비트 연산으로 밝기를 절반으로 줄임
+		
+		mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, color);
+		y++;
+	}
+}
+
 // 광선과 DDA 알고리즘에 필요한 변수들을 초기화하는 함수
 void	init_ray_data(t_game *game, t_ray *ray, int x)
 {
