@@ -17,11 +17,15 @@ CC					= cc
 CFLAGS				= -Wall -Wextra -Werror -g
 OBJ_DIR				= objs
 
+MLX_DIR             = minilibx
+MLX_LIB             = $(MLX_DIR)/libmlx.a
+MLX_FLAGS           = -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
+
 SRCS_DIR			= src/
 M_PARSE_DIR			= $(SRCS_DIR)map_parsing/
 M_CHECK_DIR			= $(SRCS_DIR)map_checking/
 
-SRCS_MAIN			= main.c debug.c string_utils.c strs_dup.c
+SRCS_MAIN			= main.c debug.c string_utils.c strs_dup.c move.c render.c
 
 SRCS_M_PARSE		= color_utils.c  \
 					map_parser.c  \
@@ -44,10 +48,10 @@ GNL_PATH			= get_next_line
 GNL					= $(GNL_PATH)/get_next_line.a
 GNL_INC				= -I$(GNL_PATH)
 
-all: $(LIBFT) $(GNL) $(NAME)
+all: $(LIBFT) $(MLX_LIB) $(GNL) $(NAME)
 
 $(NAME): $(OBJS)
-	@$(CC) $(CFLAGS) $(OBJS) $(LIBFT) $(GNL) -o $(NAME)
+	@$(CC) $(CFLAGS) $(OBJS) $(LIBFT) $(GNL) $(MLX_FLAGS) -o $(NAME)
 	@printf $(IGreen)
 	@printf "Cub3d compiled successfully!$(RESET)\n"
 	$(call PRINT_WORD,$(NAME),ICyan)
@@ -59,6 +63,9 @@ $(OBJ_DIR)/%.o: %.c
 $(LIBFT):
 	@$(MAKE) -C $(LIBFT_PATH) --no-print-directory
 
+$(MLX_LIB):
+	@make -C $(MLX_DIR)
+
 $(GNL):
 	@$(MAKE) -C $(GNL_PATH) --no-print-directory
 
@@ -66,6 +73,7 @@ clean:
 	@rm -rf $(OBJ_DIR)
 	@$(MAKE) -C $(LIBFT_PATH) clean --no-print-directory
 	@$(MAKE) -C $(GNL_PATH) clean --no-print-directory
+	@$(MAKE) -C $(MLX_DIR) clean
 	@printf $(IRed)
 	@printf "Removed all object files from cub3d!.$(RESET)\n"
 

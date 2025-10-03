@@ -22,5 +22,6 @@
 # include "map_parsing.h"
 # include "map_checking.h"
 # include "string_utils.h"
+# include "cub3d_nami.h"
 
 #endif

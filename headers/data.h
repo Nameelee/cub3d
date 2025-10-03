@@ -44,4 +44,32 @@ typedef struct s_map_data
 	char	**map;
 }	t_map_data;
 
+typedef struct s_img
+{
+	void	*img_ptr;
+	int		*data; // 이미지의 픽셀 데이터 주소
+	int		size_l;
+	int		bpp;
+	int		endian;
+}	t_img;
+
+typedef struct s_player
+{
+	double	pos_x;     // 플레이어의 x 좌표
+	double	pos_y;     // 플레이어의 y 좌표
+	double	dir_x;     // 방향 벡터 x (-1 to 1)
+	double	dir_y;     // 방향 벡터 y (-1 to 1)
+	double	plane_x;   // 카메라 평면 벡터 x (시야각 결정)
+	double	plane_y;   // 카메라 평면 벡터 y (시야각 결정)
+}	t_player;
+
+typedef struct s_game
+{
+	void		*mlx_ptr;
+	void		*win_ptr;
+	t_img       textures[4];
+	t_player	player;
+	t_map_data	map_data;
+}	t_game;
+
 #endif

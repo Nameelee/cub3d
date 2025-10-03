@@ -1,4 +1,4 @@
-#include "includes/cub3d.h"
+#include "../headers/cub3d.h"
 
 // 광선과 DDA 알고리즘에 필요한 변수들을 초기화하는 함수
 void	init_ray_data(t_game *game, t_ray *ray, int x)
@@ -50,7 +50,7 @@ void	perform_dda(t_game *game, t_ray *ray)
 			ray->map_y += ray->step_y;
 			ray->side = 1;
 		}
-		if (game->map[ray->map_y][ray->map_x] == '1')
+		if (game->map_data.map[ray->map_y][ray->map_x] == '1')
 			ray->hit = 1;
 	}
     	// 어느 벽에 부딪혔는지 결정

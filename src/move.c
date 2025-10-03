@@ -1,4 +1,4 @@
-#include "includes/cub3d.h"
+#include "../headers/cub3d.h"
 
 // Fonction pour gérer les entrées clavier
 int key_press_handler(int keycode, t_game *game)
@@ -12,33 +12,33 @@ int key_press_handler(int keycode, t_game *game)
 	if (keycode == KEY_W) // 'W' 키: 앞으로 이동
 	{
 		// [수정] 맵 접근 인덱스를 [y][x] 순서로 변경
-		if (game->map[(int)game->player.pos_y][(int)(game->player.pos_x + game->player.dir_x * (move_speed + padding))] == '0')
+		if (game->map_data.map[(int)game->player.pos_y][(int)(game->player.pos_x + game->player.dir_x * (move_speed + padding))] == '0')
 			game->player.pos_x += game->player.dir_x * move_speed;
-		if (game->map[(int)(game->player.pos_y + game->player.dir_y * (move_speed + padding))][(int)game->player.pos_x] == '0')
+		if (game->map_data.map[(int)(game->player.pos_y + game->player.dir_y * (move_speed + padding))][(int)game->player.pos_x] == '0')
 			game->player.pos_y += game->player.dir_y * move_speed;
 	}
 	if (keycode == KEY_A)
 	{
 		// [수정] 맵 접근 인덱스를 [y][x] 순서로 변경
-		if (game->map[(int)game->player.pos_y][(int)(game->player.pos_x - game->player.plane_x * (move_speed + padding))] == '0')
+		if (game->map_data.map[(int)game->player.pos_y][(int)(game->player.pos_x - game->player.plane_x * (move_speed + padding))] == '0')
 			game->player.pos_x -= game->player.plane_x * move_speed;
-		if (game->map[(int)(game->player.pos_y - game->player.plane_y * (move_speed + padding))][(int)game->player.pos_x] == '0')
+		if (game->map_data.map[(int)(game->player.pos_y - game->player.plane_y * (move_speed + padding))][(int)game->player.pos_x] == '0')
 			game->player.pos_y -= game->player.plane_y * move_speed;
 	}
 	if (keycode == KEY_S)
 	{
 		// [수정] 맵 접근 인덱스를 [y][x] 순서로 변경
-		if (game->map[(int)game->player.pos_y][(int)(game->player.pos_x - game->player.dir_x * (move_speed + padding))] == '0')
+		if (game->map_data.map[(int)game->player.pos_y][(int)(game->player.pos_x - game->player.dir_x * (move_speed + padding))] == '0')
 			game->player.pos_x -= game->player.dir_x * move_speed;
-		if (game->map[(int)(game->player.pos_y - game->player.dir_y * (move_speed *padding))][(int)game->player.pos_x] == '0')
+		if (game->map_data.map[(int)(game->player.pos_y - game->player.dir_y * (move_speed *padding))][(int)game->player.pos_x] == '0')
 			game->player.pos_y -= game->player.dir_y * move_speed;
 	}
 	if (keycode == KEY_D)
 	{
 		// [수정] 맵 접근 인덱스를 [y][x] 순서로 변경
-		if (game->map[(int)game->player.pos_y][(int)(game->player.pos_x + game->player.plane_x * (move_speed + padding))] == '0')
+		if (game->map_data.map[(int)game->player.pos_y][(int)(game->player.pos_x + game->player.plane_x * (move_speed + padding))] == '0')
 			game->player.pos_x += game->player.plane_x * move_speed;
-		if (game->map[(int)(game->player.pos_y + game->player.plane_y * (move_speed + padding))][(int)game->player.pos_x] == '0')
+		if (game->map_data.map[(int)(game->player.pos_y + game->player.plane_y * (move_speed + padding))][(int)game->player.pos_x] == '0')
 			game->player.pos_y += game->player.plane_y * move_speed;
 	}
 	if (keycode == KEY_LEFT) // 오른쪽 화살표: 시야 회전
