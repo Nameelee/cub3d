@@ -1,4 +1,7 @@
-================ GOOD MAPS ================
+
+===========================================
+GOOD MAPS
+===========================================
 >>> ./maps/good/cheese_maze.cub
 
 >>> ./maps/good/creepy.cub
@@ -35,7 +38,10 @@ The map is not valid !
 
 >>> ./maps/good/works.cub
 
-================ BAD MAPS =================
+
+===========================================
+BAD MAPS
+===========================================
 >>> ./maps/bad/color_invalid_rgb.cub
 Error
 Missing or Invalid parametter
@@ -54,7 +60,7 @@ Missing or Invalid parametter
 
 >>> ./maps/bad/color_none.cub
 Error
-Missing or Invalid paramettermak
+Missing or Invalid parametter
 
 >>> ./maps/bad/empty.cub
 Error
@@ -74,9 +80,6 @@ Error
 Invalid file name !
 
 >>> ./maps/bad/forbidden.cub
-Error
-There was a problem reading the file !
-(file is empty or there was an error reading it)
 
 >>> ./maps/bad/map_first.cub
 Error
@@ -119,8 +122,6 @@ Error
 Missing or Invalid parametter
 
 >>> ./maps/bad/textures_forbidden.cub
-Error
-Missing or Invalid parametter
 
 >>> ./maps/bad/textures_invalid.cub
 Error
