@@ -19,8 +19,8 @@ OBJ_DIR				= objs
 
 MLX_DIR             = minilibx
 MLX_LIB             = $(MLX_DIR)/libmlx.a
-MLX_FLAGS           = -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
-
+#MLX_FLAGS           = -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
+MLX_FLAGS           = -L$(MLX_DIR) -lmlx -lXext -lX11 -lm -lz
 SRCS_DIR			= src/
 M_PARSE_DIR			= $(SRCS_DIR)map_parsing/
 M_CHECK_DIR			= $(SRCS_DIR)map_checking/
