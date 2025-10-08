@@ -1,6 +1,7 @@
 #include "../headers/cub3d.h"
 
 // 광선과 DDA 알고리즘에 필요한 변수들을 초기화하는 함수
+
 void	init_ray_data(t_game *game, t_ray *ray, int x)
 {
 	ray->camera_x = 2 * x / (double)SCREEN_WIDTH - 1;
@@ -8,8 +9,21 @@ void	init_ray_data(t_game *game, t_ray *ray, int x)
 	ray->dir_y = game->player.dir_y + game->player.plane_y * ray->camera_x;
 	ray->map_x = (int)game->player.pos_x;
 	ray->map_y = (int)game->player.pos_y;
-	ray->delta_dist_x = fabs(1 / ray->dir_x);
-	ray->delta_dist_y = fabs(1 / ray->dir_y);
+
+	// --- THIS IS THE FIX ---
+	// Prevent division by zero by checking if ray->dir is 0.
+	// If it is, we set delta_dist to a very large number (infinity)
+	// to signify the ray will never hit a grid line on that axis.
+	if (ray->dir_x == 0)
+		ray->delta_dist_x = 1e30;
+	else
+		ray->delta_dist_x = fabs(1 / ray->dir_x);
+	if (ray->dir_y == 0)
+		ray->delta_dist_y = 1e30;
+	else
+		ray->delta_dist_y = fabs(1 / ray->dir_y);
+	// --- END OF FIX ---
+
 	ray->hit = 0;
 	if (ray->dir_x < 0)
 	{
@@ -70,13 +84,17 @@ void	perform_dda(t_game *game, t_ray *ray)
 	}
 }
 
-// 벽까지의 거리를 계산하고, 화면에 그릴 벽의 높이와 위치를 계산하는 함수
+// in src/render.c
+
 void	calculate_wall_projection(t_game *game, t_ray *ray)
 {
 	if (ray->side == 0)
-		ray->perp_wall_dist = (ray->map_x - game->player.pos_x + (1 - ray->step_x) / 2) / ray->dir_x;
+		ray->perp_wall_dist = (ray->map_x - game->player.pos_x
+				+ (1 - ray->step_x) / 2) / ray->dir_x;
 	else
-		ray->perp_wall_dist = (ray->map_y - game->player.pos_y + (1 - ray->step_y) / 2) / ray->dir_y;
+		ray->perp_wall_dist = (ray->map_y - game->player.pos_y
+				+ (1 - ray->step_y) / 2) / ray->dir_y;
+
 	ray->line_height = (int)(SCREEN_HEIGHT / ray->perp_wall_dist);
 	ray->draw_start = -ray->line_height / 2 + SCREEN_HEIGHT / 2;
 	if (ray->draw_start < 0)
@@ -85,20 +103,16 @@ void	calculate_wall_projection(t_game *game, t_ray *ray)
 	if (ray->draw_end >= SCREEN_HEIGHT)
 		ray->draw_end = SCREEN_HEIGHT - 1;
 
-    // 여기부터 텍스쳐 관련 코드
-    // 벽에 부딪힌 정확한 x 좌표(wall_x)를 계산합니다.
 	if (ray->side == 0)
 		ray->wall_x = game->player.pos_y + ray->perp_wall_dist * ray->dir_y;
 	else
 		ray->wall_x = game->player.pos_x + ray->perp_wall_dist * ray->dir_x;
 	ray->wall_x -= floor(ray->wall_x);
 
-	// 텍스처의 x 좌표(tex_x)를 계산합니다.
 	ray->tex_x = (int)(ray->wall_x * (double)TEX_WIDTH);
 	if(ray->side == 0 && ray->dir_x < 0)
 		ray->tex_x = TEX_WIDTH - ray->tex_x - 1;
 	if(ray->side == 1 && ray->dir_y > 0)
 		ray->tex_x = TEX_WIDTH - ray->tex_x - 1;
 }
-
 

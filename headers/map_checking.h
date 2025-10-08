@@ -15,5 +15,6 @@
 
 int	map_checker(t_map_data *map_data);
 int	find_player_pos(char **map, int *x, int *y);
+int	get_map_width(char **map);//Nami added this function
 
 #endif

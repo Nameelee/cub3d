@@ -4,6 +4,15 @@ int		key_press_handler(int keycode, t_game *game);
 int		key_release_handler(int keycode, t_game *game);
 void	move_player(t_game *game);
 
+void	put_pixel_to_image(t_img *buffer, int x, int y, int color)
+{
+	char	*dst;
+
+	// 주소 오프셋을 계산하여 해당 위치에 색상 값을 씁니다.
+	dst = (char *)buffer->data + (y * buffer->size_l + x * (buffer->bpp / 8));
+	*(unsigned int *)dst = color;
+}
+
 void	load_textures(t_game *game)
 {
 	int		width;
@@ -40,13 +49,15 @@ void	draw_textured_line(t_game *game, t_ray *ray, int x)
 	y = 0;
 	while (y < ray->draw_start)
 	{
-		mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, 0x808080);
+		//mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, 0x808080);
+		put_pixel_to_image(&game->screen_buffer, x, y, 0x808080);
 		y++;
 	}
 	y = ray->draw_end;
 	while (y < SCREEN_HEIGHT)
 	{
-		mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, 0x0000FF);
+		put_pixel_to_image(&game->screen_buffer, x, y, 0x0000FF);
+		//mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, 0x0000FF);
 		y++;
 	}
 	step = 1.0 * TEX_HEIGHT / ray->line_height;
@@ -59,7 +70,8 @@ void	draw_textured_line(t_game *game, t_ray *ray, int x)
 		color = game->textures[ray->tex_num].data[TEX_HEIGHT * tex_y + ray->tex_x];
         if (ray->side == 1)
             color = (color >> 1) & 8355711;
-		mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, color);
+		//mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, color);
+		put_pixel_to_image(&game->screen_buffer, x, y, color);
 		y++;
 	}
 }
@@ -72,7 +84,8 @@ void draw_tile(t_game *game, int x, int y, int color)
         int j = 0;
         while (j < MINIMAP_SCALE)
         {
-            mlx_pixel_put(game->mlx_ptr, game->win_ptr, x * MINIMAP_SCALE + j, y * MINIMAP_SCALE + i, color);
+			put_pixel_to_image(&game->screen_buffer, x * MINIMAP_SCALE + j, y * MINIMAP_SCALE + i, color);
+            //mlx_pixel_put(game->mlx_ptr, game->win_ptr, x * MINIMAP_SCALE + j, y * MINIMAP_SCALE + i, color);
             j++;
         }
         i++;
@@ -82,10 +95,10 @@ void draw_tile(t_game *game, int x, int y, int color)
 void draw_minimap(t_game *game)
 {
     int y = 0;
-    while (y < MAP_HEIGHT)
+    while (y < game->map_data.height)
     {
         int x = 0;
-        while (x < MAP_WIDTH)
+        while (x < game->map_data.width)
         {
             if (game->map_data.map[y][x] == '1')
                 draw_tile(game, x, y, WALL_COLOR);
@@ -107,10 +120,8 @@ void draw_minimap(t_game *game)
         int x = 0;
         while (x < PLAYER_SIZE)
         {
-            mlx_pixel_put(game->mlx_ptr, game->win_ptr,
-                (int)(start_draw_x + x),
-                (int)(start_draw_y + y),
-                PLAYER_COLOR);
+			put_pixel_to_image(&game->screen_buffer, (int)(start_draw_x + x), (int)(start_draw_y + y), PLAYER_COLOR);
+            //mlx_pixel_put(game->mlx_ptr, game->win_ptr, (int)(start_draw_x + x), (int)(start_draw_y + y), PLAYER_COLOR);
             x++;
         }
         y++;
@@ -127,7 +138,8 @@ void draw_minimap(t_game *game)
     int i = 0;
     while (i <= steps)
     {
-        mlx_pixel_put(game->mlx_ptr, game->win_ptr, (int)x_line, (int)y_line, PLAYER_COLOR);
+		put_pixel_to_image(&game->screen_buffer, (int)x_line, (int)y_line, PLAYER_COLOR);
+        //mlx_pixel_put(game->mlx_ptr, game->win_ptr, (int)x_line, (int)y_line, PLAYER_COLOR);
         x_line += x_inc;
         y_line += y_inc;
         i++;
@@ -136,7 +148,30 @@ void draw_minimap(t_game *game)
 
 int	close_game(t_game *game)
 {
-	mlx_destroy_window(game->mlx_ptr, game->win_ptr);
+    // 중요: 생성된 모든 이미지를 파괴합니다.
+    for (int i = 0; i < 4; i++)
+	{
+        if (game->textures[i].img_ptr)
+            mlx_destroy_image(game->mlx_ptr, game->textures[i].img_ptr);
+    }
+    if (game->screen_buffer.img_ptr)
+	{
+        mlx_destroy_image(game->mlx_ptr, game->screen_buffer.img_ptr);
+	}
+	if (game->win_ptr)
+	{
+		mlx_destroy_window(game->mlx_ptr, game->win_ptr);
+	}
+	// Linux에서는 mlx_destroy_display를 호출해주는 것이 좋습니다.
+	#ifdef __linux__
+	if (game->mlx_ptr)
+	{
+		mlx_destroy_display(game->mlx_ptr);
+		free(game->mlx_ptr);
+	}
+	#endif
+
+	printf("Window closed. Exiting program.\n");
 	exit(0);
 	return (0);
 }
@@ -147,7 +182,7 @@ int	game_loop(t_game *game)
 	int		x;
 
 	move_player(game);
-	mlx_clear_window(game->mlx_ptr, game->win_ptr);
+
 	x = 0;
 	while (x < SCREEN_WIDTH)
 	{
@@ -158,6 +193,7 @@ int	game_loop(t_game *game)
 		x++;
 	}
 	draw_minimap(game);
+	mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, game->screen_buffer.img_ptr, 0, 0);
 	return (0);
 }
 
@@ -199,7 +235,7 @@ void init_player_position(t_game *game)
     while (y < MAP_HEIGHT)
     {
         int x = 0;
-        while (x < MAP_WIDTH)
+        while (x < game->map_data.width)
         {
             if (ft_strchr("NSWE", game->map_data.map[y][x]))
             {
@@ -272,6 +308,15 @@ int	main(int ac, char **av)
 	game.win_ptr = mlx_new_window(game.mlx_ptr, 800, 600, "cub3D");
 	if (game.win_ptr == NULL)
 		return (1);
+
+	// --- 더블 버퍼링을 위한 이미지 버퍼 생성 ---
+	game.screen_buffer.img_ptr = mlx_new_image(game.mlx_ptr, SCREEN_WIDTH, SCREEN_HEIGHT);
+	if (!game.screen_buffer.img_ptr)
+		return (perror("Screen buffer creation failed"), 1);
+	game.screen_buffer.data = (int *)mlx_get_data_addr(game.screen_buffer.img_ptr,
+		&game.screen_buffer.bpp, &game.screen_buffer.size_l, &game.screen_buffer.endian);
+	// -----------------------------------------
+
 	load_textures(&game);
 	mlx_hook(game.win_ptr, 2, 1L << 0, key_press_handler, &game);
 	mlx_hook(game.win_ptr, 3, 1L << 1, key_release_handler, &game);

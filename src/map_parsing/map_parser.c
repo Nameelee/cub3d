@@ -130,8 +130,20 @@ int	map_parser(char *file_path, t_map_data *map_data)
 	if (last_param_index == -1 || !check_textures_file(map_data))
 		return (free_double((void ***)&file_lines), ERR_MISS_OR_INVAL_PARAM);
 	error = store_map(last_param_index, file_lines, map_data);
+	/*
+	 * --- 여기부터 수정 ---
+	 * store_map이 성공하면, map_checker를 호출하기 전에
+	 * 맵의 높이와 너비를 계산해서 저장합니다.
+	*/
 	if (error == SUCCESS)
+	{
+		map_data->height = 0;
+		while (map_data->map[map_data->height])
+			map_data->height++;
+		map_data->width = get_map_width(map_data->map);
 		error = map_checker(map_data);
+	}
+	/* --- 여기까지 수정 --- */
 	free_double((void ***)&file_lines);
 	return (error);
 }

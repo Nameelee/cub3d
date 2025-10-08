@@ -31,6 +31,8 @@ typedef struct s_map_data
 	char	*wall_w_t;
 	char	*wall_e_t;
 	char	**map;
+	int     width;   // <-- 이 줄을 추가하세요!
+    int     height;  // <-- 이 줄도 추가하세요!
 }	t_map_data;
 
 typedef struct s_img
@@ -60,6 +62,7 @@ typedef struct s_game
 	void		*mlx_ptr;
 	void		*win_ptr;
 	t_img       textures[4];
+	t_img		screen_buffer;
 	t_player	player;
 	t_map_data	map_data;
 }	t_game;

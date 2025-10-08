@@ -12,6 +12,26 @@
 
 #include "../../headers/cub3d.h"
 
+int	get_map_width(char **map)//Nami added this function
+{
+	int	max_width;
+	int	current_width;
+	int	i;
+
+	if (!map || !*map)
+		return (0);
+	max_width = 0;
+	i = 0;
+	while (map[i])
+	{
+		current_width = ft_strlen(map[i]);
+		if (current_width > max_width)
+			max_width = current_width;
+		i++;
+	}
+	return (max_width);
+}
+
 /**
  * @brief checks recursively that the map is valid with flood fill algorithm
  * @param map the map to check
