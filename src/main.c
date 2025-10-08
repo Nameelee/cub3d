@@ -232,7 +232,7 @@ void set_player_direction(t_game *game, char direction)
 void init_player_position(t_game *game)
 {
     int y = 0;
-    while (y < MAP_HEIGHT)
+    while (y < game->map_data.height)
     {
         int x = 0;
         while (x < game->map_data.width)

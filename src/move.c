@@ -58,11 +58,23 @@ void	move_player(t_game *game)
 			+ (game->player.plane_x * game->player.strafe_direction);
 		move_vec_y = (game->player.dir_y * game->player.walk_direction)
 			+ (game->player.plane_y * game->player.strafe_direction);
+	
 		new_pos_x = game->player.pos_x + move_vec_x * move_speed;
 		new_pos_y = game->player.pos_y + move_vec_y * move_speed;
-		if (game->map_data.map[(int)game->player.pos_y][(int)new_pos_x] == '0')
+
+		new_pos_x = game->player.pos_x + move_vec_x * move_speed;
+		new_pos_y = game->player.pos_y + move_vec_y * move_speed;
+		// --- 여기부터 수정 ---
+		// 맵 경계를 확인하고 벽 충돌을 처리합니다.
+		if (new_pos_x >= 0 && (int)new_pos_x < game->map_data.width &&
+			game->map_data.map[(int)game->player.pos_y][(int)new_pos_x] == '0')
+		{
 			game->player.pos_x = new_pos_x;
-		if (game->map_data.map[(int)new_pos_y][(int)game->player.pos_x] == '0')
+		}
+		if (new_pos_y >= 0 && (int)new_pos_y < game->map_data.height &&
+			game->map_data.map[(int)new_pos_y][(int)game->player.pos_x] == '0')
+		{
 			game->player.pos_y = new_pos_y;
+		}
 	}
 }
