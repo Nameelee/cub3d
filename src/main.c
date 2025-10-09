@@ -4,6 +4,11 @@ int		key_press_handler(int keycode, t_game *game);
 int		key_release_handler(int keycode, t_game *game);
 void	move_player(t_game *game);
 
+int create_trgb(int t, int r, int g, int b)
+{
+    return (t << 24 | r << 16 | g << 8 | b);
+}
+
 void	put_pixel_to_image(t_img *buffer, int x, int y, int color)
 {
 	char	*dst;
@@ -50,13 +55,13 @@ void	draw_textured_line(t_game *game, t_ray *ray, int x)
 	while (y < ray->draw_start)
 	{
 		//mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, 0x808080);
-		put_pixel_to_image(&game->screen_buffer, x, y, 0x808080);
+		put_pixel_to_image(&game->screen_buffer, x, y, game->ceiling_color_int);
 		y++;
 	}
 	y = ray->draw_end;
 	while (y < SCREEN_HEIGHT)
 	{
-		put_pixel_to_image(&game->screen_buffer, x, y, 0x0000FF);
+		put_pixel_to_image(&game->screen_buffer, x, y, game->floor_color_int);
 		//mlx_pixel_put(game->mlx_ptr, game->win_ptr, x, y, 0x0000FF);
 		y++;
 	}
@@ -302,6 +307,18 @@ int	main(int ac, char **av)
 	if (error != SUCCESS)
 		return (free_map_data(&game.map_data), print_error(error), 1);
 	init_player_position(&game);
+
+	if (game.map_data.ceiling_color)
+	{
+		game.ceiling_color_int = create_trgb(0, game.map_data.ceiling_color->r,
+				game.map_data.ceiling_color->g, game.map_data.ceiling_color->b);
+	}
+	if (game.map_data.floor_color)
+	{
+		game.floor_color_int = create_trgb(0, game.map_data.floor_color->r,
+				game.map_data.floor_color->g, game.map_data.floor_color->b);
+	}
+
 	game.mlx_ptr = mlx_init();
 	if (game.mlx_ptr == NULL)
 		return (1);

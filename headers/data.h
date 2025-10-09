@@ -65,6 +65,8 @@ typedef struct s_game
 	t_img		screen_buffer;
 	t_player	player;
 	t_map_data	map_data;
+	int			ceiling_color_int;
+    int			floor_color_int;
 }	t_game;
 
 #endif
