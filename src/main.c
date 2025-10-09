@@ -305,7 +305,7 @@ int	main(int ac, char **av)
 	game.mlx_ptr = mlx_init();
 	if (game.mlx_ptr == NULL)
 		return (1);
-	game.win_ptr = mlx_new_window(game.mlx_ptr, 800, 600, "cub3D");
+	game.win_ptr = mlx_new_window(game.mlx_ptr, SCREEN_WIDTH, SCREEN_HEIGHT, "cub3D");
 	if (game.win_ptr == NULL)
 		return (1);
 

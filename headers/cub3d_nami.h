@@ -16,9 +16,9 @@
 #define MAP_WIDTH 8
 #define MAP_HEIGHT 8
 
-#define SCREEN_WIDTH 800
-#define SCREEN_HEIGHT 600
-// 벽 텍스처의 크기를 정의합니다.
+#define SCREEN_WIDTH 1920
+#define SCREEN_HEIGHT 1080
+
 # define TEX_WIDTH 64
 # define TEX_HEIGHT 64
 
