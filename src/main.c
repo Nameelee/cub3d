@@ -175,7 +175,7 @@ int	close_game(t_game *game)
 		free(game->mlx_ptr);
 	}
 	#endif
-
+	free_map_data(&game->map_data);
 	printf("Window closed. Exiting program.\n");
 	exit(0);
 	return (0);

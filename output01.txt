@@ -1,0 +1,2611 @@
+
+===========================================
+GOOD MAPS
+===========================================
+>>> ./maps/good/cheese_maze.cub
+Window closed. Exiting program.
+==1183959== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1183959== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1183959==    <inherited from parent>
+==1183959== 
+==1183959== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1183959==    <inherited from parent>
+==1183959== 
+==1183959== 
+==1183959== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1183959==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1183959==    by 0x404A2D: extract_color (color_utils.c:96)
+==1183959==    by 0x405235: store_color (param_parser.c:66)
+==1183959==    by 0x405455: store_param (param_parser.c:105)
+==1183959==    by 0x405527: get_map_param (param_parser.c:133)
+==1183959==    by 0x404EF9: map_parser (map_parser.c:127)
+==1183959==    by 0x4033A9: main (main.c:306)
+==1183959== 
+==1183959== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1183959==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1183959==    by 0x404A2D: extract_color (color_utils.c:96)
+==1183959==    by 0x40526D: store_color (param_parser.c:68)
+==1183959==    by 0x405455: store_param (param_parser.c:105)
+==1183959==    by 0x405527: get_map_param (param_parser.c:133)
+==1183959==    by 0x404EF9: map_parser (map_parser.c:127)
+==1183959==    by 0x4033A9: main (main.c:306)
+==1183959== 
+==1183959== 35 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1183959==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1183959==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1183959==    by 0x40505B: store_texture (param_parser.c:32)
+==1183959==    by 0x4053E7: store_param (param_parser.c:100)
+==1183959==    by 0x405527: get_map_param (param_parser.c:133)
+==1183959==    by 0x404EF9: map_parser (map_parser.c:127)
+==1183959==    by 0x4033A9: main (main.c:306)
+==1183959== 
+==1183959== 35 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1183959==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1183959==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1183959==    by 0x405096: store_texture (param_parser.c:34)
+==1183959==    by 0x4053E7: store_param (param_parser.c:100)
+==1183959==    by 0x405527: get_map_param (param_parser.c:133)
+==1183959==    by 0x404EF9: map_parser (map_parser.c:127)
+==1183959==    by 0x4033A9: main (main.c:306)
+==1183959== 
+==1183959== 35 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1183959==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1183959==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1183959==    by 0x40510C: store_texture (param_parser.c:38)
+==1183959==    by 0x4053E7: store_param (param_parser.c:100)
+==1183959==    by 0x405527: get_map_param (param_parser.c:133)
+==1183959==    by 0x404EF9: map_parser (map_parser.c:127)
+==1183959==    by 0x4033A9: main (main.c:306)
+==1183959== 
+==1183959== 35 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1183959==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1183959==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1183959==    by 0x4050D1: store_texture (param_parser.c:36)
+==1183959==    by 0x4053E7: store_param (param_parser.c:100)
+==1183959==    by 0x405527: get_map_param (param_parser.c:133)
+==1183959==    by 0x404EF9: map_parser (map_parser.c:127)
+==1183959==    by 0x4033A9: main (main.c:306)
+==1183959== 
+==1183959== 176 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1183959==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1183959==    by 0x404B61: store_map (map_parser.c:33)
+==1183959==    by 0x404F5B: map_parser (map_parser.c:132)
+==1183959==    by 0x4033A9: main (main.c:306)
+==1183959== 
+==1183959== 483 bytes in 21 blocks are still reachable in loss record 8 of 8
+==1183959==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1183959==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1183959==    by 0x404BB5: store_map (map_parser.c:39)
+==1183959==    by 0x404F5B: map_parser (map_parser.c:132)
+==1183959==    by 0x4033A9: main (main.c:306)
+==1183959== 
+
+>>> ./maps/good/creepy.cub
+Window closed. Exiting program.
+==1184021== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184021== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184021==    <inherited from parent>
+==1184021== 
+==1184021== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184021==    <inherited from parent>
+==1184021== 
+==1184021== 
+==1184021== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184021==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184021==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184021==    by 0x40526D: store_color (param_parser.c:68)
+==1184021==    by 0x405455: store_param (param_parser.c:105)
+==1184021==    by 0x405527: get_map_param (param_parser.c:133)
+==1184021==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184021==    by 0x4033A9: main (main.c:306)
+==1184021== 
+==1184021== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184021==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184021==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184021==    by 0x405235: store_color (param_parser.c:66)
+==1184021==    by 0x405455: store_param (param_parser.c:105)
+==1184021==    by 0x405527: get_map_param (param_parser.c:133)
+==1184021==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184021==    by 0x4033A9: main (main.c:306)
+==1184021== 
+==1184021== 36 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184021==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184021==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184021==    by 0x40505B: store_texture (param_parser.c:32)
+==1184021==    by 0x4053E7: store_param (param_parser.c:100)
+==1184021==    by 0x405527: get_map_param (param_parser.c:133)
+==1184021==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184021==    by 0x4033A9: main (main.c:306)
+==1184021== 
+==1184021== 39 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184021==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184021==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184021==    by 0x405096: store_texture (param_parser.c:34)
+==1184021==    by 0x4053E7: store_param (param_parser.c:100)
+==1184021==    by 0x405527: get_map_param (param_parser.c:133)
+==1184021==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184021==    by 0x4033A9: main (main.c:306)
+==1184021== 
+==1184021== 39 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184021==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184021==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184021==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184021==    by 0x4053E7: store_param (param_parser.c:100)
+==1184021==    by 0x405527: get_map_param (param_parser.c:133)
+==1184021==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184021==    by 0x4033A9: main (main.c:306)
+==1184021== 
+==1184021== 43 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184021==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184021==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184021==    by 0x40510C: store_texture (param_parser.c:38)
+==1184021==    by 0x4053E7: store_param (param_parser.c:100)
+==1184021==    by 0x405527: get_map_param (param_parser.c:133)
+==1184021==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184021==    by 0x4033A9: main (main.c:306)
+==1184021== 
+==1184021== 112 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1184021==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184021==    by 0x404B61: store_map (map_parser.c:33)
+==1184021==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184021==    by 0x4033A9: main (main.c:306)
+==1184021== 
+==1184021== 221 bytes in 13 blocks are still reachable in loss record 8 of 8
+==1184021==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184021==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184021==    by 0x404BB5: store_map (map_parser.c:39)
+==1184021==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184021==    by 0x4033A9: main (main.c:306)
+==1184021== 
+
+>>> ./maps/good/dungeon.cub
+Window closed. Exiting program.
+==1184082== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184082== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184082==    <inherited from parent>
+==1184082== 
+==1184082== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184082==    <inherited from parent>
+==1184082== 
+==1184082== 
+==1184082== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184082==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184082==    by 0x405235: store_color (param_parser.c:66)
+==1184082==    by 0x405455: store_param (param_parser.c:105)
+==1184082==    by 0x405527: get_map_param (param_parser.c:133)
+==1184082==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184082==    by 0x4033A9: main (main.c:306)
+==1184082== 
+==1184082== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184082==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184082==    by 0x40526D: store_color (param_parser.c:68)
+==1184082==    by 0x405455: store_param (param_parser.c:105)
+==1184082==    by 0x405527: get_map_param (param_parser.c:133)
+==1184082==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184082==    by 0x4033A9: main (main.c:306)
+==1184082== 
+==1184082== 36 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184082==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184082==    by 0x40505B: store_texture (param_parser.c:32)
+==1184082==    by 0x4053E7: store_param (param_parser.c:100)
+==1184082==    by 0x405527: get_map_param (param_parser.c:133)
+==1184082==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184082==    by 0x4033A9: main (main.c:306)
+==1184082== 
+==1184082== 39 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184082==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184082==    by 0x405096: store_texture (param_parser.c:34)
+==1184082==    by 0x4053E7: store_param (param_parser.c:100)
+==1184082==    by 0x405527: get_map_param (param_parser.c:133)
+==1184082==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184082==    by 0x4033A9: main (main.c:306)
+==1184082== 
+==1184082== 39 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184082==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184082==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184082==    by 0x4053E7: store_param (param_parser.c:100)
+==1184082==    by 0x405527: get_map_param (param_parser.c:133)
+==1184082==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184082==    by 0x4033A9: main (main.c:306)
+==1184082== 
+==1184082== 43 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184082==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184082==    by 0x40510C: store_texture (param_parser.c:38)
+==1184082==    by 0x4053E7: store_param (param_parser.c:100)
+==1184082==    by 0x405527: get_map_param (param_parser.c:133)
+==1184082==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184082==    by 0x4033A9: main (main.c:306)
+==1184082== 
+==1184082== 88 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1184082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184082==    by 0x404B61: store_map (map_parser.c:33)
+==1184082==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184082==    by 0x4033A9: main (main.c:306)
+==1184082== 
+==1184082== 210 bytes in 10 blocks are still reachable in loss record 8 of 8
+==1184082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184082==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184082==    by 0x404BB5: store_map (map_parser.c:39)
+==1184082==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184082==    by 0x4033A9: main (main.c:306)
+==1184082== 
+
+>>> ./maps/good/library.cub
+Window closed. Exiting program.
+==1184119== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184119== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184119==    <inherited from parent>
+==1184119== 
+==1184119== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184119==    <inherited from parent>
+==1184119== 
+==1184119== 
+==1184119== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184119==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184119==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184119==    by 0x405235: store_color (param_parser.c:66)
+==1184119==    by 0x405455: store_param (param_parser.c:105)
+==1184119==    by 0x405527: get_map_param (param_parser.c:133)
+==1184119==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184119==    by 0x4033A9: main (main.c:306)
+==1184119== 
+==1184119== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184119==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184119==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184119==    by 0x40526D: store_color (param_parser.c:68)
+==1184119==    by 0x405455: store_param (param_parser.c:105)
+==1184119==    by 0x405527: get_map_param (param_parser.c:133)
+==1184119==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184119==    by 0x4033A9: main (main.c:306)
+==1184119== 
+==1184119== 34 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184119==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184119==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184119==    by 0x40505B: store_texture (param_parser.c:32)
+==1184119==    by 0x4053E7: store_param (param_parser.c:100)
+==1184119==    by 0x405527: get_map_param (param_parser.c:133)
+==1184119==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184119==    by 0x4033A9: main (main.c:306)
+==1184119== 
+==1184119== 37 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184119==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184119==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184119==    by 0x405096: store_texture (param_parser.c:34)
+==1184119==    by 0x4053E7: store_param (param_parser.c:100)
+==1184119==    by 0x405527: get_map_param (param_parser.c:133)
+==1184119==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184119==    by 0x4033A9: main (main.c:306)
+==1184119== 
+==1184119== 37 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184119==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184119==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184119==    by 0x40510C: store_texture (param_parser.c:38)
+==1184119==    by 0x4053E7: store_param (param_parser.c:100)
+==1184119==    by 0x405527: get_map_param (param_parser.c:133)
+==1184119==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184119==    by 0x4033A9: main (main.c:306)
+==1184119== 
+==1184119== 37 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184119==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184119==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184119==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184119==    by 0x4053E7: store_param (param_parser.c:100)
+==1184119==    by 0x405527: get_map_param (param_parser.c:133)
+==1184119==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184119==    by 0x4033A9: main (main.c:306)
+==1184119== 
+==1184119== 88 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1184119==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184119==    by 0x404B61: store_map (map_parser.c:33)
+==1184119==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184119==    by 0x4033A9: main (main.c:306)
+==1184119== 
+==1184119== 210 bytes in 10 blocks are still reachable in loss record 8 of 8
+==1184119==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184119==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184119==    by 0x404BB5: store_map (map_parser.c:39)
+==1184119==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184119==    by 0x4033A9: main (main.c:306)
+==1184119== 
+
+>>> ./maps/good/matrix.cub
+Window closed. Exiting program.
+==1184152== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184152== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184152==    <inherited from parent>
+==1184152== 
+==1184152== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184152==    <inherited from parent>
+==1184152== 
+==1184152== 
+==1184152== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184152==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184152==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184152==    by 0x405235: store_color (param_parser.c:66)
+==1184152==    by 0x405455: store_param (param_parser.c:105)
+==1184152==    by 0x405527: get_map_param (param_parser.c:133)
+==1184152==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184152==    by 0x4033A9: main (main.c:306)
+==1184152== 
+==1184152== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184152==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184152==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184152==    by 0x40526D: store_color (param_parser.c:68)
+==1184152==    by 0x405455: store_param (param_parser.c:105)
+==1184152==    by 0x405527: get_map_param (param_parser.c:133)
+==1184152==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184152==    by 0x4033A9: main (main.c:306)
+==1184152== 
+==1184152== 20 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184152==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184152==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184152==    by 0x40505B: store_texture (param_parser.c:32)
+==1184152==    by 0x4053E7: store_param (param_parser.c:100)
+==1184152==    by 0x405527: get_map_param (param_parser.c:133)
+==1184152==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184152==    by 0x4033A9: main (main.c:306)
+==1184152== 
+==1184152== 20 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184152==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184152==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184152==    by 0x405096: store_texture (param_parser.c:34)
+==1184152==    by 0x4053E7: store_param (param_parser.c:100)
+==1184152==    by 0x405527: get_map_param (param_parser.c:133)
+==1184152==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184152==    by 0x4033A9: main (main.c:306)
+==1184152== 
+==1184152== 20 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184152==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184152==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184152==    by 0x40510C: store_texture (param_parser.c:38)
+==1184152==    by 0x4053E7: store_param (param_parser.c:100)
+==1184152==    by 0x405527: get_map_param (param_parser.c:133)
+==1184152==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184152==    by 0x4033A9: main (main.c:306)
+==1184152== 
+==1184152== 20 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184152==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184152==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184152==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184152==    by 0x4053E7: store_param (param_parser.c:100)
+==1184152==    by 0x405527: get_map_param (param_parser.c:133)
+==1184152==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184152==    by 0x4033A9: main (main.c:306)
+==1184152== 
+==1184152== 176 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1184152==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184152==    by 0x404B61: store_map (map_parser.c:33)
+==1184152==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184152==    by 0x4033A9: main (main.c:306)
+==1184152== 
+==1184152== 483 bytes in 21 blocks are still reachable in loss record 8 of 8
+==1184152==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184152==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184152==    by 0x404BB5: store_map (map_parser.c:39)
+==1184152==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184152==    by 0x4033A9: main (main.c:306)
+==1184152== 
+
+>>> ./maps/good/sad_face.cub
+Window closed. Exiting program.
+==1184170== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184170== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184170==    <inherited from parent>
+==1184170== 
+==1184170== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184170==    <inherited from parent>
+==1184170== 
+==1184170== 
+==1184170== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184170==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184170==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184170==    by 0x40526D: store_color (param_parser.c:68)
+==1184170==    by 0x405455: store_param (param_parser.c:105)
+==1184170==    by 0x405527: get_map_param (param_parser.c:133)
+==1184170==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184170==    by 0x4033A9: main (main.c:306)
+==1184170== 
+==1184170== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184170==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184170==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184170==    by 0x405235: store_color (param_parser.c:66)
+==1184170==    by 0x405455: store_param (param_parser.c:105)
+==1184170==    by 0x405527: get_map_param (param_parser.c:133)
+==1184170==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184170==    by 0x4033A9: main (main.c:306)
+==1184170== 
+==1184170== 34 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184170==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184170==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184170==    by 0x40505B: store_texture (param_parser.c:32)
+==1184170==    by 0x4053E7: store_param (param_parser.c:100)
+==1184170==    by 0x405527: get_map_param (param_parser.c:133)
+==1184170==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184170==    by 0x4033A9: main (main.c:306)
+==1184170== 
+==1184170== 34 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184170==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184170==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184170==    by 0x40510C: store_texture (param_parser.c:38)
+==1184170==    by 0x4053E7: store_param (param_parser.c:100)
+==1184170==    by 0x405527: get_map_param (param_parser.c:133)
+==1184170==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184170==    by 0x4033A9: main (main.c:306)
+==1184170== 
+==1184170== 34 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184170==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184170==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184170==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184170==    by 0x4053E7: store_param (param_parser.c:100)
+==1184170==    by 0x405527: get_map_param (param_parser.c:133)
+==1184170==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184170==    by 0x4033A9: main (main.c:306)
+==1184170== 
+==1184170== 37 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184170==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184170==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184170==    by 0x405096: store_texture (param_parser.c:34)
+==1184170==    by 0x4053E7: store_param (param_parser.c:100)
+==1184170==    by 0x405527: get_map_param (param_parser.c:133)
+==1184170==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184170==    by 0x4033A9: main (main.c:306)
+==1184170== 
+==1184170== 112 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1184170==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184170==    by 0x404B61: store_map (map_parser.c:33)
+==1184170==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184170==    by 0x4033A9: main (main.c:306)
+==1184170== 
+==1184170== 221 bytes in 13 blocks are still reachable in loss record 8 of 8
+==1184170==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184170==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184170==    by 0x404BB5: store_map (map_parser.c:39)
+==1184170==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184170==    by 0x4033A9: main (main.c:306)
+==1184170== 
+
+>>> ./maps/good/square_map.cub
+Window closed. Exiting program.
+==1184198== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184198== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184198==    <inherited from parent>
+==1184198== 
+==1184198== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184198==    <inherited from parent>
+==1184198== 
+==1184198== 
+==1184198== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184198==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184198==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184198==    by 0x405235: store_color (param_parser.c:66)
+==1184198==    by 0x405455: store_param (param_parser.c:105)
+==1184198==    by 0x405527: get_map_param (param_parser.c:133)
+==1184198==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184198==    by 0x4033A9: main (main.c:306)
+==1184198== 
+==1184198== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184198==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184198==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184198==    by 0x40526D: store_color (param_parser.c:68)
+==1184198==    by 0x405455: store_param (param_parser.c:105)
+==1184198==    by 0x405527: get_map_param (param_parser.c:133)
+==1184198==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184198==    by 0x4033A9: main (main.c:306)
+==1184198== 
+==1184198== 31 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184198==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184198==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184198==    by 0x40510C: store_texture (param_parser.c:38)
+==1184198==    by 0x4053E7: store_param (param_parser.c:100)
+==1184198==    by 0x405527: get_map_param (param_parser.c:133)
+==1184198==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184198==    by 0x4033A9: main (main.c:306)
+==1184198== 
+==1184198== 31 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184198==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184198==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184198==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184198==    by 0x4053E7: store_param (param_parser.c:100)
+==1184198==    by 0x405527: get_map_param (param_parser.c:133)
+==1184198==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184198==    by 0x4033A9: main (main.c:306)
+==1184198== 
+==1184198== 35 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184198==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184198==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184198==    by 0x405096: store_texture (param_parser.c:34)
+==1184198==    by 0x4053E7: store_param (param_parser.c:100)
+==1184198==    by 0x405527: get_map_param (param_parser.c:133)
+==1184198==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184198==    by 0x4033A9: main (main.c:306)
+==1184198== 
+==1184198== 36 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184198==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184198==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184198==    by 0x40505B: store_texture (param_parser.c:32)
+==1184198==    by 0x4053E7: store_param (param_parser.c:100)
+==1184198==    by 0x405527: get_map_param (param_parser.c:133)
+==1184198==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184198==    by 0x4033A9: main (main.c:306)
+==1184198== 
+==1184198== 224 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1184198==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184198==    by 0x404B61: store_map (map_parser.c:33)
+==1184198==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184198==    by 0x4033A9: main (main.c:306)
+==1184198== 
+==1184198== 702 bytes in 27 blocks are still reachable in loss record 8 of 8
+==1184198==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184198==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184198==    by 0x404BB5: store_map (map_parser.c:39)
+==1184198==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184198==    by 0x4033A9: main (main.c:306)
+==1184198== 
+
+>>> ./maps/good/subject_map.cub
+==1184233== Invalid read of size 1
+==1184233==    at 0x404410: perform_dda (render.c:67)
+==1184233==    by 0x402E31: game_loop (main.c:195)
+==1184233==    by 0x407254: mlx_loop (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x4035E9: main (main.c:342)
+==1184233==  Address 0x4d603af is 0 bytes after a block of size 31 alloc'd
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x404BB5: store_map (map_parser.c:39)
+==1184233==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184233==    by 0x4033A9: main (main.c:306)
+==1184233== 
+==1184233== 
+==1184233== Process terminating with default action of signal 11 (SIGSEGV)
+==1184233==  Access not within mapped region at address 0x25
+==1184233==    at 0x404410: perform_dda (render.c:67)
+==1184233==    by 0x402E31: game_loop (main.c:195)
+==1184233==    by 0x407254: mlx_loop (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x4035E9: main (main.c:342)
+==1184233==  If you believe this happened as a result of a stack
+==1184233==  overflow in your program's main thread (unlikely but
+==1184233==  possible), you can try to increase the size of the
+==1184233==  main thread stack using the --main-stacksize= flag.
+==1184233==  The main thread stack size used in this run was 8388608.
+==1184233== FILE DESCRIPTORS: 6 open (3 std) at exit.
+==1184233== Open AF_UNIX socket 3: <unknown>
+==1184233==    at 0x4BF5BAB: socket (syscall-template.S:120)
+==1184233==    by 0x4D0434D: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D06797: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x48C8EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184233==    <inherited from parent>
+==1184233== 
+==1184233== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184233==    <inherited from parent>
+==1184233== 
+==1184233== 
+==1184233== 3 bytes in 1 blocks are still reachable in loss record 1 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184233==    by 0x405235: store_color (param_parser.c:66)
+==1184233==    by 0x405455: store_param (param_parser.c:105)
+==1184233==    by 0x405527: get_map_param (param_parser.c:133)
+==1184233==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184233==    by 0x4033A9: main (main.c:306)
+==1184233== 
+==1184233== 3 bytes in 1 blocks are still reachable in loss record 2 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184233==    by 0x40526D: store_color (param_parser.c:68)
+==1184233==    by 0x405455: store_param (param_parser.c:105)
+==1184233==    by 0x405527: get_map_param (param_parser.c:133)
+==1184233==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184233==    by 0x4033A9: main (main.c:306)
+==1184233== 
+==1184233== 3 bytes in 1 blocks are still reachable in loss record 3 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x4B7658E: strdup (strdup.c:42)
+==1184233==    by 0x48B8B45: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 8 bytes in 1 blocks are still reachable in loss record 4 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x4B7658E: strdup (strdup.c:42)
+==1184233==    by 0x48B59AE: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x487A820: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 8 bytes in 1 blocks are still reachable in loss record 5 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x4878B34: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487A9DF: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 10 bytes in 1 blocks are still reachable in loss record 6 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x4B7658E: strdup (strdup.c:42)
+==1184233==    by 0x48B59AE: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x491F213: XkbUseExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B96A8: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 16 bytes in 1 blocks are still reachable in loss record 7 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x4D062EE: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D06E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x48C8EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 21 bytes in 1 blocks are still reachable in loss record 8 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B903E: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 24 bytes in 1 blocks are still reachable in loss record 9 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x487A041: XextCreateExtension (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487A4CC: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487A9C8: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 24 bytes in 1 blocks are still reachable in loss record 10 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x4B7658E: strdup (strdup.c:42)
+==1184233==    by 0x48B59AE: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x487A820: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487A50A: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487A9C8: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 24 bytes in 1 blocks are still reachable in loss record 11 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x487A9F5: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 24 bytes in 1 blocks are still reachable in loss record 12 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48C6A65: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CF2C6: _XReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CF77E: XSync (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x40723F: mlx_loop (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x4035E9: main (main.c:342)
+==1184233== 
+==1184233== 29 bytes in 1 blocks are still reachable in loss record 13 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B20CD: _XUpdateAtomCache (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B4929: XInternAtom (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406F74: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 30 bytes in 1 blocks are still reachable in loss record 14 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184233==    by 0x4053E7: store_param (param_parser.c:100)
+==1184233==    by 0x405527: get_map_param (param_parser.c:133)
+==1184233==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184233==    by 0x4033A9: main (main.c:306)
+==1184233== 
+==1184233== 32 bytes in 1 blocks are still reachable in loss record 15 of 57
+==1184233==    at 0x48487A9: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x4D0A15E: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D0A237: xcb_get_extension_data (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D0A2EE: xcb_prefetch_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D0A364: xcb_get_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x48B952B: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 32 bytes in 1 blocks are still reachable in loss record 16 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x4D031B7: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D03A08: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D03EB0: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D04E44: xcb_wait_for_reply (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D0A292: xcb_get_extension_data (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D0A2EE: xcb_prefetch_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D0A364: xcb_get_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x48B952B: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 32 bytes in 1 blocks are still reachable in loss record 17 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x487A7FF: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 32 bytes in 1 blocks are still reachable in loss record 18 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x487A7FF: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487A50A: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487A9C8: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 33 bytes in 1 blocks are still reachable in loss record 19 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B20CD: _XUpdateAtomCache (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B4929: XInternAtom (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406F5F: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 35 bytes in 1 blocks are still reachable in loss record 20 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x40510C: store_texture (param_parser.c:38)
+==1184233==    by 0x4053E7: store_param (param_parser.c:100)
+==1184233==    by 0x405527: get_map_param (param_parser.c:133)
+==1184233==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184233==    by 0x4033A9: main (main.c:306)
+==1184233== 
+==1184233== 36 bytes in 1 blocks are still reachable in loss record 21 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x40505B: store_texture (param_parser.c:32)
+==1184233==    by 0x4053E7: store_param (param_parser.c:100)
+==1184233==    by 0x405527: get_map_param (param_parser.c:133)
+==1184233==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184233==    by 0x4033A9: main (main.c:306)
+==1184233== 
+==1184233== 38 bytes in 1 blocks are still reachable in loss record 22 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x405096: store_texture (param_parser.c:34)
+==1184233==    by 0x4053E7: store_param (param_parser.c:100)
+==1184233==    by 0x405527: get_map_param (param_parser.c:133)
+==1184233==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184233==    by 0x4033A9: main (main.c:306)
+==1184233== 
+==1184233== 40 bytes in 1 blocks are still reachable in loss record 23 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48C91F1: _XPollfdCacheInit (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B8E71: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 48 bytes in 1 blocks are still reachable in loss record 24 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48C8E71: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 48 bytes in 1 blocks are still reachable in loss record 25 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48C8E87: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 72 bytes in 1 blocks are still reachable in loss record 26 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B8F20: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 88 bytes in 1 blocks are still reachable in loss record 27 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x40753B: mlx_int_new_xshm_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x407870: mlx_new_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x4034C9: main (main.c:330)
+==1184233== 
+==1184233== 112 bytes in 1 blocks are still reachable in loss record 28 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48C8D72: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 112 bytes in 1 blocks are still reachable in loss record 29 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B9200: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 120 bytes in 1 blocks are still reachable in loss record 30 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x404B61: store_map (map_parser.c:33)
+==1184233==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184233==    by 0x4033A9: main (main.c:306)
+==1184233== 
+==1184233== 128 bytes in 1 blocks are still reachable in loss record 31 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B912E: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 128 bytes in 1 blocks are still reachable in loss record 32 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B599E: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x491F213: XkbUseExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B96A8: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 128 bytes in 1 blocks are still reachable in loss record 33 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B599E: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x487A820: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 128 bytes in 1 blocks are still reachable in loss record 34 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B599E: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x487A820: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487A50A: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487A9C8: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 136 bytes in 1 blocks are still reachable in loss record 35 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x406EBE: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 136 bytes in 1 blocks are still reachable in loss record 36 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48790C3: XShmCreateImage (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x40756B: mlx_int_new_xshm_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x407870: mlx_new_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x4034C9: main (main.c:330)
+==1184233== 
+==1184233== 150 bytes in 1 blocks are still reachable in loss record 37 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B9710: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 152 bytes in 1 blocks are still reachable in loss record 38 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x491F40E: XkbUseExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B96A8: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 160 bytes in 1 blocks are still reachable in loss record 39 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48A79EF: XCreateGC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B95A4: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 160 bytes in 1 blocks are still reachable in loss record 40 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48A79EF: XCreateGC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x4070E9: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403492: main (main.c:325)
+==1184233== 
+==1184233== 168 bytes in 1 blocks are still reachable in loss record 41 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B90B2: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 208 bytes in 1 blocks are still reachable in loss record 42 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x4878AE9: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487A9DF: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 208 bytes in 1 blocks are still reachable in loss record 43 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48CAFAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CDBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CEEC0: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CF205: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x4073E5: mlx_int_wait_first_expose (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x407125: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403492: main (main.c:325)
+==1184233== 
+==1184233== 208 bytes in 1 blocks are still reachable in loss record 44 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48CAFAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CDBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CEEC0: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CF1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x4073E5: mlx_int_wait_first_expose (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x407125: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403492: main (main.c:325)
+==1184233== 
+==1184233== 352 bytes in 4 blocks are still reachable in loss record 45 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x40753B: mlx_int_new_xshm_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x407870: mlx_new_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x408149: mlx_int_parse_xpm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x408563: mlx_xpm_file_to_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x402665: load_textures (main.c:33)
+==1184233==    by 0x40354E: main (main.c:337)
+==1184233== 
+==1184233== 460 bytes in 14 blocks are still reachable in loss record 46 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x404BB5: store_map (map_parser.c:39)
+==1184233==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184233==    by 0x4033A9: main (main.c:306)
+==1184233== 
+==1184233== 512 bytes in 1 blocks are still reachable in loss record 47 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B446A: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B484E: XInternAtom (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406F5F: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 544 bytes in 4 blocks are still reachable in loss record 48 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48790C3: XShmCreateImage (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184233==    by 0x40756B: mlx_int_new_xshm_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x407870: mlx_new_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x408149: mlx_int_parse_xpm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x408563: mlx_xpm_file_to_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x402665: load_textures (main.c:33)
+==1184233==    by 0x40354E: main (main.c:337)
+==1184233== 
+==1184233== 832 bytes in 4 blocks are still reachable in loss record 49 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48CAFAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CDBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CF40C: _XReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CF77E: XSync (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x407628: mlx_int_new_xshm_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x407870: mlx_new_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x4034C9: main (main.c:330)
+==1184233== 
+==1184233== 936 bytes in 1 blocks are still reachable in loss record 50 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x40704F: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403492: main (main.c:325)
+==1184233== 
+==1184233== 1,456 bytes in 7 blocks are still reachable in loss record 51 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48CAFAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CDBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CEF01: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CF1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x4073E5: mlx_int_wait_first_expose (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x407125: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403492: main (main.c:325)
+==1184233== 
+==1184233== 2,704 bytes in 13 blocks are still reachable in loss record 52 of 57
+==1184233==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48CAFAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CDBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CEF01: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48CF205: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x4073E5: mlx_int_wait_first_expose (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x407125: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403492: main (main.c:325)
+==1184233== 
+==1184233== 4,704 bytes in 1 blocks are still reachable in loss record 53 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B8B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 12,308 bytes in 1 blocks are still reachable in loss record 54 of 57
+==1184233==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x4D064FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D06E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x48C8EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 16,384 bytes in 1 blocks are still reachable in loss record 55 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B8EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 21,168 bytes in 1 blocks are still reachable in loss record 56 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x4D06204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x4D06E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184233==    by 0x48C8EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+==1184233== 28,224 bytes in 2 blocks are still reachable in loss record 57 of 57
+==1184233==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184233==    by 0x48B9290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184233==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184233==    by 0x403451: main (main.c:322)
+==1184233== 
+
+>>> ./maps/good/test_map.cub
+Window closed. Exiting program.
+==1184263== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184263== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184263==    <inherited from parent>
+==1184263== 
+==1184263== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184263==    <inherited from parent>
+==1184263== 
+==1184263== 
+==1184263== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184263==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184263==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184263==    by 0x405235: store_color (param_parser.c:66)
+==1184263==    by 0x405455: store_param (param_parser.c:105)
+==1184263==    by 0x405527: get_map_param (param_parser.c:133)
+==1184263==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184263==    by 0x4033A9: main (main.c:306)
+==1184263== 
+==1184263== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184263==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184263==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184263==    by 0x40526D: store_color (param_parser.c:68)
+==1184263==    by 0x405455: store_param (param_parser.c:105)
+==1184263==    by 0x405527: get_map_param (param_parser.c:133)
+==1184263==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184263==    by 0x4033A9: main (main.c:306)
+==1184263== 
+==1184263== 30 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184263==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184263==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184263==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184263==    by 0x4053E7: store_param (param_parser.c:100)
+==1184263==    by 0x405527: get_map_param (param_parser.c:133)
+==1184263==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184263==    by 0x4033A9: main (main.c:306)
+==1184263== 
+==1184263== 35 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184263==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184263==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184263==    by 0x40510C: store_texture (param_parser.c:38)
+==1184263==    by 0x4053E7: store_param (param_parser.c:100)
+==1184263==    by 0x405527: get_map_param (param_parser.c:133)
+==1184263==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184263==    by 0x4033A9: main (main.c:306)
+==1184263== 
+==1184263== 36 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184263==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184263==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184263==    by 0x40505B: store_texture (param_parser.c:32)
+==1184263==    by 0x4053E7: store_param (param_parser.c:100)
+==1184263==    by 0x405527: get_map_param (param_parser.c:133)
+==1184263==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184263==    by 0x4033A9: main (main.c:306)
+==1184263== 
+==1184263== 38 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184263==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184263==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184263==    by 0x405096: store_texture (param_parser.c:34)
+==1184263==    by 0x4053E7: store_param (param_parser.c:100)
+==1184263==    by 0x405527: get_map_param (param_parser.c:133)
+==1184263==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184263==    by 0x4033A9: main (main.c:306)
+==1184263== 
+==1184263== 72 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1184263==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184263==    by 0x404B61: store_map (map_parser.c:33)
+==1184263==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184263==    by 0x4033A9: main (main.c:306)
+==1184263== 
+==1184263== 112 bytes in 8 blocks are still reachable in loss record 8 of 8
+==1184263==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184263==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184263==    by 0x404BB5: store_map (map_parser.c:39)
+==1184263==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184263==    by 0x4033A9: main (main.c:306)
+==1184263== 
+
+>>> ./maps/good/test_map_hole.cub
+Error
+The map is not valid !
+==1184311== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184311== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184311==    <inherited from parent>
+==1184311== 
+==1184311== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184311==    <inherited from parent>
+==1184311== 
+==1184311== 
+
+>>> ./maps/good/test_pos_bottom.cub
+Window closed. Exiting program.
+==1184313== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184313== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184313==    <inherited from parent>
+==1184313== 
+==1184313== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184313==    <inherited from parent>
+==1184313== 
+==1184313== 
+==1184313== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184313==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184313==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184313==    by 0x405235: store_color (param_parser.c:66)
+==1184313==    by 0x405455: store_param (param_parser.c:105)
+==1184313==    by 0x405527: get_map_param (param_parser.c:133)
+==1184313==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184313==    by 0x4033A9: main (main.c:306)
+==1184313== 
+==1184313== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184313==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184313==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184313==    by 0x40526D: store_color (param_parser.c:68)
+==1184313==    by 0x405455: store_param (param_parser.c:105)
+==1184313==    by 0x405527: get_map_param (param_parser.c:133)
+==1184313==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184313==    by 0x4033A9: main (main.c:306)
+==1184313== 
+==1184313== 23 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184313==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184313==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184313==    by 0x40510C: store_texture (param_parser.c:38)
+==1184313==    by 0x4053E7: store_param (param_parser.c:100)
+==1184313==    by 0x405527: get_map_param (param_parser.c:133)
+==1184313==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184313==    by 0x4033A9: main (main.c:306)
+==1184313== 
+==1184313== 23 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184313==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184313==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184313==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184313==    by 0x4053E7: store_param (param_parser.c:100)
+==1184313==    by 0x405527: get_map_param (param_parser.c:133)
+==1184313==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184313==    by 0x4033A9: main (main.c:306)
+==1184313== 
+==1184313== 24 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184313==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184313==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184313==    by 0x40505B: store_texture (param_parser.c:32)
+==1184313==    by 0x4053E7: store_param (param_parser.c:100)
+==1184313==    by 0x405527: get_map_param (param_parser.c:133)
+==1184313==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184313==    by 0x4033A9: main (main.c:306)
+==1184313== 
+==1184313== 24 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184313==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184313==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184313==    by 0x405096: store_texture (param_parser.c:34)
+==1184313==    by 0x4053E7: store_param (param_parser.c:100)
+==1184313==    by 0x405527: get_map_param (param_parser.c:133)
+==1184313==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184313==    by 0x4033A9: main (main.c:306)
+==1184313== 
+==1184313== 65 bytes in 13 blocks are still reachable in loss record 7 of 8
+==1184313==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184313==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184313==    by 0x404BB5: store_map (map_parser.c:39)
+==1184313==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184313==    by 0x4033A9: main (main.c:306)
+==1184313== 
+==1184313== 112 bytes in 1 blocks are still reachable in loss record 8 of 8
+==1184313==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184313==    by 0x404B61: store_map (map_parser.c:33)
+==1184313==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184313==    by 0x4033A9: main (main.c:306)
+==1184313== 
+
+>>> ./maps/good/test_pos_left.cub
+Window closed. Exiting program.
+==1184350== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184350== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184350==    <inherited from parent>
+==1184350== 
+==1184350== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184350==    <inherited from parent>
+==1184350== 
+==1184350== 
+==1184350== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184350==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184350==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184350==    by 0x405235: store_color (param_parser.c:66)
+==1184350==    by 0x405455: store_param (param_parser.c:105)
+==1184350==    by 0x405527: get_map_param (param_parser.c:133)
+==1184350==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184350==    by 0x4033A9: main (main.c:306)
+==1184350== 
+==1184350== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184350==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184350==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184350==    by 0x40526D: store_color (param_parser.c:68)
+==1184350==    by 0x405455: store_param (param_parser.c:105)
+==1184350==    by 0x405527: get_map_param (param_parser.c:133)
+==1184350==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184350==    by 0x4033A9: main (main.c:306)
+==1184350== 
+==1184350== 23 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184350==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184350==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184350==    by 0x40510C: store_texture (param_parser.c:38)
+==1184350==    by 0x4053E7: store_param (param_parser.c:100)
+==1184350==    by 0x405527: get_map_param (param_parser.c:133)
+==1184350==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184350==    by 0x4033A9: main (main.c:306)
+==1184350== 
+==1184350== 23 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184350==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184350==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184350==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184350==    by 0x4053E7: store_param (param_parser.c:100)
+==1184350==    by 0x405527: get_map_param (param_parser.c:133)
+==1184350==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184350==    by 0x4033A9: main (main.c:306)
+==1184350== 
+==1184350== 24 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184350==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184350==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184350==    by 0x40505B: store_texture (param_parser.c:32)
+==1184350==    by 0x4053E7: store_param (param_parser.c:100)
+==1184350==    by 0x405527: get_map_param (param_parser.c:133)
+==1184350==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184350==    by 0x4033A9: main (main.c:306)
+==1184350== 
+==1184350== 24 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184350==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184350==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184350==    by 0x405096: store_texture (param_parser.c:34)
+==1184350==    by 0x4053E7: store_param (param_parser.c:100)
+==1184350==    by 0x405527: get_map_param (param_parser.c:133)
+==1184350==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184350==    by 0x4033A9: main (main.c:306)
+==1184350== 
+==1184350== 32 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1184350==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184350==    by 0x404B61: store_map (map_parser.c:33)
+==1184350==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184350==    by 0x4033A9: main (main.c:306)
+==1184350== 
+==1184350== 69 bytes in 3 blocks are still reachable in loss record 8 of 8
+==1184350==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184350==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184350==    by 0x404BB5: store_map (map_parser.c:39)
+==1184350==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184350==    by 0x4033A9: main (main.c:306)
+==1184350== 
+
+>>> ./maps/good/test_pos_right.cub
+Window closed. Exiting program.
+==1184357== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184357== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184357==    <inherited from parent>
+==1184357== 
+==1184357== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184357==    <inherited from parent>
+==1184357== 
+==1184357== 
+==1184357== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184357==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184357==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184357==    by 0x405235: store_color (param_parser.c:66)
+==1184357==    by 0x405455: store_param (param_parser.c:105)
+==1184357==    by 0x405527: get_map_param (param_parser.c:133)
+==1184357==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184357==    by 0x4033A9: main (main.c:306)
+==1184357== 
+==1184357== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184357==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184357==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184357==    by 0x40526D: store_color (param_parser.c:68)
+==1184357==    by 0x405455: store_param (param_parser.c:105)
+==1184357==    by 0x405527: get_map_param (param_parser.c:133)
+==1184357==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184357==    by 0x4033A9: main (main.c:306)
+==1184357== 
+==1184357== 23 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184357==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184357==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184357==    by 0x40510C: store_texture (param_parser.c:38)
+==1184357==    by 0x4053E7: store_param (param_parser.c:100)
+==1184357==    by 0x405527: get_map_param (param_parser.c:133)
+==1184357==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184357==    by 0x4033A9: main (main.c:306)
+==1184357== 
+==1184357== 23 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184357==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184357==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184357==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184357==    by 0x4053E7: store_param (param_parser.c:100)
+==1184357==    by 0x405527: get_map_param (param_parser.c:133)
+==1184357==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184357==    by 0x4033A9: main (main.c:306)
+==1184357== 
+==1184357== 24 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184357==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184357==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184357==    by 0x40505B: store_texture (param_parser.c:32)
+==1184357==    by 0x4053E7: store_param (param_parser.c:100)
+==1184357==    by 0x405527: get_map_param (param_parser.c:133)
+==1184357==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184357==    by 0x4033A9: main (main.c:306)
+==1184357== 
+==1184357== 24 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184357==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184357==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184357==    by 0x405096: store_texture (param_parser.c:34)
+==1184357==    by 0x4053E7: store_param (param_parser.c:100)
+==1184357==    by 0x405527: get_map_param (param_parser.c:133)
+==1184357==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184357==    by 0x4033A9: main (main.c:306)
+==1184357== 
+==1184357== 32 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1184357==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184357==    by 0x404B61: store_map (map_parser.c:33)
+==1184357==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184357==    by 0x4033A9: main (main.c:306)
+==1184357== 
+==1184357== 69 bytes in 3 blocks are still reachable in loss record 8 of 8
+==1184357==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184357==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184357==    by 0x404BB5: store_map (map_parser.c:39)
+==1184357==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184357==    by 0x4033A9: main (main.c:306)
+==1184357== 
+
+>>> ./maps/good/test_pos_top.cub
+Window closed. Exiting program.
+==1184391== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184391== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184391==    <inherited from parent>
+==1184391== 
+==1184391== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184391==    <inherited from parent>
+==1184391== 
+==1184391== 
+==1184391== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184391==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184391==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184391==    by 0x405235: store_color (param_parser.c:66)
+==1184391==    by 0x405455: store_param (param_parser.c:105)
+==1184391==    by 0x405527: get_map_param (param_parser.c:133)
+==1184391==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184391==    by 0x4033A9: main (main.c:306)
+==1184391== 
+==1184391== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184391==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184391==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184391==    by 0x40526D: store_color (param_parser.c:68)
+==1184391==    by 0x405455: store_param (param_parser.c:105)
+==1184391==    by 0x405527: get_map_param (param_parser.c:133)
+==1184391==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184391==    by 0x4033A9: main (main.c:306)
+==1184391== 
+==1184391== 23 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184391==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184391==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184391==    by 0x40510C: store_texture (param_parser.c:38)
+==1184391==    by 0x4053E7: store_param (param_parser.c:100)
+==1184391==    by 0x405527: get_map_param (param_parser.c:133)
+==1184391==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184391==    by 0x4033A9: main (main.c:306)
+==1184391== 
+==1184391== 23 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184391==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184391==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184391==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184391==    by 0x4053E7: store_param (param_parser.c:100)
+==1184391==    by 0x405527: get_map_param (param_parser.c:133)
+==1184391==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184391==    by 0x4033A9: main (main.c:306)
+==1184391== 
+==1184391== 24 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184391==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184391==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184391==    by 0x40505B: store_texture (param_parser.c:32)
+==1184391==    by 0x4053E7: store_param (param_parser.c:100)
+==1184391==    by 0x405527: get_map_param (param_parser.c:133)
+==1184391==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184391==    by 0x4033A9: main (main.c:306)
+==1184391== 
+==1184391== 24 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184391==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184391==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184391==    by 0x405096: store_texture (param_parser.c:34)
+==1184391==    by 0x4053E7: store_param (param_parser.c:100)
+==1184391==    by 0x405527: get_map_param (param_parser.c:133)
+==1184391==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184391==    by 0x4033A9: main (main.c:306)
+==1184391== 
+==1184391== 65 bytes in 13 blocks are still reachable in loss record 7 of 8
+==1184391==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184391==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184391==    by 0x404BB5: store_map (map_parser.c:39)
+==1184391==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184391==    by 0x4033A9: main (main.c:306)
+==1184391== 
+==1184391== 112 bytes in 1 blocks are still reachable in loss record 8 of 8
+==1184391==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184391==    by 0x404B61: store_map (map_parser.c:33)
+==1184391==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184391==    by 0x4033A9: main (main.c:306)
+==1184391== 
+
+>>> ./maps/good/test_textures.cub
+Window closed. Exiting program.
+==1184393== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184393== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184393==    <inherited from parent>
+==1184393== 
+==1184393== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184393==    <inherited from parent>
+==1184393== 
+==1184393== 
+==1184393== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184393==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184393==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184393==    by 0x405235: store_color (param_parser.c:66)
+==1184393==    by 0x405455: store_param (param_parser.c:105)
+==1184393==    by 0x405527: get_map_param (param_parser.c:133)
+==1184393==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184393==    by 0x4033A9: main (main.c:306)
+==1184393== 
+==1184393== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184393==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184393==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184393==    by 0x40526D: store_color (param_parser.c:68)
+==1184393==    by 0x405455: store_param (param_parser.c:105)
+==1184393==    by 0x405527: get_map_param (param_parser.c:133)
+==1184393==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184393==    by 0x4033A9: main (main.c:306)
+==1184393== 
+==1184393== 23 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184393==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184393==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184393==    by 0x40510C: store_texture (param_parser.c:38)
+==1184393==    by 0x4053E7: store_param (param_parser.c:100)
+==1184393==    by 0x405527: get_map_param (param_parser.c:133)
+==1184393==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184393==    by 0x4033A9: main (main.c:306)
+==1184393== 
+==1184393== 23 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184393==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184393==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184393==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184393==    by 0x4053E7: store_param (param_parser.c:100)
+==1184393==    by 0x405527: get_map_param (param_parser.c:133)
+==1184393==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184393==    by 0x4033A9: main (main.c:306)
+==1184393== 
+==1184393== 24 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184393==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184393==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184393==    by 0x40505B: store_texture (param_parser.c:32)
+==1184393==    by 0x4053E7: store_param (param_parser.c:100)
+==1184393==    by 0x405527: get_map_param (param_parser.c:133)
+==1184393==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184393==    by 0x4033A9: main (main.c:306)
+==1184393== 
+==1184393== 24 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184393==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184393==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184393==    by 0x405096: store_texture (param_parser.c:34)
+==1184393==    by 0x4053E7: store_param (param_parser.c:100)
+==1184393==    by 0x405527: get_map_param (param_parser.c:133)
+==1184393==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184393==    by 0x4033A9: main (main.c:306)
+==1184393== 
+==1184393== 91 bytes in 13 blocks are still reachable in loss record 7 of 8
+==1184393==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184393==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184393==    by 0x404BB5: store_map (map_parser.c:39)
+==1184393==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184393==    by 0x4033A9: main (main.c:306)
+==1184393== 
+==1184393== 112 bytes in 1 blocks are still reachable in loss record 8 of 8
+==1184393==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184393==    by 0x404B61: store_map (map_parser.c:33)
+==1184393==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184393==    by 0x4033A9: main (main.c:306)
+==1184393== 
+
+>>> ./maps/good/test_whitespace.cub
+==1184416== Invalid read of size 1
+==1184416==    at 0x404410: perform_dda (render.c:67)
+==1184416==    by 0x402E31: game_loop (main.c:195)
+==1184416==    by 0x407254: mlx_loop (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x4035E9: main (main.c:342)
+==1184416==  Address 0x4d5f317 is 0 bytes after a block of size 7 alloc'd
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x404BB5: store_map (map_parser.c:39)
+==1184416==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184416==    by 0x4033A9: main (main.c:306)
+==1184416== 
+==1184416== 
+==1184416== Process terminating with default action of signal 11 (SIGSEGV)
+==1184416==  Access not within mapped region at address 0x12
+==1184416==    at 0x404410: perform_dda (render.c:67)
+==1184416==    by 0x402E31: game_loop (main.c:195)
+==1184416==    by 0x407254: mlx_loop (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x4035E9: main (main.c:342)
+==1184416==  If you believe this happened as a result of a stack
+==1184416==  overflow in your program's main thread (unlikely but
+==1184416==  possible), you can try to increase the size of the
+==1184416==  main thread stack using the --main-stacksize= flag.
+==1184416==  The main thread stack size used in this run was 8388608.
+==1184416== FILE DESCRIPTORS: 6 open (3 std) at exit.
+==1184416== Open AF_UNIX socket 3: <unknown>
+==1184416==    at 0x4BF5BAB: socket (syscall-template.S:120)
+==1184416==    by 0x4D0434D: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D06797: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x48C8EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184416==    <inherited from parent>
+==1184416== 
+==1184416== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184416==    <inherited from parent>
+==1184416== 
+==1184416== 
+==1184416== 3 bytes in 1 blocks are still reachable in loss record 1 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184416==    by 0x405235: store_color (param_parser.c:66)
+==1184416==    by 0x405455: store_param (param_parser.c:105)
+==1184416==    by 0x405527: get_map_param (param_parser.c:133)
+==1184416==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184416==    by 0x4033A9: main (main.c:306)
+==1184416== 
+==1184416== 3 bytes in 1 blocks are still reachable in loss record 2 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184416==    by 0x40526D: store_color (param_parser.c:68)
+==1184416==    by 0x405455: store_param (param_parser.c:105)
+==1184416==    by 0x405527: get_map_param (param_parser.c:133)
+==1184416==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184416==    by 0x4033A9: main (main.c:306)
+==1184416== 
+==1184416== 3 bytes in 1 blocks are still reachable in loss record 3 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x4B7658E: strdup (strdup.c:42)
+==1184416==    by 0x48B8B45: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 8 bytes in 1 blocks are still reachable in loss record 4 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x4B7658E: strdup (strdup.c:42)
+==1184416==    by 0x48B59AE: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x487A820: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 8 bytes in 1 blocks are still reachable in loss record 5 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x4878B34: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487A9DF: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 10 bytes in 1 blocks are still reachable in loss record 6 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x4B7658E: strdup (strdup.c:42)
+==1184416==    by 0x48B59AE: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x491F213: XkbUseExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B96A8: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 16 bytes in 1 blocks are still reachable in loss record 7 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x4D062EE: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D06E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x48C8EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 21 bytes in 1 blocks are still reachable in loss record 8 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B903E: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 23 bytes in 1 blocks are still reachable in loss record 9 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x40510C: store_texture (param_parser.c:38)
+==1184416==    by 0x4053E7: store_param (param_parser.c:100)
+==1184416==    by 0x405527: get_map_param (param_parser.c:133)
+==1184416==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184416==    by 0x4033A9: main (main.c:306)
+==1184416== 
+==1184416== 23 bytes in 1 blocks are still reachable in loss record 10 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184416==    by 0x4053E7: store_param (param_parser.c:100)
+==1184416==    by 0x405527: get_map_param (param_parser.c:133)
+==1184416==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184416==    by 0x4033A9: main (main.c:306)
+==1184416== 
+==1184416== 24 bytes in 1 blocks are still reachable in loss record 11 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x40505B: store_texture (param_parser.c:32)
+==1184416==    by 0x4053E7: store_param (param_parser.c:100)
+==1184416==    by 0x405527: get_map_param (param_parser.c:133)
+==1184416==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184416==    by 0x4033A9: main (main.c:306)
+==1184416== 
+==1184416== 24 bytes in 1 blocks are still reachable in loss record 12 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x405096: store_texture (param_parser.c:34)
+==1184416==    by 0x4053E7: store_param (param_parser.c:100)
+==1184416==    by 0x405527: get_map_param (param_parser.c:133)
+==1184416==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184416==    by 0x4033A9: main (main.c:306)
+==1184416== 
+==1184416== 24 bytes in 1 blocks are still reachable in loss record 13 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x487A041: XextCreateExtension (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487A4CC: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487A9C8: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 24 bytes in 1 blocks are still reachable in loss record 14 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x4B7658E: strdup (strdup.c:42)
+==1184416==    by 0x48B59AE: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x487A820: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487A50A: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487A9C8: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 24 bytes in 1 blocks are still reachable in loss record 15 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x487A9F5: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 24 bytes in 1 blocks are still reachable in loss record 16 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48C6A65: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CF2C6: _XReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CF77E: XSync (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x40723F: mlx_loop (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x4035E9: main (main.c:342)
+==1184416== 
+==1184416== 29 bytes in 1 blocks are still reachable in loss record 17 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B20CD: _XUpdateAtomCache (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B4929: XInternAtom (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406F74: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 32 bytes in 1 blocks are still reachable in loss record 18 of 57
+==1184416==    at 0x48487A9: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x4D0A15E: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D0A237: xcb_get_extension_data (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D0A2EE: xcb_prefetch_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D0A364: xcb_get_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x48B952B: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 32 bytes in 1 blocks are still reachable in loss record 19 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x4D031B7: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D03A08: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D03EB0: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D04E44: xcb_wait_for_reply (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D0A292: xcb_get_extension_data (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D0A2EE: xcb_prefetch_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D0A364: xcb_get_maximum_request_length (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x48B952B: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 32 bytes in 1 blocks are still reachable in loss record 20 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x487A7FF: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 32 bytes in 1 blocks are still reachable in loss record 21 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x487A7FF: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487A50A: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487A9C8: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 33 bytes in 1 blocks are still reachable in loss record 22 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B20CD: _XUpdateAtomCache (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B4929: XInternAtom (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406F5F: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 40 bytes in 1 blocks are still reachable in loss record 23 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48C91F1: _XPollfdCacheInit (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B8E71: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 48 bytes in 1 blocks are still reachable in loss record 24 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48C8E71: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 48 bytes in 1 blocks are still reachable in loss record 25 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48C8E87: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 72 bytes in 1 blocks are still reachable in loss record 26 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B8F20: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 88 bytes in 1 blocks are still reachable in loss record 27 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x40753B: mlx_int_new_xshm_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x407870: mlx_new_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x4034C9: main (main.c:330)
+==1184416== 
+==1184416== 112 bytes in 1 blocks are still reachable in loss record 28 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x404B61: store_map (map_parser.c:33)
+==1184416==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184416==    by 0x4033A9: main (main.c:306)
+==1184416== 
+==1184416== 112 bytes in 1 blocks are still reachable in loss record 29 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48C8D72: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 112 bytes in 1 blocks are still reachable in loss record 30 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B9200: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 128 bytes in 1 blocks are still reachable in loss record 31 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B912E: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 128 bytes in 1 blocks are still reachable in loss record 32 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B599E: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x491F213: XkbUseExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B96A8: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 128 bytes in 1 blocks are still reachable in loss record 33 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B599E: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x487A820: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 128 bytes in 1 blocks are still reachable in loss record 34 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B599E: XInitExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x487A820: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487A50A: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487A9C8: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 133 bytes in 13 blocks are still reachable in loss record 35 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x404BB5: store_map (map_parser.c:39)
+==1184416==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184416==    by 0x4033A9: main (main.c:306)
+==1184416== 
+==1184416== 136 bytes in 1 blocks are still reachable in loss record 36 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x406EBE: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 136 bytes in 1 blocks are still reachable in loss record 37 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48790C3: XShmCreateImage (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x40756B: mlx_int_new_xshm_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x407870: mlx_new_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x4034C9: main (main.c:330)
+==1184416== 
+==1184416== 150 bytes in 1 blocks are still reachable in loss record 38 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B9710: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 152 bytes in 1 blocks are still reachable in loss record 39 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x491F40E: XkbUseExtension (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B96A8: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 160 bytes in 1 blocks are still reachable in loss record 40 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48A79EF: XCreateGC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B95A4: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 160 bytes in 1 blocks are still reachable in loss record 41 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48A79EF: XCreateGC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x4070E9: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403492: main (main.c:325)
+==1184416== 
+==1184416== 168 bytes in 1 blocks are still reachable in loss record 42 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B90B2: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 208 bytes in 1 blocks are still reachable in loss record 43 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x4878AE9: ??? (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487A9DF: XextAddDisplay (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x487F9E2: XShmQueryVersion (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x406D13: mlx_int_deal_shm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x406F82: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 208 bytes in 1 blocks are still reachable in loss record 44 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48CAFAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CDBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CEEC0: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CF205: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x4073E5: mlx_int_wait_first_expose (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x407125: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403492: main (main.c:325)
+==1184416== 
+==1184416== 208 bytes in 1 blocks are still reachable in loss record 45 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48CAFAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CDBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CEEC0: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CF1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x4073E5: mlx_int_wait_first_expose (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x407125: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403492: main (main.c:325)
+==1184416== 
+==1184416== 352 bytes in 4 blocks are still reachable in loss record 46 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x40753B: mlx_int_new_xshm_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x407870: mlx_new_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x408149: mlx_int_parse_xpm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x408563: mlx_xpm_file_to_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x402665: load_textures (main.c:33)
+==1184416==    by 0x40354E: main (main.c:337)
+==1184416== 
+==1184416== 512 bytes in 1 blocks are still reachable in loss record 47 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B446A: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B484E: XInternAtom (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406F5F: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 544 bytes in 4 blocks are still reachable in loss record 48 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48790C3: XShmCreateImage (in /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0)
+==1184416==    by 0x40756B: mlx_int_new_xshm_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x407870: mlx_new_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x408149: mlx_int_parse_xpm (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x408563: mlx_xpm_file_to_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x402665: load_textures (main.c:33)
+==1184416==    by 0x40354E: main (main.c:337)
+==1184416== 
+==1184416== 832 bytes in 4 blocks are still reachable in loss record 49 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48CAFAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CDBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CF40C: _XReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CF77E: XSync (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x407628: mlx_int_new_xshm_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x407870: mlx_new_image (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x4034C9: main (main.c:330)
+==1184416== 
+==1184416== 936 bytes in 1 blocks are still reachable in loss record 50 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x40704F: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403492: main (main.c:325)
+==1184416== 
+==1184416== 1,456 bytes in 7 blocks are still reachable in loss record 51 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48CAFAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CDBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CEF01: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CF1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x4073E5: mlx_int_wait_first_expose (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x407125: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403492: main (main.c:325)
+==1184416== 
+==1184416== 2,704 bytes in 13 blocks are still reachable in loss record 52 of 57
+==1184416==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48CAFAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CDBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CEF01: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48CF205: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x4073E5: mlx_int_wait_first_expose (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x407125: mlx_new_window (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403492: main (main.c:325)
+==1184416== 
+==1184416== 4,704 bytes in 1 blocks are still reachable in loss record 53 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B8B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 12,308 bytes in 1 blocks are still reachable in loss record 54 of 57
+==1184416==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x4D064FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D06E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x48C8EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 16,384 bytes in 1 blocks are still reachable in loss record 55 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B8EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 21,168 bytes in 1 blocks are still reachable in loss record 56 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x4D06204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x4D06E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==1184416==    by 0x48C8EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x48B8B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+==1184416== 28,224 bytes in 2 blocks are still reachable in loss record 57 of 57
+==1184416==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184416==    by 0x48B9290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==1184416==    by 0x406ED6: mlx_init (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184416==    by 0x403451: main (main.c:322)
+==1184416== 
+
+>>> ./maps/good/works.cub
+Window closed. Exiting program.
+==1184426== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184426== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184426==    <inherited from parent>
+==1184426== 
+==1184426== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184426==    <inherited from parent>
+==1184426== 
+==1184426== 
+==1184426== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184426==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184426==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184426==    by 0x405235: store_color (param_parser.c:66)
+==1184426==    by 0x405455: store_param (param_parser.c:105)
+==1184426==    by 0x405527: get_map_param (param_parser.c:133)
+==1184426==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184426==    by 0x4033A9: main (main.c:306)
+==1184426== 
+==1184426== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184426==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184426==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184426==    by 0x40526D: store_color (param_parser.c:68)
+==1184426==    by 0x405455: store_param (param_parser.c:105)
+==1184426==    by 0x405527: get_map_param (param_parser.c:133)
+==1184426==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184426==    by 0x4033A9: main (main.c:306)
+==1184426== 
+==1184426== 30 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184426==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184426==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184426==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184426==    by 0x4053E7: store_param (param_parser.c:100)
+==1184426==    by 0x405527: get_map_param (param_parser.c:133)
+==1184426==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184426==    by 0x4033A9: main (main.c:306)
+==1184426== 
+==1184426== 35 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184426==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184426==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184426==    by 0x405096: store_texture (param_parser.c:34)
+==1184426==    by 0x4053E7: store_param (param_parser.c:100)
+==1184426==    by 0x405527: get_map_param (param_parser.c:133)
+==1184426==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184426==    by 0x4033A9: main (main.c:306)
+==1184426== 
+==1184426== 36 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184426==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184426==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184426==    by 0x40510C: store_texture (param_parser.c:38)
+==1184426==    by 0x4053E7: store_param (param_parser.c:100)
+==1184426==    by 0x405527: get_map_param (param_parser.c:133)
+==1184426==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184426==    by 0x4033A9: main (main.c:306)
+==1184426== 
+==1184426== 38 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184426==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184426==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184426==    by 0x40505B: store_texture (param_parser.c:32)
+==1184426==    by 0x4053E7: store_param (param_parser.c:100)
+==1184426==    by 0x405527: get_map_param (param_parser.c:133)
+==1184426==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184426==    by 0x4033A9: main (main.c:306)
+==1184426== 
+==1184426== 56 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1184426==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184426==    by 0x404B61: store_map (map_parser.c:33)
+==1184426==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184426==    by 0x4033A9: main (main.c:306)
+==1184426== 
+==1184426== 162 bytes in 6 blocks are still reachable in loss record 8 of 8
+==1184426==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184426==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184426==    by 0x404BB5: store_map (map_parser.c:39)
+==1184426==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184426==    by 0x4033A9: main (main.c:306)
+==1184426== 
+
+
+===========================================
+BAD MAPS
+===========================================
+>>> ./maps/bad/color_invalid_rgb.cub
+Error
+Missing or Invalid parametter
+==1184449== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184449== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184449==    <inherited from parent>
+==1184449== 
+==1184449== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184449==    <inherited from parent>
+==1184449== 
+==1184449== 
+
+>>> ./maps/bad/color_missing_ceiling_rgb.cub
+Error
+Missing or Invalid parametter
+==1184450== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184450== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184450==    <inherited from parent>
+==1184450== 
+==1184450== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184450==    <inherited from parent>
+==1184450== 
+==1184450== 
+
+>>> ./maps/bad/color_missing.cub
+Error
+Missing or Invalid parametter
+==1184462== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184462== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184462==    <inherited from parent>
+==1184462== 
+==1184462== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184462==    <inherited from parent>
+==1184462== 
+==1184462== 
+
+>>> ./maps/bad/color_missing_floor_rgb.cub
+Error
+Missing or Invalid parametter
+==1184463== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184463== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184463==    <inherited from parent>
+==1184463== 
+==1184463== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184463==    <inherited from parent>
+==1184463== 
+==1184463== 
+
+>>> ./maps/bad/color_none.cub
+Error
+Missing or Invalid parametter
+==1184470== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184470== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184470==    <inherited from parent>
+==1184470== 
+==1184470== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184470==    <inherited from parent>
+==1184470== 
+==1184470== 
+
+>>> ./maps/bad/empty.cub
+Error
+There was a problem reading the file !
+(file is empty or there was an error reading it)
+==1184471== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184471== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184471==    <inherited from parent>
+==1184471== 
+==1184471== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184471==    <inherited from parent>
+==1184471== 
+==1184471== 
+
+>>> ./maps/bad/file_letter_end.cub
+Error
+Missing or Invalid parametter
+==1184472== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184472== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184472==    <inherited from parent>
+==1184472== 
+==1184472== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184472==    <inherited from parent>
+==1184472== 
+==1184472== 
+
+>>> ./maps/bad/filetype_missing
+Error
+Invalid file name !
+==1184473== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184473== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184473==    <inherited from parent>
+==1184473== 
+==1184473== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184473==    <inherited from parent>
+==1184473== 
+==1184473== 
+
+>>> ./maps/bad/filetype_wrong.buc
+Error
+Invalid file name !
+==1184474== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184474== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184474==    <inherited from parent>
+==1184474== 
+==1184474== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184474==    <inherited from parent>
+==1184474== 
+==1184474== 
+
+>>> ./maps/bad/forbidden.cub
+Window closed. Exiting program.
+==1184475== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184475== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184475==    <inherited from parent>
+==1184475== 
+==1184475== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184475==    <inherited from parent>
+==1184475== 
+==1184475== 
+==1184475== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184475==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184475==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184475==    by 0x405235: store_color (param_parser.c:66)
+==1184475==    by 0x405455: store_param (param_parser.c:105)
+==1184475==    by 0x405527: get_map_param (param_parser.c:133)
+==1184475==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184475==    by 0x4033A9: main (main.c:306)
+==1184475== 
+==1184475== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184475==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184475==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184475==    by 0x40526D: store_color (param_parser.c:68)
+==1184475==    by 0x405455: store_param (param_parser.c:105)
+==1184475==    by 0x405527: get_map_param (param_parser.c:133)
+==1184475==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184475==    by 0x4033A9: main (main.c:306)
+==1184475== 
+==1184475== 30 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184475==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184475==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184475==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184475==    by 0x4053E7: store_param (param_parser.c:100)
+==1184475==    by 0x405527: get_map_param (param_parser.c:133)
+==1184475==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184475==    by 0x4033A9: main (main.c:306)
+==1184475== 
+==1184475== 35 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184475==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184475==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184475==    by 0x40510C: store_texture (param_parser.c:38)
+==1184475==    by 0x4053E7: store_param (param_parser.c:100)
+==1184475==    by 0x405527: get_map_param (param_parser.c:133)
+==1184475==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184475==    by 0x4033A9: main (main.c:306)
+==1184475== 
+==1184475== 36 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184475==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184475==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184475==    by 0x40505B: store_texture (param_parser.c:32)
+==1184475==    by 0x4053E7: store_param (param_parser.c:100)
+==1184475==    by 0x405527: get_map_param (param_parser.c:133)
+==1184475==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184475==    by 0x4033A9: main (main.c:306)
+==1184475== 
+==1184475== 38 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184475==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184475==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184475==    by 0x405096: store_texture (param_parser.c:34)
+==1184475==    by 0x4053E7: store_param (param_parser.c:100)
+==1184475==    by 0x405527: get_map_param (param_parser.c:133)
+==1184475==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184475==    by 0x4033A9: main (main.c:306)
+==1184475== 
+==1184475== 72 bytes in 1 blocks are still reachable in loss record 7 of 8
+==1184475==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184475==    by 0x404B61: store_map (map_parser.c:33)
+==1184475==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184475==    by 0x4033A9: main (main.c:306)
+==1184475== 
+==1184475== 112 bytes in 8 blocks are still reachable in loss record 8 of 8
+==1184475==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184475==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184475==    by 0x404BB5: store_map (map_parser.c:39)
+==1184475==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184475==    by 0x4033A9: main (main.c:306)
+==1184475== 
+
+>>> ./maps/bad/map_first.cub
+Error
+Missing or Invalid parametter
+==1184495== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184495== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184495==    <inherited from parent>
+==1184495== 
+==1184495== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184495==    <inherited from parent>
+==1184495== 
+==1184495== 
+
+>>> ./maps/bad/map_middle.cub
+Error
+Missing or Invalid parametter
+==1184496== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184496== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184496==    <inherited from parent>
+==1184496== 
+==1184496== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184496==    <inherited from parent>
+==1184496== 
+==1184496== 
+
+>>> ./maps/bad/map_missing.cub
+Error
+Missing or Invalid parametter
+==1184497== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184497== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184497==    <inherited from parent>
+==1184497== 
+==1184497== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184497==    <inherited from parent>
+==1184497== 
+==1184497== 
+
+>>> ./maps/bad/map_only.cub
+Error
+Missing or Invalid parametter
+==1184498== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184498== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184498==    <inherited from parent>
+==1184498== 
+==1184498== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184498==    <inherited from parent>
+==1184498== 
+==1184498== 
+
+>>> ./maps/bad/map_too_small.cub
+Error
+Missing or Invalid parametter
+==1184499== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184499== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184499==    <inherited from parent>
+==1184499== 
+==1184499== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184499==    <inherited from parent>
+==1184499== 
+==1184499== 
+
+>>> ./maps/bad/player_multiple.cub
+Error
+Missing or Invalid parametter
+==1184500== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184500== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184500==    <inherited from parent>
+==1184500== 
+==1184500== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184500==    <inherited from parent>
+==1184500== 
+==1184500== 
+
+>>> ./maps/bad/player_none.cub
+Error
+Missing or Invalid parametter
+==1184512== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184512== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184512==    <inherited from parent>
+==1184512== 
+==1184512== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184512==    <inherited from parent>
+==1184512== 
+==1184512== 
+
+>>> ./maps/bad/player_on_edge.cub
+Error
+Missing or Invalid parametter
+==1184513== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184513== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184513==    <inherited from parent>
+==1184513== 
+==1184513== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184513==    <inherited from parent>
+==1184513== 
+==1184513== 
+
+>>> ./maps/bad/textures_dir.cub
+Error
+Missing or Invalid parametter
+==1184520== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184520== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184520==    <inherited from parent>
+==1184520== 
+==1184520== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184520==    <inherited from parent>
+==1184520== 
+==1184520== 
+
+>>> ./maps/bad/textures_duplicates.cub
+Error
+Missing or Invalid parametter
+==1184521== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184521== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184521==    <inherited from parent>
+==1184521== 
+==1184521== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184521==    <inherited from parent>
+==1184521== 
+==1184521== 
+
+>>> ./maps/bad/textures_forbidden.cub
+Window closed. Exiting program.
+==1184522== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184522== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184522==    <inherited from parent>
+==1184522== 
+==1184522== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184522==    <inherited from parent>
+==1184522== 
+==1184522== 
+==1184522== 3 bytes in 1 blocks are still reachable in loss record 1 of 8
+==1184522==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184522==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184522==    by 0x405235: store_color (param_parser.c:66)
+==1184522==    by 0x405455: store_param (param_parser.c:105)
+==1184522==    by 0x405527: get_map_param (param_parser.c:133)
+==1184522==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184522==    by 0x4033A9: main (main.c:306)
+==1184522== 
+==1184522== 3 bytes in 1 blocks are still reachable in loss record 2 of 8
+==1184522==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184522==    by 0x404A2D: extract_color (color_utils.c:96)
+==1184522==    by 0x40526D: store_color (param_parser.c:68)
+==1184522==    by 0x405455: store_param (param_parser.c:105)
+==1184522==    by 0x405527: get_map_param (param_parser.c:133)
+==1184522==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184522==    by 0x4033A9: main (main.c:306)
+==1184522== 
+==1184522== 23 bytes in 1 blocks are still reachable in loss record 3 of 8
+==1184522==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184522==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184522==    by 0x40510C: store_texture (param_parser.c:38)
+==1184522==    by 0x4053E7: store_param (param_parser.c:100)
+==1184522==    by 0x405527: get_map_param (param_parser.c:133)
+==1184522==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184522==    by 0x4033A9: main (main.c:306)
+==1184522== 
+==1184522== 23 bytes in 1 blocks are still reachable in loss record 4 of 8
+==1184522==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184522==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184522==    by 0x4050D1: store_texture (param_parser.c:36)
+==1184522==    by 0x4053E7: store_param (param_parser.c:100)
+==1184522==    by 0x405527: get_map_param (param_parser.c:133)
+==1184522==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184522==    by 0x4033A9: main (main.c:306)
+==1184522== 
+==1184522== 24 bytes in 1 blocks are still reachable in loss record 5 of 8
+==1184522==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184522==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184522==    by 0x405096: store_texture (param_parser.c:34)
+==1184522==    by 0x4053E7: store_param (param_parser.c:100)
+==1184522==    by 0x405527: get_map_param (param_parser.c:133)
+==1184522==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184522==    by 0x4033A9: main (main.c:306)
+==1184522== 
+==1184522== 28 bytes in 1 blocks are still reachable in loss record 6 of 8
+==1184522==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184522==    by 0x40628F: ft_substr (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184522==    by 0x40505B: store_texture (param_parser.c:32)
+==1184522==    by 0x4053E7: store_param (param_parser.c:100)
+==1184522==    by 0x405527: get_map_param (param_parser.c:133)
+==1184522==    by 0x404EF9: map_parser (map_parser.c:127)
+==1184522==    by 0x4033A9: main (main.c:306)
+==1184522== 
+==1184522== 91 bytes in 13 blocks are still reachable in loss record 7 of 8
+==1184522==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184522==    by 0x406180: ft_strdup (in /home/jelee/Documents/cub3d4mac/cub3d)
+==1184522==    by 0x404BB5: store_map (map_parser.c:39)
+==1184522==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184522==    by 0x4033A9: main (main.c:306)
+==1184522== 
+==1184522== 112 bytes in 1 blocks are still reachable in loss record 8 of 8
+==1184522==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1184522==    by 0x404B61: store_map (map_parser.c:33)
+==1184522==    by 0x404F5B: map_parser (map_parser.c:132)
+==1184522==    by 0x4033A9: main (main.c:306)
+==1184522== 
+
+>>> ./maps/bad/textures_invalid.cub
+Error
+Missing or Invalid parametter
+==1184538== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184538== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184538==    <inherited from parent>
+==1184538== 
+==1184538== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184538==    <inherited from parent>
+==1184538== 
+==1184538== 
+
+>>> ./maps/bad/textures_missing.cub
+Error
+Missing or Invalid parametter
+==1184545== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184545== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184545==    <inherited from parent>
+==1184545== 
+==1184545== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184545==    <inherited from parent>
+==1184545== 
+==1184545== 
+
+>>> ./maps/bad/textures_none.cub
+Error
+Missing or Invalid parametter
+==1184546== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184546== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184546==    <inherited from parent>
+==1184546== 
+==1184546== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184546==    <inherited from parent>
+==1184546== 
+==1184546== 
+
+>>> ./maps/bad/textures_not_xpm.cub
+Error
+Missing or Invalid parametter
+==1184547== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184547== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184547==    <inherited from parent>
+==1184547== 
+==1184547== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184547==    <inherited from parent>
+==1184547== 
+==1184547== 
+
+>>> ./maps/bad/wall_hole_east.cub
+Error
+The map is not valid !
+==1184548== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184548== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184548==    <inherited from parent>
+==1184548== 
+==1184548== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184548==    <inherited from parent>
+==1184548== 
+==1184548== 
+
+>>> ./maps/bad/wall_hole_north.cub
+Error
+Missing or Invalid parametter
+==1184549== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184549== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184549==    <inherited from parent>
+==1184549== 
+==1184549== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184549==    <inherited from parent>
+==1184549== 
+==1184549== 
+
+>>> ./maps/bad/wall_hole_south.cub
+Error
+Missing or Invalid parametter
+==1184550== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184550== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184550==    <inherited from parent>
+==1184550== 
+==1184550== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184550==    <inherited from parent>
+==1184550== 
+==1184550== 
+
+>>> ./maps/bad/wall_hole_west.cub
+Error
+The map is not valid !
+==1184551== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184551== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184551==    <inherited from parent>
+==1184551== 
+==1184551== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184551==    <inherited from parent>
+==1184551== 
+==1184551== 
+
+>>> ./maps/bad/wall_none.cub
+Error
+Missing or Invalid parametter
+==1184552== FILE DESCRIPTORS: 5 open (3 std) at exit.
+==1184552== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
+==1184552==    <inherited from parent>
+==1184552== 
+==1184552== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
+==1184552==    <inherited from parent>
+==1184552== 
+==1184552== 
+

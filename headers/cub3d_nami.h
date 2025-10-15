@@ -60,3 +60,4 @@ void	perform_dda(t_game *game, t_ray *ray);
 void	calculate_wall_projection(t_game *game, t_ray *ray);
 int		game_loop(t_game *game);
 void	draw_minimap(t_game *game);//미니맵
+void	free_map_data(t_map_data *map_data);

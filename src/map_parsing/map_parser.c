@@ -13,6 +13,53 @@
 #include "../../headers/cub3d.h"
 
 /**
+ * @brief Nami added. Takes a jagged 2D map and makes it rectangular.
+ * @brief Each line in the new map is padded with spaces to match the
+ * @brief maximum width. The original map is freed.
+ * @param original_map The original map with uneven line lengths.
+ * @param width The target width for the new rectangular map.
+ * @param height The height of the map (number of lines).
+ * @return A new, rectangular char ** map, or NULL on malloc failure.
+ */
+char **regularize_map(char **original_map, int width, int height)
+{
+    char **new_map;
+    int y;
+
+    // Allocate memory for the new map grid
+    new_map = malloc(sizeof(char *) * (height + 1));
+    if (!new_map)
+        return (NULL); // Handle malloc failure
+
+    y = 0;
+    while (y < height)
+    {
+        // Allocate each line to the full width
+        new_map[y] = malloc(sizeof(char) * (width + 1));
+        if (!new_map[y])
+        {
+            // Handle malloc failure, free previously allocated lines
+            free_double((void ***)&new_map);
+            return (NULL);
+        }
+        
+        // Copy the original line and pad the rest with spaces
+        ft_memset(new_map[y], ' ', width); // Pre-fill with spaces
+        ft_memcpy(new_map[y], original_map[y], ft_strlen(original_map[y]));
+        new_map[y][width] = '\0';
+        
+        y++;
+    }
+    new_map[y] = NULL;
+
+    // Don't forget to free the original map!
+    free_double((void ***)&original_map);
+
+    return (new_map);
+}
+
+
+/**
  * @brief stores the map lines in the map data structure
  * @param line_i the line index of the last saved parametter
  * @param file_lines the lines read from the map file
@@ -141,7 +188,12 @@ int	map_parser(char *file_path, t_map_data *map_data)
 		while (map_data->map[map_data->height])
 			map_data->height++;
 		map_data->width = get_map_width(map_data->map);
-		error = map_checker(map_data);
+		        map_data->map = regularize_map(map_data->map, map_data->width, map_data->height);
+        if (!map_data->map) // 메모리 할당 실패 시 에러 처리
+            error = ERR_MALLOC; 
+        else
+            // 3. 이제 안전해진 맵으로 체커를 호출합니다.
+            error = map_checker(map_data);
 	}
 	/* --- 여기까지 수정 --- */
 	free_double((void ***)&file_lines);
