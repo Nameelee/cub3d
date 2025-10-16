@@ -21,43 +21,32 @@
  * @param height The height of the map (number of lines).
  * @return A new, rectangular char ** map, or NULL on malloc failure.
  */
-char **regularize_map(char **original_map, int width, int height)
+char	**regularize_map(char **original_map, int width, int height)
 {
-    char **new_map;
-    int y;
+	char	**new_map;
+	int		y;
 
-    // Allocate memory for the new map grid
-    new_map = malloc(sizeof(char *) * (height + 1));
-    if (!new_map)
-        return (NULL); // Handle malloc failure
-
-    y = 0;
-    while (y < height)
-    {
-        // Allocate each line to the full width
-        new_map[y] = malloc(sizeof(char) * (width + 1));
-        if (!new_map[y])
-        {
-            // Handle malloc failure, free previously allocated lines
-            free_double((void ***)&new_map);
-            return (NULL);
-        }
-        
-        // Copy the original line and pad the rest with spaces
-        ft_memset(new_map[y], ' ', width); // Pre-fill with spaces
-        ft_memcpy(new_map[y], original_map[y], ft_strlen(original_map[y]));
-        new_map[y][width] = '\0';
-        
-        y++;
-    }
-    new_map[y] = NULL;
-
-    // Don't forget to free the original map!
-    free_double((void ***)&original_map);
-
-    return (new_map);
+	new_map = malloc(sizeof(char *) * (height + 1));
+	if (!new_map)
+		return (NULL);
+	y = 0;
+	while (y < height)
+	{
+		new_map[y] = malloc(sizeof(char) * (width + 1));
+		if (!new_map[y])
+		{
+			free_double((void ***)&new_map);
+			return (NULL);
+		}
+		ft_memset(new_map[y], ' ', width);
+		ft_memcpy(new_map[y], original_map[y], ft_strlen(original_map[y]));
+		new_map[y][width] = '\0';
+		y++;
+	}
+	new_map[y] = NULL;
+	free_double((void ***)&original_map);
+	return (new_map);
 }
-
 
 /**
  * @brief stores the map lines in the map data structure
@@ -155,6 +144,7 @@ int	check_file_path(char *file_path)
 
 /**
  * @brief reads the map file, checks for errors and stores data
+ * Nami add after 'error = store_map' till 'error = mapcheck' 
  * @param file_path the map file path
  * @param map_data the structure where we store the map data
  * @return e_num with specified error or success flag
@@ -177,25 +167,19 @@ int	map_parser(char *file_path, t_map_data *map_data)
 	if (last_param_index == -1 || !check_textures_file(map_data))
 		return (free_double((void ***)&file_lines), ERR_MISS_OR_INVAL_PARAM);
 	error = store_map(last_param_index, file_lines, map_data);
-	/*
-	 * --- 여기부터 수정 ---
-	 * store_map이 성공하면, map_checker를 호출하기 전에
-	 * 맵의 높이와 너비를 계산해서 저장합니다.
-	*/
 	if (error == SUCCESS)
 	{
 		map_data->height = 0;
 		while (map_data->map[map_data->height])
 			map_data->height++;
 		map_data->width = get_map_width(map_data->map);
-		        map_data->map = regularize_map(map_data->map, map_data->width, map_data->height);
-        if (!map_data->map) // 메모리 할당 실패 시 에러 처리
-            error = ERR_MALLOC; 
-        else
-            // 3. 이제 안전해진 맵으로 체커를 호출합니다.
-            error = map_checker(map_data);
+		map_data->map = regularize_map(map_data->map,
+				map_data->width, map_data->height);
+		if (!map_data->map)
+			error = ERR_MALLOC;
+		else
+			error = map_checker(map_data);
 	}
-	/* --- 여기까지 수정 --- */
 	free_double((void ***)&file_lines);
 	return (error);
 }

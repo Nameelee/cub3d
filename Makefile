@@ -25,7 +25,7 @@ SRCS_DIR			= src/
 M_PARSE_DIR			= $(SRCS_DIR)map_parsing/
 M_CHECK_DIR			= $(SRCS_DIR)map_checking/
 
-SRCS_MAIN			= main.c debug.c string_utils.c strs_dup.c move.c render.c
+SRCS_MAIN			= main.c debug.c string_utils.c strs_dup.c move.c render.c minimap.c
 
 SRCS_M_PARSE		= color_utils.c  \
 					map_parser.c  \

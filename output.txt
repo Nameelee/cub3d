@@ -4,191 +4,55 @@ GOOD MAPS
 ===========================================
 >>> ./maps/good/cheese_maze.cub
 Window closed. Exiting program.
-==1192923== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1192923== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1192923==    <inherited from parent>
-==1192923== 
-==1192923== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1192923==    <inherited from parent>
-==1192923== 
-==1192923== 
 
 >>> ./maps/good/creepy.cub
 Window closed. Exiting program.
-==1192954== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1192954== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1192954==    <inherited from parent>
-==1192954== 
-==1192954== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1192954==    <inherited from parent>
-==1192954== 
-==1192954== 
 
 >>> ./maps/good/dungeon.cub
 Window closed. Exiting program.
-==1192991== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1192991== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1192991==    <inherited from parent>
-==1192991== 
-==1192991== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1192991==    <inherited from parent>
-==1192991== 
-==1192991== 
 
 >>> ./maps/good/library.cub
 Window closed. Exiting program.
-==1193010== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193010== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193010==    <inherited from parent>
-==1193010== 
-==1193010== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193010==    <inherited from parent>
-==1193010== 
-==1193010== 
 
 >>> ./maps/good/matrix.cub
 Window closed. Exiting program.
-==1193015== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193015== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193015==    <inherited from parent>
-==1193015== 
-==1193015== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193015==    <inherited from parent>
-==1193015== 
-==1193015== 
 
 >>> ./maps/good/sad_face.cub
 Window closed. Exiting program.
-==1193034== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193034== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193034==    <inherited from parent>
-==1193034== 
-==1193034== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193034==    <inherited from parent>
-==1193034== 
-==1193034== 
 
 >>> ./maps/good/square_map.cub
 Window closed. Exiting program.
-==1193055== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193055== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193055==    <inherited from parent>
-==1193055== 
-==1193055== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193055==    <inherited from parent>
-==1193055== 
-==1193055== 
 
 >>> ./maps/good/subject_map.cub
 Window closed. Exiting program.
-==1193068== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193068== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193068==    <inherited from parent>
-==1193068== 
-==1193068== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193068==    <inherited from parent>
-==1193068== 
-==1193068== 
 
 >>> ./maps/good/test_map.cub
 Window closed. Exiting program.
-==1193079== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193079== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193079==    <inherited from parent>
-==1193079== 
-==1193079== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193079==    <inherited from parent>
-==1193079== 
-==1193079== 
 
 >>> ./maps/good/test_map_hole.cub
 Error
 The map is not valid !
-==1193095== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193095== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193095==    <inherited from parent>
-==1193095== 
-==1193095== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193095==    <inherited from parent>
-==1193095== 
-==1193095== 
 
 >>> ./maps/good/test_pos_bottom.cub
 Window closed. Exiting program.
-==1193100== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193100== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193100==    <inherited from parent>
-==1193100== 
-==1193100== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193100==    <inherited from parent>
-==1193100== 
-==1193100== 
 
 >>> ./maps/good/test_pos_left.cub
 Window closed. Exiting program.
-==1193116== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193116== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193116==    <inherited from parent>
-==1193116== 
-==1193116== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193116==    <inherited from parent>
-==1193116== 
-==1193116== 
 
 >>> ./maps/good/test_pos_right.cub
 Window closed. Exiting program.
-==1193132== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193132== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193132==    <inherited from parent>
-==1193132== 
-==1193132== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193132==    <inherited from parent>
-==1193132== 
-==1193132== 
 
 >>> ./maps/good/test_pos_top.cub
 Window closed. Exiting program.
-==1193139== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193139== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193139==    <inherited from parent>
-==1193139== 
-==1193139== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193139==    <inherited from parent>
-==1193139== 
-==1193139== 
 
 >>> ./maps/good/test_textures.cub
 Window closed. Exiting program.
-==1193166== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193166== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193166==    <inherited from parent>
-==1193166== 
-==1193166== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193166==    <inherited from parent>
-==1193166== 
-==1193166== 
 
 >>> ./maps/good/test_whitespace.cub
 Window closed. Exiting program.
-==1193184== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193184== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193184==    <inherited from parent>
-==1193184== 
-==1193184== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193184==    <inherited from parent>
-==1193184== 
-==1193184== 
 
 >>> ./maps/good/works.cub
 Window closed. Exiting program.
-==1193199== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193199== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193199==    <inherited from parent>
-==1193199== 
-==1193199== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193199==    <inherited from parent>
-==1193199== 
-==1193199== 
 
 
 ===========================================
@@ -197,359 +61,119 @@ BAD MAPS
 >>> ./maps/bad/color_invalid_rgb.cub
 Error
 Missing or Invalid parametter
-==1193259== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193259== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193259==    <inherited from parent>
-==1193259== 
-==1193259== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193259==    <inherited from parent>
-==1193259== 
-==1193259== 
 
 >>> ./maps/bad/color_missing_ceiling_rgb.cub
 Error
 Missing or Invalid parametter
-==1193271== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193271== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193271==    <inherited from parent>
-==1193271== 
-==1193271== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193271==    <inherited from parent>
-==1193271== 
-==1193271== 
 
 >>> ./maps/bad/color_missing.cub
 Error
 Missing or Invalid parametter
-==1193272== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193272== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193272==    <inherited from parent>
-==1193272== 
-==1193272== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193272==    <inherited from parent>
-==1193272== 
-==1193272== 
 
 >>> ./maps/bad/color_missing_floor_rgb.cub
 Error
 Missing or Invalid parametter
-==1193283== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193283== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193283==    <inherited from parent>
-==1193283== 
-==1193283== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193283==    <inherited from parent>
-==1193283== 
-==1193283== 
 
 >>> ./maps/bad/color_none.cub
 Error
 Missing or Invalid parametter
-==1193284== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193284== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193284==    <inherited from parent>
-==1193284== 
-==1193284== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193284==    <inherited from parent>
-==1193284== 
-==1193284== 
 
 >>> ./maps/bad/empty.cub
 Error
 There was a problem reading the file !
 (file is empty or there was an error reading it)
-==1193285== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193285== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193285==    <inherited from parent>
-==1193285== 
-==1193285== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193285==    <inherited from parent>
-==1193285== 
-==1193285== 
 
 >>> ./maps/bad/file_letter_end.cub
 Error
 Missing or Invalid parametter
-==1193286== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193286== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193286==    <inherited from parent>
-==1193286== 
-==1193286== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193286==    <inherited from parent>
-==1193286== 
-==1193286== 
 
 >>> ./maps/bad/filetype_missing
 Error
 Invalid file name !
-==1193287== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193287== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193287==    <inherited from parent>
-==1193287== 
-==1193287== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193287==    <inherited from parent>
-==1193287== 
-==1193287== 
 
 >>> ./maps/bad/filetype_wrong.buc
 Error
 Invalid file name !
-==1193288== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193288== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193288==    <inherited from parent>
-==1193288== 
-==1193288== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193288==    <inherited from parent>
-==1193288== 
-==1193288== 
 
 >>> ./maps/bad/forbidden.cub
 Window closed. Exiting program.
-==1193289== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193289== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193289==    <inherited from parent>
-==1193289== 
-==1193289== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193289==    <inherited from parent>
-==1193289== 
-==1193289== 
 
 >>> ./maps/bad/map_first.cub
 Error
 Missing or Invalid parametter
-==1193313== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193313== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193313==    <inherited from parent>
-==1193313== 
-==1193313== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193313==    <inherited from parent>
-==1193313== 
-==1193313== 
 
 >>> ./maps/bad/map_middle.cub
 Error
 Missing or Invalid parametter
-==1193314== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193314== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193314==    <inherited from parent>
-==1193314== 
-==1193314== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193314==    <inherited from parent>
-==1193314== 
-==1193314== 
 
 >>> ./maps/bad/map_missing.cub
 Error
 Missing or Invalid parametter
-==1193315== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193315== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193315==    <inherited from parent>
-==1193315== 
-==1193315== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193315==    <inherited from parent>
-==1193315== 
-==1193315== 
 
 >>> ./maps/bad/map_only.cub
 Error
 Missing or Invalid parametter
-==1193329== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193329== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193329==    <inherited from parent>
-==1193329== 
-==1193329== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193329==    <inherited from parent>
-==1193329== 
-==1193329== 
 
 >>> ./maps/bad/map_too_small.cub
 Error
 Missing or Invalid parametter
-==1193330== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193330== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193330==    <inherited from parent>
-==1193330== 
-==1193330== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193330==    <inherited from parent>
-==1193330== 
-==1193330== 
 
 >>> ./maps/bad/player_multiple.cub
 Error
 Missing or Invalid parametter
-==1193338== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193338== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193338==    <inherited from parent>
-==1193338== 
-==1193338== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193338==    <inherited from parent>
-==1193338== 
-==1193338== 
 
 >>> ./maps/bad/player_none.cub
 Error
 Missing or Invalid parametter
-==1193339== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193339== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193339==    <inherited from parent>
-==1193339== 
-==1193339== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193339==    <inherited from parent>
-==1193339== 
-==1193339== 
 
 >>> ./maps/bad/player_on_edge.cub
 Error
 Missing or Invalid parametter
-==1193340== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193340== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193340==    <inherited from parent>
-==1193340== 
-==1193340== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193340==    <inherited from parent>
-==1193340== 
-==1193340== 
 
 >>> ./maps/bad/textures_dir.cub
 Error
 Missing or Invalid parametter
-==1193341== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193341== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193341==    <inherited from parent>
-==1193341== 
-==1193341== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193341==    <inherited from parent>
-==1193341== 
-==1193341== 
 
 >>> ./maps/bad/textures_duplicates.cub
 Error
 Missing or Invalid parametter
-==1193342== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193342== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193342==    <inherited from parent>
-==1193342== 
-==1193342== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193342==    <inherited from parent>
-==1193342== 
-==1193342== 
 
 >>> ./maps/bad/textures_forbidden.cub
 Window closed. Exiting program.
-==1193343== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193343== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193343==    <inherited from parent>
-==1193343== 
-==1193343== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193343==    <inherited from parent>
-==1193343== 
-==1193343== 
 
 >>> ./maps/bad/textures_invalid.cub
 Error
 Missing or Invalid parametter
-==1193363== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193363== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193363==    <inherited from parent>
-==1193363== 
-==1193363== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193363==    <inherited from parent>
-==1193363== 
-==1193363== 
 
 >>> ./maps/bad/textures_missing.cub
 Error
 Missing or Invalid parametter
-==1193365== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193365== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193365==    <inherited from parent>
-==1193365== 
-==1193365== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193365==    <inherited from parent>
-==1193365== 
-==1193365== 
 
 >>> ./maps/bad/textures_none.cub
 Error
 Missing or Invalid parametter
-==1193366== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193366== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193366==    <inherited from parent>
-==1193366== 
-==1193366== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193366==    <inherited from parent>
-==1193366== 
-==1193366== 
 
 >>> ./maps/bad/textures_not_xpm.cub
 Error
 Missing or Invalid parametter
-==1193367== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193367== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193367==    <inherited from parent>
-==1193367== 
-==1193367== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193367==    <inherited from parent>
-==1193367== 
-==1193367== 
 
 >>> ./maps/bad/wall_hole_east.cub
 Error
 The map is not valid !
-==1193379== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193379== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193379==    <inherited from parent>
-==1193379== 
-==1193379== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193379==    <inherited from parent>
-==1193379== 
-==1193379== 
 
 >>> ./maps/bad/wall_hole_north.cub
 Error
 Missing or Invalid parametter
-==1193380== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193380== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193380==    <inherited from parent>
-==1193380== 
-==1193380== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193380==    <inherited from parent>
-==1193380== 
-==1193380== 
 
 >>> ./maps/bad/wall_hole_south.cub
 Error
 Missing or Invalid parametter
-==1193387== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193387== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193387==    <inherited from parent>
-==1193387== 
-==1193387== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193387==    <inherited from parent>
-==1193387== 
-==1193387== 
 
 >>> ./maps/bad/wall_hole_west.cub
 Error
 The map is not valid !
-==1193389== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193389== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193389==    <inherited from parent>
-==1193389== 
-==1193389== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193389==    <inherited from parent>
-==1193389== 
-==1193389== 
 
 >>> ./maps/bad/wall_none.cub
 Error
 Missing or Invalid parametter
-==1193390== FILE DESCRIPTORS: 5 open (3 std) at exit.
-==1193390== Open file descriptor 103: /usr/share/code/v8_context_snapshot.bin
-==1193390==    <inherited from parent>
-==1193390== 
-==1193390== Open file descriptor 41: /home/jelee/.config/Code/logs/20251015T162041/ptyhost.log
-==1193390==    <inherited from parent>
-==1193390== 
-==1193390== 
 
