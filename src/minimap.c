@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   minimap.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jelee <marvin@42lausanne.ch>               +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/17 16:26:28 by jelee             #+#    #+#             */
+/*   Updated: 2025/10/17 16:26:30 by jelee            ###   ####lausanne.ch   */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../headers/cub3d.h"
 
 void	draw_tile(t_game *game, int x, int y, int color)
@@ -19,54 +31,78 @@ void	draw_tile(t_game *game, int x, int y, int color)
 	}
 }
 
-void draw_minimap(t_game *game)
+static void	draw_minimap_background(t_game *game)
 {
-    int y = 0;
-    while (y < game->map_data.height)
-    {
-        int x = 0;
-        while (x < game->map_data.width)
-        {
-            if (game->map_data.map[y][x] == '1')
-                draw_tile(game, x, y, WALL_COLOR);
-            else
-                draw_tile(game, x, y, FLOOR_COLOR);
-            x++;
-        }
-        y++;
-    }
+	int	y;
+	int	x;
 
-    double precise_player_x = game->player.pos_x * MINIMAP_SCALE;
-    double precise_player_y = game->player.pos_y * MINIMAP_SCALE;
-    double start_draw_x = precise_player_x - (PLAYER_SIZE / 2.0);
-    double start_draw_y = precise_player_y - (PLAYER_SIZE / 2.0);
+	y = 0;
+	while (y < game->map_data.height)
+	{
+		x = 0;
+		while (x < game->map_data.width)
+		{
+			if (game->map_data.map[y][x] == '1')
+				draw_tile(game, x, y, WALL_COLOR);
+			else
+				draw_tile(game, x, y, FLOOR_COLOR);
+			x++;
+		}
+		y++;
+	}
+}
 
-    y = 0;
-    while (y < PLAYER_SIZE)
-    {
-        int x = 0;
-        while (x < PLAYER_SIZE)
-        {
-			put_pixel_to_image(&game->screen_buffer, (int)(start_draw_x + x), (int)(start_draw_y + y), PLAYER_COLOR);
-            x++;
-        }
-        y++;
-    }
-    double end_x = (game->player.pos_x * MINIMAP_SCALE) + game->player.dir_x * MINIMAP_SCALE;
-    double end_y = (game->player.pos_y * MINIMAP_SCALE) + game->player.dir_y * MINIMAP_SCALE;
-    double dx = end_x - (game->player.pos_x * MINIMAP_SCALE);
-    double dy = end_y - (game->player.pos_y * MINIMAP_SCALE);
-    double steps = fabs(dx) > fabs(dy) ? fabs(dx) : fabs(dy);
-    double x_inc = dx / steps;
-    double y_inc = dy / steps;
-    double x_line = game->player.pos_x * MINIMAP_SCALE;
-    double y_line = game->player.pos_y * MINIMAP_SCALE;
-    int i = 0;
-    while (i <= steps)
-    {
-		put_pixel_to_image(&game->screen_buffer, (int)x_line, (int)y_line, PLAYER_COLOR);
-        x_line += x_inc;
-        y_line += y_inc;
-        i++;
-    }
+static void	draw_minimap_player(t_game *game)
+{
+	double	start_x;
+	double	start_y;
+	int		y;
+	int		x;
+
+	start_x = (game->player.pos_x * MINIMAP_SCALE) - (PLAYER_SIZE / 2.0);
+	start_y = (game->player.pos_y * MINIMAP_SCALE) - (PLAYER_SIZE / 2.0);
+	y = 0;
+	while (y < PLAYER_SIZE)
+	{
+		x = 0;
+		while (x < PLAYER_SIZE)
+		{
+			put_pixel_to_image(&game->screen_buffer,
+				(int)(start_x + x), (int)(start_y + y), PLAYER_COLOR);
+			x++;
+		}
+		y++;
+	}
+}
+
+static void	draw_minimap_player_dir(t_game *game)
+{
+	double	x_pos;
+	double	y_pos;
+	double	x_inc;
+	double	y_inc;
+	int		steps;
+
+	x_pos = game->player.pos_x * MINIMAP_SCALE;
+	y_pos = game->player.pos_y * MINIMAP_SCALE;
+	x_inc = game->player.dir_x;
+	y_inc = game->player.dir_y;
+	steps = (int)(fmax(fabs(x_inc), fabs(y_inc)) * MINIMAP_SCALE);
+	x_inc /= (steps / MINIMAP_SCALE);
+	y_inc /= (steps / MINIMAP_SCALE);
+	while (steps > 0)
+	{
+		put_pixel_to_image(&game->screen_buffer, (int)x_pos,
+			(int)y_pos, PLAYER_COLOR);
+		x_pos += x_inc;
+		y_pos += y_inc;
+		steps--;
+	}
+}
+
+void	draw_minimap(t_game *game)
+{
+	draw_minimap_background(game);
+	draw_minimap_player(game);
+	draw_minimap_player_dir(game);
 }

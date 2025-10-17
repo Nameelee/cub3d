@@ -13,42 +13,6 @@
 #include "../../headers/cub3d.h"
 
 /**
- * @brief Nami added. Takes a jagged 2D map and makes it rectangular.
- * @brief Each line in the new map is padded with spaces to match the
- * @brief maximum width. The original map is freed.
- * @param original_map The original map with uneven line lengths.
- * @param width The target width for the new rectangular map.
- * @param height The height of the map (number of lines).
- * @return A new, rectangular char ** map, or NULL on malloc failure.
- */
-char	**regularize_map(char **original_map, int width, int height)
-{
-	char	**new_map;
-	int		y;
-
-	new_map = malloc(sizeof(char *) * (height + 1));
-	if (!new_map)
-		return (NULL);
-	y = 0;
-	while (y < height)
-	{
-		new_map[y] = malloc(sizeof(char) * (width + 1));
-		if (!new_map[y])
-		{
-			free_double((void ***)&new_map);
-			return (NULL);
-		}
-		ft_memset(new_map[y], ' ', width);
-		ft_memcpy(new_map[y], original_map[y], ft_strlen(original_map[y]));
-		new_map[y][width] = '\0';
-		y++;
-	}
-	new_map[y] = NULL;
-	free_double((void ***)&original_map);
-	return (new_map);
-}
-
-/**
  * @brief stores the map lines in the map data structure
  * @param line_i the line index of the last saved parametter
  * @param file_lines the lines read from the map file
@@ -144,7 +108,6 @@ int	check_file_path(char *file_path)
 
 /**
  * @brief reads the map file, checks for errors and stores data
- * Nami add after 'error = store_map' till 'error = mapcheck' 
  * @param file_path the map file path
  * @param map_data the structure where we store the map data
  * @return e_num with specified error or success flag
@@ -168,18 +131,7 @@ int	map_parser(char *file_path, t_map_data *map_data)
 		return (free_double((void ***)&file_lines), ERR_MISS_OR_INVAL_PARAM);
 	error = store_map(last_param_index, file_lines, map_data);
 	if (error == SUCCESS)
-	{
-		map_data->height = 0;
-		while (map_data->map[map_data->height])
-			map_data->height++;
-		map_data->width = get_map_width(map_data->map);
-		map_data->map = regularize_map(map_data->map,
-				map_data->width, map_data->height);
-		if (!map_data->map)
-			error = ERR_MALLOC;
-		else
-			error = map_checker(map_data);
-	}
+		error = process_and_validate_map(map_data);
 	free_double((void ***)&file_lines);
 	return (error);
 }

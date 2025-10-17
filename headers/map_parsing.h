@@ -19,5 +19,6 @@ int		ft_isspace(char c);
 int		get_index_after_isspace(char *str);
 t_color	*extract_color(char *color, int *malloc_err_flag);
 int		get_map_param(char **file_lines, t_map_data *map_data, int *i_lines);
+int		process_and_validate_map(t_map_data *map_data);
 
 #endif

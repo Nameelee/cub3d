@@ -24,20 +24,32 @@ MLX_FLAGS           = -L$(MLX_DIR) -lmlx -lXext -lX11 -lm -lz
 SRCS_DIR			= src/
 M_PARSE_DIR			= $(SRCS_DIR)map_parsing/
 M_CHECK_DIR			= $(SRCS_DIR)map_checking/
+GRAPHICS_DIR		= $(SRCS_DIR)graphics/
 
-SRCS_MAIN			= main.c debug.c string_utils.c strs_dup.c move.c render.c minimap.c texture.c
+SRCS_MAIN			= main.c \
+					debug.c \
+					string_utils.c \
+					strs_dup.c \
+					move.c \
+					minimap.c \
+					init.c \
+					key_handler.c
 
 SRCS_M_PARSE		= color_utils.c  \
 					map_parser.c  \
 					param_parser.c  \
 					parsing_utils.c  \
-					read_file.c
+					read_file.c	\
+					map_rectangular.c
 
 SRCS_M_CHECK		= main_checker.c map_check_utils.c
 
+SRCS_GRAPHICS		= init_ray.c pixel_image.c render.c texture.c
+
 SRCS				= $(addprefix $(SRCS_DIR), $(SRCS_MAIN)) \
 					  $(addprefix $(M_PARSE_DIR), $(SRCS_M_PARSE)) \
-					  $(addprefix $(M_CHECK_DIR), $(SRCS_M_CHECK))
+					  $(addprefix $(M_CHECK_DIR), $(SRCS_M_CHECK)) \
+					  $(addprefix $(GRAPHICS_DIR), $(SRCS_GRAPHICS))
 
 OBJS				= $(SRCS:%.c=$(OBJ_DIR)/%.o)
 PROJ_INC			= -I$(SRCS_DIR) -I$(M_PARSE_DIR)
