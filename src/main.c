@@ -91,7 +91,7 @@ int	main(int ac, char **av)
 	t_game	game;
 	int		error;
 
-	memset(&game, 0, sizeof(t_game));
+	ft_memset(&game, 0, sizeof(t_game));
 	if (ac != 2 || !av[1] || !av[1][0])
 		return (print_error(ERR_ARGS), 1);
 	init_map_data(&game.map_data);
