@@ -15,13 +15,20 @@
 
 # include <fcntl.h>
 # include <stdio.h>
+# include <stdlib.h>
+# include <math.h>
+# include <string.h>
 # include "../libft/libft.h"
 # include "../get_next_line/get_next_line.h"
+# include "../minilibx/mlx.h"
 # include "errors.h"
 # include "data.h"
 # include "map_parsing.h"
 # include "map_checking.h"
 # include "string_utils.h"
-# include "cub3d_nami.h"
+# include "game.h"
+# include "graphics.h"
+# include "input.h"
+# include "moving.h"
 
 #endif

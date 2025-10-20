@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   map_checking.h                                     :+:      :+:    :+:   */
+/*   moving.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: jelee <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 18:32:14 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/30 21:39:12 by manuelma         ###   ########.fr       */
+/*   Created: 2025/10/20 16:25:49 by jelee             #+#    #+#             */
+/*   Updated: 2025/10/20 16:25:52 by jelee            ###   ####lausanne.ch   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAP_CHECKING_H
-# define MAP_CHECKING_H
+#ifndef MOVING_H
+# define MOVING_H
 
-int	map_checker(t_map_data *map_data);
-int	find_player_pos(char **map, int *x, int *y);
-int	get_map_width(char **map);
+# include "data.h"
+
+void	set_player_direction(t_game *game, char direction);
+void	init_player_position(t_game *game);
+void	move_player(t_game *game);
 
 #endif

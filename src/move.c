@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "../headers/cub3d.h"
-#include <math.h>
 
 void	set_player_vectors(t_game *game, t_vector_set vectors)
 {

@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   map_checking.h                                     :+:      :+:    :+:   */
+/*   input.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: jelee <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 18:32:14 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/30 21:39:12 by manuelma         ###   ########.fr       */
+/*   Created: 2025/10/20 16:25:03 by jelee             #+#    #+#             */
+/*   Updated: 2025/10/20 16:25:10 by jelee            ###   ####lausanne.ch   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAP_CHECKING_H
-# define MAP_CHECKING_H
+#ifndef INPUT_H
+# define INPUT_H
 
-int	map_checker(t_map_data *map_data);
-int	find_player_pos(char **map, int *x, int *y);
-int	get_map_width(char **map);
+# include "data.h"
+
+int		key_press_handler(int keycode, t_game *game);
+int		key_release_handler(int keycode, t_game *game);
 
 #endif
