@@ -6,7 +6,7 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/05 16:41:17 by manuelma          #+#    #+#              #
-#    Updated: 2025/10/21 15:41:43 by manuelma         ###   ########.fr        #
+#    Updated: 2025/10/21 17:19:53 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,6 @@ M_CHECK_DIR			= $(SRCS_DIR)map_checking/
 GRAPHICS_DIR		= $(SRCS_DIR)graphics/
 
 SRCS_MAIN			= main.c \
-					debug.c \
 					string_utils.c \
 					strs_dup.c \
 					move.c \
