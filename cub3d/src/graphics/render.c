@@ -70,6 +70,8 @@ void	calculate_wall_projection(t_game *game, t_ray *ray)
 	if (ray->draw_start < 0)
 		ray->draw_start = 0;
 	ray->draw_end = ray->line_height / 2 + SCREEN_HEIGHT / 2;
+	if (ray->draw_end < 0)
+        ray->draw_end = 0;
 	if (ray->draw_end >= SCREEN_HEIGHT)
 		ray->draw_end = SCREEN_HEIGHT - 1;
 	if (ray->side == 0)

@@ -85,3 +85,18 @@ void	init_player_position(t_game *game)
 		y++;
 	}
 }
+
+/*
+game->player.pos_x = x + 0.5;//to locate character in the center
+game->map_data.map[y][x] = '0';//to inform this spot is free to walk
+
+mlx_init initializes the connection to the operating system's 
+graphical display server and returns a unique pointer 
+(handle) to that connection
+
+mlx_new_image: it create invisible blank paepr in memory
+put_pixel_to_image draw pic here(memory buffer) to avoid flickering
+and mlx_put_image_to_window <- this shoot the buffered image into window
+
+mlx_get_data_addr: it gets address of memory that was drawn by put_pixel_to_image
+*/

@@ -12,6 +12,10 @@
 
 #include "../headers/cub3d.h"
 
+/**
+ * @brief save all of texture for wall
+ * @param t_game game struct as pinter
+ */
 void	load_textures(t_game *game)
 {
 	int		width;
