@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/09 00:30:46 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/11 18:49:37 by manuelma         ###   ########.fr       */
+/*   Created: 2025/10/21 15:05:37 by manuelma          #+#    #+#             */
+/*   Updated: 2025/10/21 15:08:20 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@
 # define PLAYER_COLOR 0xFF0000
 # define WALL_COLOR 0xFFFFFF
 # define FLOOR_COLOR 0x808080
-
 
 typedef struct s_color
 {

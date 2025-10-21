@@ -6,7 +6,7 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/05 16:41:17 by manuelma          #+#    #+#              #
-#    Updated: 2025/09/30 22:27:52 by manuelma         ###   ########.fr        #
+#    Updated: 2025/10/21 15:30:42 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CC					= cc
 CFLAGS				= -Wall -Wextra -Werror -g
 OBJ_DIR				= objs
 
-MLX_DIR             = minilibx
+MLX_DIR             = ../minilibx
 MLX_LIB             = $(MLX_DIR)/libmlx.a
 #MLX_FLAGS           = -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
 MLX_FLAGS           = -L$(MLX_DIR) -lmlx -lXext -lX11 -lm -lz

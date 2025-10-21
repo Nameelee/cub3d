@@ -6,7 +6,7 @@
 /*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 18:44:42 by manuelma          #+#    #+#             */
-/*   Updated: 2025/09/30 18:33:36 by manuelma         ###   ########.fr       */
+/*   Updated: 2025/10/21 15:30:25 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # include <string.h>
 # include "../libft/libft.h"
 # include "../get_next_line/get_next_line.h"
-# include "../minilibx/mlx.h"
+# include "../../minilibx/mlx.h"
 # include "errors.h"
 # include "data.h"
 # include "map_parsing.h"
