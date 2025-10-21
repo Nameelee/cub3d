@@ -6,13 +6,13 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/05 16:41:17 by manuelma          #+#    #+#              #
-#    Updated: 2025/10/21 15:30:42 by manuelma         ###   ########.fr        #
+#    Updated: 2025/10/21 15:41:43 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 include mk/print_ascii_art.mk
 
-NAME				= cub3d
+NAME				= cub3D
 CC					= cc
 CFLAGS				= -Wall -Wextra -Werror -g
 OBJ_DIR				= objs
