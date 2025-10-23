@@ -12,6 +12,12 @@
 
 #include "../headers/cub3d.h"
 
+/**
+ * dir_x: 1(to right) ~ -1(to left) / 0(not moving)
+ * dir_y: 1(to north) ~ -1(to south)
+ * plane_x: filed of view(the angle). 
+ when it getting biger, you can see more thing and smaller. 
+ */
 void	set_player_vectors(t_game *game, t_vector_set vectors)
 {
 	game->player.dir_x = vectors.dir_x;
@@ -32,6 +38,11 @@ void	set_player_direction(t_game *game, char direction)
 		set_player_vectors(game, (t_vector_set){1, 0, 0, 0.66});
 }
 
+/**
+ * rotation matrix: when you rotate in the angle of rs
+x′=x⋅cos(rs)−y⋅sin(rs)
+y′=x⋅sin(rs)+y⋅cos(rs)
+ */
 static	void	rotate_player(t_game *game, double rot_speed)
 {
 	double	old_dir_x;
@@ -52,6 +63,10 @@ static	void	rotate_player(t_game *game, double rot_speed)
 		* cos(rs);
 }
 
+/**
+ * last two if's are collision check. 
+ * this code makes player slide when it collides wall and pushed. 
+ */
 static	void	perform_movement(t_game *game, double move_speed)
 {
 	double	move_vec_x;

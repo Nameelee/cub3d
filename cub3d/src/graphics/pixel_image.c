@@ -12,6 +12,11 @@
 
 #include "../headers/cub3d.h"
 
+/**
+t<<24: move bit of t as 24 unit to the left 
+and makes all into bits and combine all and return just 1 number. 
+couldn't understand
+*/
 int	create_trgb(int t, int r, int g, int b)
 {
 	return (t << 24 | r << 16 | g << 8 | b);
@@ -24,9 +29,3 @@ void	put_pixel_to_image(t_img *buffer, int x, int y, int color)
 	dst = (char *)buffer->data + (y * buffer->size_l + x * (buffer->bpp / 8));
 	*(unsigned int *)dst = color;
 }
-
-/*
-create_trgb: t<<24: move bit of t as 24 unit to the left 
-and makes all into bits and combine all and return just 1 number. 
-couldn't understand
-*/
