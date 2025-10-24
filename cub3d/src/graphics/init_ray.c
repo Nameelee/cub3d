@@ -12,6 +12,16 @@
 
 #include "../headers/cub3d.h"
 
+/** 
+ * ray->camera_x = 2 * x / (double)SCREEN_WIDTH - 1
+ Convert pixel location(0~1024) into the location of camera(-1~+1)
+ * ray->dir_x = game->player.dir_x + game->player.plane_x * ray->camera_x;
+ with value of camera_x, it calcul the direction of the projection of the ray
+ * ray->map_x = (int)game->player.pos_x;
+ it set the starting point of projecting ray
+ * ray->hit = 0;
+ DDA algorithm works only ray->hit == 0
+*/
 static void	init_ray_vectors(t_game *game, t_ray *ray, int x)
 {
 	ray->camera_x = 2 * x / (double)SCREEN_WIDTH - 1;
@@ -22,6 +32,13 @@ static void	init_ray_vectors(t_game *game, t_ray *ray, int x)
 	ray->hit = 0;
 }
 
+/**
+if (ray->dir_x == 0) ray is vertical. 
+	ray->delta_dist_x = 1e30; it gives very big number for its limit
+	ray->delta_dist_x = fabs(1 / ray->dir_x); very big numeber
+ray->dir_x < 0: when you move to left
+	step_x = -1 means left
+ */
 static void	init_dda_x(t_game *game, t_ray *ray)
 {
 	if (ray->dir_x == 0)

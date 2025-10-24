@@ -12,6 +12,14 @@
 
 #include "../headers/cub3d.h"
 
+/**
+ * the heart of DDA algorithm. it move the ray
+ * while (ray->hit == 0): go on if ray didn't hit the wall
+ * if (ray->side_dist_x < ray->side_dist_y)
+ * : to next grid, which is smaller? distance_x or distance_y?
+ * if distance_x is smaller then add the direction
+ * so the ray decide its direction and move on
+ */
 static void	run_dda_loop(t_game *game, t_ray *ray)
 {
 	while (ray->hit == 0)
@@ -33,6 +41,11 @@ static void	run_dda_loop(t_game *game, t_ray *ray)
 	}
 }
 
+/**
+ * this function decide which wall the ray hit
+side == 0 means the ray hit the wall x axis(E or W)
+if (ray-> dir_x > 0) means E wall
+ */
 static void	set_wall_texture(t_ray *ray)
 {
 	if (ray->side == 0)
@@ -57,6 +70,23 @@ void	perform_dda(t_game *game, t_ray *ray)
 	set_wall_texture(ray);
 }
 
+/** 
+ * perp_wall_dist: preventing fish eyes
+ * for drawing, first draw vertical line.
+ * ray->draw_end = ray->line_height / 2 + SCREEN_HEIGHT / 2;
+	:it always draw wall in the center of the screen
+if (ray->side == 0)
+	ray->wall_x = game->player.pos_y + ray->perp_wall_dist * ray->dir_y;
+	:when ray hit the vertical wall (W,E) it needs its y coordinate
+	and save at ray->wall_x  
+ray->wall_x -= floor(ray->wall_x);
+	:if wall_X 5.7 then the value will be 0.7
+	:this means the ray hit the 70% of wall tile
+ray->tex_x = (int)(ray->wall_x * (double)TEX_WIDTH);
+	:TEX_WIDTH is 60. 60 * 0.7 = 44.8 
+	:to draw the wall bring the 44th vertical pixel
+the last codes: it prevent the mirroring
+*/
 void	calculate_wall_projection(t_game *game, t_ray *ray)
 {
 	if (ray->side == 0)
@@ -71,7 +101,7 @@ void	calculate_wall_projection(t_game *game, t_ray *ray)
 		ray->draw_start = 0;
 	ray->draw_end = ray->line_height / 2 + SCREEN_HEIGHT / 2;
 	if (ray->draw_end < 0)
-        ray->draw_end = 0;
+		ray->draw_end = 0;
 	if (ray->draw_end >= SCREEN_HEIGHT)
 		ray->draw_end = SCREEN_HEIGHT - 1;
 	if (ray->side == 0)

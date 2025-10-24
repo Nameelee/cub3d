@@ -102,26 +102,26 @@ typedef struct s_vector_set
 
 typedef struct s_ray
 {
-	double	camera_x;
-	double	dir_x;
+	double	camera_x;//The x-coordinate on the camera plane, ranging -1 ~ +1
+	double	dir_x;//actual direction
 	double	dir_y;
-	int		map_x;
+	int		map_x;//the ray start from here
 	int		map_y;
-	double	side_dist_x;
+	double	side_dist_x;//distance from the ray's start to the next X-side
 	double	side_dist_y;
-	double	delta_dist_x;
+	double	delta_dist_x;//The distance the ray must travel to cross
 	double	delta_dist_y;
-	double	perp_wall_dist;
-	int		step_x;
+	double	perp_wall_dist;//Perpendicular Wall Distance. This prevent fish eye
+	int		step_x;//The direction to step in the map grid, either +1 or -1
 	int		step_y;
-	int		hit;
-	int		side;
-	int		line_height;
-	int		draw_start;
+	int		hit;//0: ray is traveling. 1:the ray has hit a wall
+	int		side;//which sides wall hits. 0:X-side 1:Y-side
+	int		line_height;//the height of pixel of the wall slice
+	int		draw_start;//The vertical y pixel coordinates to draw the wall
 	int		draw_end;
 	int		tex_num;//the num of the texture you use
 	double	wall_x;// the x location you hit (0.0 ~ 1.0)
-	int		tex_x;// the x locatio of the texture
+	int		tex_x;// the x location of the texture
 }	t_ray;
 
 #endif
