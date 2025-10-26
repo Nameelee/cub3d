@@ -32,7 +32,7 @@
 # define TEX_WIDTH 64
 # define TEX_HEIGHT 64
 //Minimap
-# define MINIMAP_SCALE 15
+# define MINIMAP_SCALE 15 //size of one tile
 # define PLAYER_SIZE 15
 # define PLAYER_COLOR 0xFF0000
 # define WALL_COLOR 0xFFFFFF
@@ -61,7 +61,7 @@ typedef struct s_map_data
 typedef struct s_img
 {
 	void	*img_ptr;
-	int		*data;
+	int		*data;//the address of the memory of the image by mlx_get_data_addr
 	int		size_l;
 	int		bpp;
 	int		endian;

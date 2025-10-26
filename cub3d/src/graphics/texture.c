@@ -14,7 +14,7 @@
 
 /**
  * @brief save all of texture for wall
- * @param t_game game struct as pinter
+ * @param t_game game struct
  */
 void	load_textures(t_game *game)
 {
@@ -44,6 +44,11 @@ void	load_textures(t_game *game)
 	}
 }
 
+/**
+ * paints a vertical line in the current screen column (x) with the ceiling color, 
+    starting from (y=0) down to the point where the wall begins (ray->draw_start).
+	this will loop
+ */
 static	void	draw_ceiling(t_game *game, t_ray *ray, int x)
 {
 	int	y;
@@ -68,6 +73,21 @@ static	void	draw_floor(t_game *game, t_ray *ray, int x)
 	}
 }
 
+/**
+ @param step how much stretch the original texture
+ @param tex_pos calcul to where to start to read y coordinate
+ @param tex_y = (int)tex_pos & (TEX_HEIGHT - 1);
+	It converts tex_pos (a floating-point value) into an actual 
+	texture y-coordinate (an integer value). 
+	& (TEX_HEIGHT - 1) :this prevent it getting bigger than texture
+* data[TEX_HEIGHT * tex_y + ray->tex_x]
+	Convert 2D texture coordinates (tex_x, tex_y) to a 1D array index.
+    Uses the formula: index = (y * width) + x
+    (Assuming TEX_HEIGHT is the texture width, as in 64x64)
+* if (ray->side == 1) : When ray hit N/S wall
+	* color = (color >> 1) & 8355711 : this makes rgb value darker
+    for Light/Shading Effect. 
+ */
 static	void	draw_wall_slice(t_game *game, t_ray *ray, int x)
 {
 	int		y;
