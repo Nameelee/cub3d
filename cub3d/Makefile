@@ -6,7 +6,7 @@
 #    By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/05 16:41:17 by manuelma          #+#    #+#              #
-#    Updated: 2025/10/21 17:19:53 by manuelma         ###   ########.fr        #
+#    Updated: 2025/10/27 15:35:27 by manuelma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,6 @@ OBJ_DIR				= objs
 
 MLX_DIR             = ../minilibx
 MLX_LIB             = $(MLX_DIR)/libmlx.a
-#MLX_FLAGS           = -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
 MLX_FLAGS           = -L$(MLX_DIR) -lmlx -lXext -lX11 -lm -lz
 SRCS_DIR			= src/
 M_PARSE_DIR			= $(SRCS_DIR)map_parsing/
@@ -62,7 +61,7 @@ GNL_INC				= -I$(GNL_PATH)
 all: $(LIBFT) $(MLX_LIB) $(GNL) $(NAME)
 
 $(NAME): $(OBJS)
-	@$(CC) $(CFLAGS) $(OBJS) $(LIBFT) $(GNL) $(MLX_FLAGS) -o $(NAME)
+	@$(CC) $(CFLAGS) -fsanitize=address -g $(OBJS) $(LIBFT) $(GNL) $(MLX_FLAGS) -o $(NAME)
 	@printf $(IGreen)
 	@printf "Cub3d compiled successfully!$(RESET)\n"
 	$(call PRINT_WORD,$(NAME),ICyan)

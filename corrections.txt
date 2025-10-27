@@ -1,0 +1,4 @@
+- parsing the map -> checking that all the '0' are surrounded by '1' not only the accessible ones.
+	-> check the subject again
+
+- check that puting a huge map (huge line or lots of lines) still works.

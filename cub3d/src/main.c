@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jelee <marvin@42lausanne.ch>               +#+  +:+       +#+        */
+/*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 13:27:53 by jelee             #+#    #+#             */
-/*   Updated: 2025/10/17 13:29:12 by jelee            ###   ####lausanne.ch   */
+/*   Updated: 2025/10/27 15:37:02 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int	game_loop(t_game *game)
 
 	move_player(game);
 	x = 0;
+
 	while (x < SCREEN_WIDTH)
 	{
 		init_ray_data(game, &ray, x);

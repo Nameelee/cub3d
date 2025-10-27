@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minimap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jelee <marvin@42lausanne.ch>               +#+  +:+       +#+        */
+/*   By: manuelma <manuelma@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 16:26:28 by jelee             #+#    #+#             */
-/*   Updated: 2025/10/17 16:26:30 by jelee            ###   ####lausanne.ch   */
+/*   Updated: 2025/10/27 15:47:23 by manuelma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	draw_tile(t_game *game, int x, int y, int color)
 {
 	int	i;
 	int	j;
+	int	rx;
+	int	ry;
 
 	i = 0;
 	while (i < MINIMAP_SCALE)
@@ -23,6 +25,11 @@ void	draw_tile(t_game *game, int x, int y, int color)
 		j = 0;
 		while (j < MINIMAP_SCALE)
 		{
+			rx = x * MINIMAP_SCALE + j;
+			ry = y * MINIMAP_SCALE + i;
+
+			if (rx > SCREEN_WIDTH || ry > SCREEN_HEIGHT)
+				return ;
 			put_pixel_to_image(&game->screen_buffer,
 				x * MINIMAP_SCALE + j, y * MINIMAP_SCALE + i, color);
 			j++;
