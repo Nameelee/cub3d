@@ -45,8 +45,9 @@ void	load_textures(t_game *game)
 }
 
 /**
- * paints a vertical line in the current screen column (x) with the ceiling color, 
-    starting from (y=0) down to the point where the wall begins (ray->draw_start).
+ * paints a vertical line in the current screen column (x) 
+    with the ceiling color, starting from (y=0) down 
+	to the point where the wall begins (ray->draw_start).
 	this will loop
  */
 static	void	draw_ceiling(t_game *game, t_ray *ray, int x)
