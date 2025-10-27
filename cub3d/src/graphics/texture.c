@@ -34,7 +34,7 @@ void	load_textures(t_game *game)
 				paths[i], &width, &height);
 		if (game->textures[i].img_ptr == NULL)
 		{
-			printf("Error: Texture '%s' loading failed.\n", paths[i]);
+			printf("Error\n Texture '%s' loading failed.\n", paths[i]);
 			exit(1);
 		}
 		game->textures[i].data = (int *)mlx_get_data_addr(
