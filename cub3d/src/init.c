@@ -39,6 +39,7 @@ int	init_all(t_game *game)
 	game->mlx_ptr = mlx_init();
 	if (game->mlx_ptr == NULL)
 		return (1);
+	load_textures(game);
 	game->win_ptr = mlx_new_window
 		(game->mlx_ptr, SCREEN_WIDTH, SCREEN_HEIGHT, "cub3D");
 	if (game->win_ptr == NULL)

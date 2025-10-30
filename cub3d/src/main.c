@@ -101,7 +101,6 @@ int	main(int ac, char **av)
 		return (free_map_data(&game.map_data), print_error(error), 1);
 	if (init_all(&game) == 1)
 		return (1);
-	load_textures(&game);
 	mlx_hook(game.win_ptr, 2, 1L << 0, key_press_handler, &game);
 	mlx_hook(game.win_ptr, 3, 1L << 1, key_release_handler, &game);
 	mlx_hook(game.win_ptr, 17, 0, close_game, &game);
