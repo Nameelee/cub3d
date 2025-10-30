@@ -13,6 +13,7 @@
 include mk/print_ascii_art.mk
 
 NAME				= cub3D
+NAME_BONUS			= $(NAME)_bonus
 CC					= cc
 CFLAGS				= -Wall -Wextra -Werror -g
 OBJ_DIR				= objs
@@ -25,11 +26,9 @@ M_PARSE_DIR			= $(SRCS_DIR)map_parsing/
 M_CHECK_DIR			= $(SRCS_DIR)map_checking/
 GRAPHICS_DIR		= $(SRCS_DIR)graphics/
 
-SRCS_MAIN			= main.c \
-					string_utils.c \
+SRCS_MAIN_COMMON    = string_utils.c \
 					strs_dup.c \
 					move.c \
-					minimap.c \
 					init.c \
 					key_handler.c
 
@@ -44,12 +43,17 @@ SRCS_M_CHECK		= main_checker.c map_check_utils.c
 
 SRCS_GRAPHICS		= init_ray.c pixel_image.c render.c texture.c
 
-SRCS				= $(addprefix $(SRCS_DIR), $(SRCS_MAIN)) \
+SRCS_COMMON			= $(addprefix $(SRCS_DIR), $(SRCS_MAIN_COMMON)) \
 					  $(addprefix $(M_PARSE_DIR), $(SRCS_M_PARSE)) \
 					  $(addprefix $(M_CHECK_DIR), $(SRCS_M_CHECK)) \
 					  $(addprefix $(GRAPHICS_DIR), $(SRCS_GRAPHICS))
 
-OBJS				= $(SRCS:%.c=$(OBJ_DIR)/%.o)
+SRCS_MANDATORY 		= $(addprefix $(SRCS_DIR), main.c) $(SRCS_COMMON)
+OBJS_MANDATORY 		= $(SRCS_MANDATORY:%.c=$(OBJ_DIR)/%.o)
+
+SRCS_BONUS 			= $(addprefix $(SRCS_DIR), main_bonus.c minimap_bonus.c) $(SRCS_COMMON)
+OBJS_BONUS 			= $(SRCS_BONUS:%.c=$(OBJ_DIR)/%.o)
+
 PROJ_INC			= -I$(SRCS_DIR) -I$(M_PARSE_DIR)
 LIBFT_PATH			= libft
 LIBFT				= $(LIBFT_PATH)/libft.a
@@ -60,11 +64,19 @@ GNL_INC				= -I$(GNL_PATH)
 
 all: $(LIBFT) $(MLX_LIB) $(GNL) $(NAME)
 
-$(NAME): $(OBJS)
-	@$(CC) $(CFLAGS) -fsanitize=address -g $(OBJS) $(LIBFT) $(GNL) $(MLX_FLAGS) -o $(NAME)
+$(NAME): $(OBJS_MANDATORY)
+	@$(CC) $(CFLAGS) -fsanitize=address -g $(OBJS_MANDATORY) $(LIBFT) $(GNL) $(MLX_FLAGS) -o $(NAME)
 	@printf $(IGreen)
 	@printf "Cub3d compiled successfully!$(RESET)\n"
 	$(call PRINT_WORD,$(NAME),ICyan)
+
+bonus: $(LIBFT) $(MLX_LIB) $(GNL) $(NAME_BONUS)
+
+$(NAME_BONUS): $(OBJS_BONUS)
+	@$(CC) $(CFLAGS) -fsanitize=address -g $(OBJS_BONUS) $(LIBFT) $(GNL) $(MLX_FLAGS) -o $(NAME_BONUS)
+	@printf $(IGreen)
+	@printf "Cub3d BONUS compiled successfully!$(RESET)\n"
+	$(call PRINT_WORD,$(NAME_BONUS),ICyan)
 
 $(OBJ_DIR)/%.o: %.c
 	@mkdir -p $(dir $@)
@@ -88,7 +100,7 @@ clean:
 	@printf "Removed all object files from cub3d!.$(RESET)\n"
 
 fclean: clean
-	@rm -f $(NAME)
+	@rm -f $(NAME) $(NAME_BONUS)
 	@$(MAKE) -C $(LIBFT_PATH) fclean --no-print-directory || \
 	 $(MAKE) -C $(LIBFT_PATH) clean_exec --no-print-directory
 	@$(MAKE) -C $(GNL_PATH) fclean --no-print-directory || true
@@ -97,5 +109,5 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
 

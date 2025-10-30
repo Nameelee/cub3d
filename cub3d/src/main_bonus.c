@@ -54,6 +54,7 @@ int	game_loop(t_game *game)
 		draw_textured_line(game, &ray, x);
 		x++;
 	}
+	draw_minimap(game);
 	mlx_put_image_to_window(game->mlx_ptr,
 		game->win_ptr, game->screen_buffer.img_ptr, 0, 0);
 	return (0);
