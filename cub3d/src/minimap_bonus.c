@@ -27,7 +27,6 @@ void	draw_tile(t_game *game, int x, int y, int color)
 		{
 			rx = x * MINIMAP_SCALE + j;
 			ry = y * MINIMAP_SCALE + i;
-
 			if (rx > SCREEN_WIDTH || ry > SCREEN_HEIGHT)
 				return ;
 			put_pixel_to_image(&game->screen_buffer,

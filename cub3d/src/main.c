@@ -45,7 +45,6 @@ int	game_loop(t_game *game)
 
 	move_player(game);
 	x = 0;
-
 	while (x < SCREEN_WIDTH)
 	{
 		init_ray_data(game, &ray, x);
