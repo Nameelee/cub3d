@@ -37,16 +37,22 @@ void	draw_tile(t_game *game, int x, int y, int color)
 	}
 }
 
+/** 
+ * the last char is '\n' so 
+ --> while (x < row_len - 1)
+*/
 static void	draw_minimap_background(t_game *game)
 {
 	int	y;
 	int	x;
+	int	row_len;
 
 	y = 0;
 	while (y < game->map_data.height)
 	{
 		x = 0;
-		while (x < game->map_data.width)
+		row_len = ft_strlen(game->map_data.map[y]);
+		while (x < row_len - 1)
 		{
 			if (game->map_data.map[y][x] == '1')
 				draw_tile(game, x, y, WALL_COLOR);
